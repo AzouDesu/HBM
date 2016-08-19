@@ -203,14 +203,13 @@ label ch1_scene07:
                     
                     n "Just a little. Come on, [pc], let's bring this inside."
 
-        
-    $ renpy.music.stop(fadeout=2.0)
-        
+    stop music fadeout 2.0
+   
     scene bg nBedroom with wipeleft
       
     "Nagi and I manage to bring the crate up to her room with little effort."
-     
-    $renpy.music.play("assets/sound/bgm/082.mp3", fadein=2.0)
+ 
+    play music "assets/sound/bgm/082.mp3" fadein 2.0
     
     show kumiru neutral at kumiru_right
     

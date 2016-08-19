@@ -640,28 +640,52 @@ screen aff_screen:
     
     add "assets/menus/phonebg.png" xalign 0.5 yalign 0.5
 
+    if gamedebug:
+        bar pos (393,121) value FieldValue(store, "ku_like", affection_max) range affection_max style "like_bar"
+        bar pos (672,79) value FieldValue(store, "ku_love", affection_max) range affection_max style "love_bar"
+        
+        bar pos (393,214) value FieldValue(store, "v_like", affection_max) range affection_max style "like_bar"
+        bar pos (672,172) value FieldValue(store, "v_love", affection_max) range affection_max style "love_bar"
+        
+        bar pos (393,307) value FieldValue(store, "n_like", affection_max) range affection_max style "like_bar"
+        bar pos (672,265) value FieldValue(store, "n_love", affection_max) range affection_max style "love_bar"
+        
+        bar pos (393,400) value FieldValue(store, "ka_like", affection_max) range affection_max style "like_bar"
+        bar pos (672,358) value FieldValue(store, "ka_love", affection_max) range affection_max style "love_bar"
+        
+        bar pos (393,493) value FieldValue(store, "f_like", affection_max) range affection_max style "like_bar"
+        bar pos (672,451) value FieldValue(store, "f_love", affection_max) range affection_max style "love_bar"
+        
+        bar pos (393,586) value FieldValue(store, "d_like", affection_max) range affection_max style "like_bar"
+        bar pos (672,544) value FieldValue(store, "d_love", affection_max) range affection_max style "love_bar"
+        
+        bar pos (393,679) value FieldValue(store, "a_like", affection_max) range affection_max style "like_bar"
+        bar pos (672,637) value FieldValue(store, "a_love", affection_max) range affection_max style "love_bar"
 
-    
-    bar pos (393,121) value ku_like range affection_max style "like_bar"
-    bar pos (672,79) value ku_love range affection_max style "love_bar"
-    
-    bar pos (393,214) value v_like range affection_max style "like_bar"
-    bar pos (672,172) value v_love range affection_max style "love_bar"
-    
-    bar pos (393,307) value n_like range affection_max style "like_bar"
-    bar pos (672,265) value n_love range affection_max style "love_bar"
-    
-    bar pos (393,400) value ka_like range affection_max style "like_bar"
-    bar pos (672,358) value ka_love range affection_max style "love_bar"
-    
-    bar pos (393,493) value f_like range affection_max style "like_bar"
-    bar pos (672,451) value f_love range affection_max style "love_bar"
-    
-    bar pos (393,586) value d_like range affection_max style "like_bar"
-    bar pos (672,544) value d_love range affection_max style "love_bar"
-    
-    bar pos (393,679) value a_like range affection_max style "like_bar"
-    bar pos (672,637) value a_love range affection_max style "love_bar"
+    else:
+        bar pos (393,121) value ku_like range affection_max style "like_bar"
+        bar pos (672,79) value ku_love range affection_max style "love_bar"
+        
+        bar pos (393,214) value v_like range affection_max style "like_bar"
+        bar pos (672,172) value v_love range affection_max style "love_bar"
+        
+        bar pos (393,307) value n_like range affection_max style "like_bar"
+        bar pos (672,265) value n_love range affection_max style "love_bar"
+        
+        bar pos (393,400) value ka_like range affection_max style "like_bar"
+        bar pos (672,358) value ka_love range affection_max style "love_bar"
+        
+        bar pos (393,493) value f_like range affection_max style "like_bar"
+        bar pos (672,451) value f_love range affection_max style "love_bar"
+        
+        bar pos (393,586) value d_like range affection_max style "like_bar"
+        bar pos (672,544) value d_love range affection_max style "love_bar"
+        
+        bar pos (393,679) value a_like range affection_max style "like_bar"
+        bar pos (672,637) value a_love range affection_max style "love_bar"
+        
+        
+
     
     add "assets/menus/relationshipscreen3.png" xalign 0.5 yalign 0.5
     

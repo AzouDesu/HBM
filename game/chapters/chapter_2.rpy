@@ -2287,8 +2287,12 @@
     "Still, though... that doesn't mean I have to give up just yet."
     
     "On the other hand, I could head back upstairs. Dravenia told me not to be long, after all. It would probably set her at ease."
-    
+
+    #$ affection_max = 10.0
+
     "Should I keep trying with Allise, or should I go back to Dravenia and the others?"
+    
+    "[ku_like]"
     
     menu:
         

@@ -1506,8 +1506,7 @@ label ch1_scene03:
     
     "The drider coerces her friend down the staircase, leaving me alone with my thoughts. I decide to take a look at my new room."
     
-    $ renpy.music.stop(fadeout=3.0)
-    
+    stop music fadeout 3.0
     jump ch1_scene04
     
     
@@ -1517,7 +1516,8 @@ label ch1_scene04:
     
     play sound "assets/sound/sfx/door_close.wav"
     
-    $ renpy.music.play("assets/sound/bgm/tam-n17.mp3", fadein=3.0)
+    play music "assets/sound/bgm/tam-n17.mp3" fadein 3.0
+    
     
     "It's pretty much barren."
     
@@ -1551,7 +1551,7 @@ label ch1_scene04:
     
     "Looks like all I can do is-"
     
-    $renpy.music.stop(fadeout=0.5)
+    stop music fadeout 0.5
     
     play sound "assets/sound/sfx/footstep_rush_close.wav"
     
@@ -1567,7 +1567,7 @@ label ch1_scene04:
     
     play sound "assets/sound/sfx/door_close.wav"
 
-    $ renpy.music.play("assets/sound/bgm/slapstick.mp3")
+    play music "assets/sound/bgm/slapstick.mp3"
 
     $renpy.pause (1.0)
 
@@ -1643,7 +1643,7 @@ label ch1_scene04:
                    
             ka_un "And you {i}will{/i} get to know me."
            
-    $renpy.music.stop(fadeout=2.0)
+    stop music fadeout 2.0
     
     show kamao shocked       
     
@@ -1651,7 +1651,8 @@ label ch1_scene04:
     
     $renpy.pause(2.0)
     
-    $ renpy.music.play("assets/sound/bgm/tam-n13.mp3")
+    play music "assets/sound/bgm/tam-n13.mp3"
+    
     
     show kamao bored
     
@@ -2303,7 +2304,7 @@ label ch1_scene05:
     
     show kamao shocked_f
     
-    $ renpy.music.stop()
+    stop music
     
     play sound "assets/sound/sfx/vinylscratch.wav"
     
@@ -2317,7 +2318,8 @@ label ch1_scene05:
     
     ka "Why do you have boobs?"
     
-    $renpy.music.play("assets/sound/bgm/scene_comi2.ogg")
+    play music "assets/sound/bgm/scene_comi2.mp3"
+    
     
     show fenira confused
     
@@ -2462,7 +2464,7 @@ label ch1_scene05:
             
             ka "On second thought, I have to finish unpacking. Toodles!"
             
-    $renpy.music.stop(fadeout=2.0)
+    stop music fadeout 2.0
             
     hide kamao with dissolve
     
@@ -2471,7 +2473,8 @@ label ch1_scene05:
         
     "Kamao darts off, back up the stairs I just descended."
     
-    $renpy.music.play("assets/sound/bgm/Town2.ogg", fadein=3.0)
+    play music "assets/sound/bgm/noodle.mp3" fadein 3.0
+    
     
     f_un "Ugh."
     
@@ -2751,7 +2754,7 @@ label ch1_scene06:
             
             show fenira shocked
             
-            $ renpy.music.stop()
+            stop music
             
             n_un "And when she doesn't, I'll make sure you deliver a formal apology."
             
@@ -2781,7 +2784,7 @@ label ch1_scene06:
             
             show fenira shocked
             
-            $ renpy.music.stop()
+            stop music
             
             n_un "No, please continue." 
             
@@ -2803,11 +2806,11 @@ label ch1_scene06:
             
             show fenira shocked
             
-            $ renpy.music.stop()
+            stop music
             
             n_un "Oh, I don't think it would be {i}that{/i} bad."
     
-    $ renpy.music.play("assets/sound/bgm/scene_comi2.ogg")
+    play music "assets/sound/bgm/scene_comi2.mp3"
     
     f "Oh crap."
     
@@ -3195,7 +3198,7 @@ label ch1_scene06:
             
     show fenira embarrassed
     
-    $ renpy.music.stop(fadeout=2.0)
+    stop music fadeout 2.0
     
     f "S-screw you, Snaketits!"
     
@@ -3203,7 +3206,8 @@ label ch1_scene06:
     
     show nagi confident at nagi_center_flipped with move
         
-    $ renpy.music.play("assets/sound/bgm/093.mp3", fadein=2.0)
+    play music "assets/sound/bgm/093.mp3" fadein 3.0
+    
         
     n "Well, that was fun."
     

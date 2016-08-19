@@ -9,6 +9,8 @@
 
 init python:
     
+    gamedebug = True
+    
     ku_like = 0.0
     ku_love = 0.0
     ku_dating = False

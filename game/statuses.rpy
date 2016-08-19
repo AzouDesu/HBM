@@ -173,6 +173,19 @@ init python:
 
         return("!@*$%ERROR^&%$*")
   
+  #Legend
+  #Blip-Division Percentage
+  #Blip 1-Div 8.00
+  #Blip 2-Div 4.00
+  #Blip 3-Div 2.66
+  #Blip 4-Div 2.00
+  #Blip 5-Div 1.60
+  #Blip 6-Div 1.33
+  #Blip 7-Div 1.14
+  #Blip 8-Div 1.00
+  
+  
+  
   
     def getThoughts(likePts, lovePts):
         
@@ -184,7 +197,15 @@ init python:
             
             return "Acquaintance"
             
-        elif likePts >= (affection_max / 4):
+        elif likePts < (affection_max / 4):
+            
+            return "Roommate"
+            
+        elif likePts < (affection_max / 2.66):
+            
+            return "Buddy"
+            
+        elif likePts < (affection_max / 2.00):
             
             return "Friend"
             
