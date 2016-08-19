@@ -1,0 +1,21 @@
+Weak Expression (Strong Expression)
+
+Mandatory:
+Neutral
+Happy (Jubilant)
+Angry (Furious)
+Sad (Depressed)
+
+Optional:
+Excited
+Concerned (Distressed)
+Straightfaced
+Lovestruck
+Surprised (Shocked)
+Embarrassed (Flustered)
+Aroused (HEAVY BREATHING)
+
+State:
+Laughing
+Arguing (Shouting)
+Confessing

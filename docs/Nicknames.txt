@@ -1,0 +1,62 @@
+CHAR FOR PC
+
+Viscella:
+	Honey
+	Senpai
+	Onii-Chan
+
+Kumiru:
+	Darling
+	Love
+	Sweetheart
+	
+
+Dravenia:
+	Dear
+	Captain
+	Master
+
+Kamao:
+	Sexy
+	Sugar
+	Stud
+
+Nagi:
+	Handsome
+	Chief
+	Kiddo
+
+Fenira:
+	Champ
+	Punk
+	Sunshine
+
+
+Allise:
+	N/A
+
+##################################
+
+PC FOR CHAR
+
+Viscella:
+	Vella
+
+Kumiru:
+	Kumi
+
+Dravenia:
+	Nia
+
+Kamao:
+	Felicity
+
+Nagi:
+	Snaketits
+
+Fenira:
+	Fen-Fen
+
+
+Allise:
+	N/A

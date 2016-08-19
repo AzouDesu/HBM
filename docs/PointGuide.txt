@@ -1,0 +1,61 @@
+Assign no more than 5 affection points (like + love) per character per day. (Minus Prologue/Event Days)
+This way, it will take 40 days (or a month) of constant interaction to 
+	max out a character
+Choosing to hang out with someone will increase like points by 5 and prevent affection decay on that day
+Only choices can increase love points
+	Usually, certain responses will increase love by one or two points.
+
+
+Passive like gain
+Slight passive love gain
+
+
+Have 3 categories: Easy, Medium, Hard (Love, maybe Like too)
+
+Easy: Kamao, Viscella, Fenira
+
+Medium: Kumiru, Nagi, Dravenia
+
+Hard: Allise
+
+
+Some characters approach you, some you have to approach
+If you reject a character that approaches you, you have to approach them if you want to try again
+One character works up courage - if you turn them down, you have to work your ass off to get it back
+Kamao asks ~once a month regardless of love
+
+
+
+
+
+
+
+
+
+
+Four time periods
+	Morning: 6a - 12p
+	Afternoon: 12p - 6p
+	Evening: 6p - 12a
+	Night: 12a - 6a
+
+Certain characters are interactable at certain times during the day.
+
+	Allise is always available.
+
+	Dravenia & Fenira, are available in the morning.
+	Everyone is available in the afternoon and evening.
+	Viscella & Kumiru are available at night.
+
+
+
+Activities
+
+Each girl (except Allise) offers a particular activity to raise their respective stat. Signing up for an
+	activity will allow you to raise a stat, but will mean you will be preoccupied at certain times.
+
+	Viscella: Watch Anime (Cooperation)
+	Kumiru: Play Games (Caution)
+	Kamao: 
+
+All girls start interested in protag on a simple level (except Allise)
