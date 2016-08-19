@@ -1,1 +1,3 @@
 *.save
+log.txt
+game\saves\persistent
