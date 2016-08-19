@@ -8,7 +8,7 @@
 #Dravenia - 26, Fenira - 23, Nagi - 23, Kumiru - 20, Viscella - 19, Kamao - 18
 
 init python:
-    
+
     gamedebug = True
     
     ku_like = 0.0
