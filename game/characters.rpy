@@ -640,17 +640,6 @@ transform nagi_full:
     zoom 0.4
     xzoom -1.0
 
-# NEW Kamao
-
-image kamao neutral2 = LiveComposite(
-        (848, 1534), # Width x Height
-        (0, 0), "assets/kamao2/ka_defaultbody.png", # base
-        (-3, -582), "assets/kamao2/ka_defaulthair.png", # hair
-        (8, 255), "assets/kamao2/ka_foxxy.png", # shirtwords   
-        (93, -253), "assets/kamao2/faces/ka_neutral.png" # head     
-        )
-
-
 # Kamao
 
 #Valid outfits:

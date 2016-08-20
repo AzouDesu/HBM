@@ -1,9 +1,0 @@
-﻿I'm sorry, but errors were detected in your script. Please correct the
-errors listed below, and try again.
-
-
-File "game/chapters/chapter_1_p1.rpy", line 64: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    show kamao unhappy at kamao_center
-    ^
-
-Ren'Py Version: Ren'Py 6.99.10.1227
