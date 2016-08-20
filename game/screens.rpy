@@ -635,32 +635,32 @@ screen aff_screen:
     
     #Play("sound", "assets/sounds/sfx/blip.wav")
     
-    #Diff between chars: 66y
-    #Diff between char bars: 27y
+    #Diff between chars: 51y
+    #Diff between char bars: 42y
     
     add "assets/menus/phonebg.png" xalign 0.5 yalign 0.5
-
+    
     if gamedebug:
-        bar pos (393,121) value FieldValue(store, "ku_like", affection_max) range affection_max style "like_bar"
-        bar pos (672,79) value FieldValue(store, "ku_love", affection_max) range affection_max style "love_bar"
+        bar pos (393,76) value FieldValue(store, "ku_like", affection_max) range affection_max style "like_bar"
+        bar pos (393,118) value FieldValue(store, "ku_love", affection_max) range affection_max style "love_bar"
         
-        bar pos (393,214) value FieldValue(store, "v_like", affection_max) range affection_max style "like_bar"
-        bar pos (672,172) value FieldValue(store, "v_love", affection_max) range affection_max style "love_bar"
+        bar pos (393,169) value FieldValue(store, "v_like", affection_max) range affection_max style "like_bar"
+        bar pos (393,211) value FieldValue(store, "v_love", affection_max) range affection_max style "love_bar"
         
-        bar pos (393,307) value FieldValue(store, "n_like", affection_max) range affection_max style "like_bar"
-        bar pos (672,265) value FieldValue(store, "n_love", affection_max) range affection_max style "love_bar"
+        bar pos (393,262) value FieldValue(store, "n_like", affection_max) range affection_max style "like_bar"
+        bar pos (393,304) value FieldValue(store, "n_love", affection_max) range affection_max style "love_bar"
         
-        bar pos (393,400) value FieldValue(store, "ka_like", affection_max) range affection_max style "like_bar"
-        bar pos (672,358) value FieldValue(store, "ka_love", affection_max) range affection_max style "love_bar"
+        bar pos (393,355) value FieldValue(store, "ka_like", affection_max) range affection_max style "like_bar"
+        bar pos (393,397) value FieldValue(store, "ka_love", affection_max) range affection_max style "love_bar"
         
-        bar pos (393,493) value FieldValue(store, "f_like", affection_max) range affection_max style "like_bar"
-        bar pos (672,451) value FieldValue(store, "f_love", affection_max) range affection_max style "love_bar"
+        bar pos (393,448) value FieldValue(store, "f_like", affection_max) range affection_max style "like_bar"
+        bar pos (393,490) value FieldValue(store, "f_love", affection_max) range affection_max style "love_bar"
         
-        bar pos (393,586) value FieldValue(store, "d_like", affection_max) range affection_max style "like_bar"
-        bar pos (672,544) value FieldValue(store, "d_love", affection_max) range affection_max style "love_bar"
+        bar pos (393,541) value FieldValue(store, "d_like", affection_max) range affection_max style "like_bar"
+        bar pos (393,583) value FieldValue(store, "d_love", affection_max) range affection_max style "love_bar"
         
-        bar pos (393,679) value FieldValue(store, "a_like", affection_max) range affection_max style "like_bar"
-        bar pos (672,637) value FieldValue(store, "a_love", affection_max) range affection_max style "love_bar"
+        bar pos (393,634) value FieldValue(store, "a_like", affection_max) range affection_max style "like_bar"
+        bar pos (393,676) value FieldValue(store, "a_love", affection_max) range affection_max style "love_bar"
 
     else:
         bar pos (393,121) value ku_like range affection_max style "like_bar"
@@ -683,70 +683,34 @@ screen aff_screen:
         
         bar pos (393,679) value a_like range affection_max style "like_bar"
         bar pos (672,637) value a_love range affection_max style "love_bar"
+    
+    add "assets/menus/relationshipscreen.png" xalign 0.5 yalign 0.5
+    add "assets/menus/relationshipscreenpips.png" xalign 0.5 yalign 0.5
+    
+    #94y distance
+    
+    if ku_dating:
+        add "assets/menus/heartwallpaper.png" pos (272, 60)
         
-        
-
+    if v_dating:
+        add "assets/menus/heartwallpaper.png" pos (272, 154)
     
-    add "assets/menus/relationshipscreen3.png" xalign 0.5 yalign 0.5
+    if n_dating:
+        add "assets/menus/heartwallpaper.png" pos (272, 247)
     
-    if ku_dating == False:
-        add "assets/menus/chains.png" pos (681, 76)
-        
-    if v_dating == False:
-        add "assets/menus/chains.png" pos (681, 169)
+    if ka_dating:
+        add "assets/menus/heartwallpaper.png" pos (272, 340)
     
-    if n_dating == False:
-        add "assets/menus/chains.png" pos (681, 262)
+    if f_dating:
+        add "assets/menus/heartwallpaper.png" pos (272, 433)
     
-    if ka_dating == False:
-        add "assets/menus/chains.png" pos (681, 355)
+    if d_dating:
+        add "assets/menus/heartwallpaper.png" pos (272, 526)
     
-    if f_dating == False:
-        add "assets/menus/chains.png" pos (681, 448)
+    if a_dating:
+        add "assets/menus/heartwallpaper.png" pos (272, 619)
     
-    if d_dating == False:
-        add "assets/menus/chains.png" pos (681, 541)
-    
-    if a_dating == False:
-        add "assets/menus/chains.png" pos (681, 634)
-    
-    add "assets/menus/icons.png" pos (283, 72)
-    
-    # CHANGE THESE EVERY DAY, PUT THEM IN THE DAY START SCRIPT
-    
-#    $ kuThoughts = getKumiruThoughts(ku_like, ku_love)
-#    $ vThoughts = getViscellaThoughts(v_like, v_love)
-#    $ nThoughts = getNagiThoughts(n_like, n_love)
-#    $ kaThoughts = getKamaoThoughts(ka_like, ka_love)
-#    $ fThoughts = getFeniraThoughts(f_like, f_love)
-#    $ dThoughts = getDraveniaThoughts(d_like, d_love)
-    $ aThoughts = getAlliseThoughts(a_like, a_love)
-    
-    $ kuThoughts = getThoughts(ku_like, ku_love)
-    $ vThoughts = getThoughts(v_like, v_love)
-    $ nThoughts = getThoughts(n_like, n_love)
-    $ kaThoughts = getThoughts(ka_like, ka_love)
-    $ fThoughts = getThoughts(f_like, f_love)
-    $ dThoughts = getThoughts(d_like, d_love)
-#    $ aThoughts = getThoughts(a_like, a_love)
-    
-    $ kuThoughtsColor = colorThoughts(kuThoughts)
-    $ vThoughtsColor = colorThoughts(vThoughts)
-    $ nThoughtsColor = colorThoughts(nThoughts)
-    $ kaThoughtsColor = colorThoughts(kaThoughts)
-    $ fThoughtsColor = colorThoughts(fThoughts)
-    $ dThoughtsColor = colorThoughts(dThoughts)
-    
-    text [kuThoughts] font ("assets/fonts/MunroSmall.ttf") color ("#b60b0b") pos (396,77) min_width 249 text_align 0.5
-    text [vThoughts] font ("assets/fonts/MunroSmall.ttf") color ("#3dc4e2") pos (396,170) min_width 249 text_align 0.5
-    text [nThoughts] font ("assets/fonts/MunroSmall.ttf") color ("#40c535") pos (396,263) min_width 249 text_align 0.5
-    text [kaThoughts] font ("assets/fonts/MunroSmall.ttf") color ("#4070f9") pos (396,356) min_width 249 text_align 0.5
-    text [fThoughts] font ("assets/fonts/MunroSmall.ttf") color ("#dd3c22") pos (396,449) min_width 249 text_align 0.5
-    text [dThoughts] font ("assets/fonts/MunroSmall.ttf") color ("#b8860b") pos (396,542) min_width 249 text_align 0.5
-    text [aThoughts] font ("assets/fonts/MunroSmall.ttf") color ("#67069e") pos (396,635) min_width 249 text_align 0.5
-
-    
-    
+    add "assets/menus/icons.png" pos (282, 73)
     
     vbox xalign 1.0 yalign 0.0:
         imagebutton:

@@ -184,36 +184,142 @@ init python:
   #Blip 7-Div 1.14
   #Blip 8-Div 1.00
   
-  
+  #Love
+  #Blip 1-Div 3 (1/3)
+  #Blip 2-Div 1.5 (2/3)
   
   
     def getThoughts(likePts, lovePts):
-        
-        if likePts < (affection_max / 40) and lovePts < (affection_max / 40):
             
-            return "Stranger"
+        if likePts == 0:
             
-        elif likePts < (affection_max / 8) and lovePts < (affection_max / 8):
+            return "Strangers"
             
-            return "Acquaintance"
+        elif likePts < (affection_max / 8):
+            
+            if lovePts < (affection_max / 3):
+            
+                return "Acquaintances"
+                
+            elif lovePts < (affection_max / 1.5):
+                
+                return "---"
+                
+            else:
+                
+                return "---"
             
         elif likePts < (affection_max / 4):
             
-            return "Roommate"
+            if lovePts < (affection_max / 3):
+            
+                return "Roommates"
+                
+            elif lovePts < (affection_max / 1.5):
+                
+                return "---"
+                
+            else:
+                
+                return "---"
             
         elif likePts < (affection_max / 2.66):
             
-            return "Buddy"
+            if lovePts < (affection_max / 3):
+            
+                return "Buddies"
+                
+            elif lovePts < (affection_max / 1.5):
+                
+                return "---"
+                
+            else:
+                
+                return "---"
             
         elif likePts < (affection_max / 2.00):
             
-            return "Friend"
+            if lovePts < (affection_max / 3):
             
-        elif likePts <= 10 and lovePts >= 25:
+                return "Friends"
+                
+            elif lovePts < (affection_max / 1.5):
+                
+                return "---"
+                
+            else:
+                
+                return "---"
             
-            return "Crush"
+        elif likePts < (affection_max / 1.60):
             
+            if lovePts < (affection_max / 3):
+            
+                return "Good Friends"
+                
+            elif lovePts < (affection_max / 1.5):
+                
+                return "---"
+                
+            else:
+                
+                return "---"
+            
+        elif likePts < (affection_max / 1.33):
+            
+            if lovePts < (affection_max / 3):
+            
+                return "Close Friends"
+                
+            elif lovePts < (affection_max / 1.5):
+                
+                return "---"
+                
+            else:
+                
+                return "---"
+            
+        elif likePts < (affection_max / 1.14):
+            
+            if lovePts < (affection_max / 3):
+            
+                return "Best Buddies"
+                
+            elif lovePts < (affection_max / 1.5):
+                
+                return "---"
+                
+            else:
+                
+                return "---"
         
+        elif likePts < (affection_max / 1.00):
+            
+            if lovePts < (affection_max / 3):
+            
+                return "Best Friends"
+                
+            elif lovePts < (affection_max / 1.5):
+                
+                return "---"
+                
+            else:
+                
+                return "---"
+            
+        elif likePts == (affection_max / 1.00):
+            
+            if lovePts < (affection_max / 3):
+            
+                return "Best Friends Forever"
+                
+            elif lovePts < (affection_max / 1.5):
+                
+                return "---"
+                
+            else:
+                
+                return "---"
             
         #elif likePts == 0 and lovePts == 0:
         
