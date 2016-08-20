@@ -11,6 +11,11 @@ init python:
 
     gamedebug = True
     
+    #To change an outfit, set 'xx_Outfit' to a valid outfit in in characters.rpy
+    
+    ka_Outfit = "default"
+
+    
     ku_like = 0.0
     ku_love = 0.0
     ku_dating = False

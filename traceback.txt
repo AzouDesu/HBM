@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <'Image' 'assets/kamao2/ka_foxxxy.png'>:
-  File "game/chapters/chapter_1_p1.rpy", line 40, in script
-    
-IOError: Couldn't find file 'assets/kamao2/ka_foxxxy.png'.
+While loading <'Image' 'assets/kamao/faces/ka_wink.png'>:
+  File "game/chapters/chapter_1_p1.rpy", line 130, in script
+    $ pc_n = pc
+IOError: Couldn't find file 'assets/kamao/faces/ka_wink.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/chapters/chapter_1_p1.rpy", line 40, in script
-    
+  File "game/chapters/chapter_1_p1.rpy", line 130, in script
+    $ pc_n = pc
   File "E:\Users\Nick\Downloads\Programs\renpy-6.99.10-sdk\renpy\ast.py", line 604, in execute
     renpy.exports.say(who, what, interact=self.interact)
   File "E:\Users\Nick\Downloads\Programs\renpy-6.99.10-sdk\renpy\exports.py", line 1122, in say
@@ -82,7 +82,7 @@ Full traceback:
     surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
   File "E:\Users\Nick\Downloads\Programs\renpy-6.99.10-sdk\renpy\loader.py", line 533, in load
     raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'assets/kamao2/ka_foxxxy.png'.
+IOError: Couldn't find file 'assets/kamao/faces/ka_wink.png'.
 
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.10.1227
