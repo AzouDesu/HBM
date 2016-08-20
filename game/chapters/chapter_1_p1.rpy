@@ -32,6 +32,15 @@ label start:
     
     "WARNING: GAME IS WORK IN PROGRESS. MAY (WILL) CONTAIN PLACEHOLDER ART."
     
+    $ ku_dating = True
+    
+    show kamao neutral at kamao_center
+    
+    ""
+    show kamao neutral2 at kamao2_center
+    
+    ""
+    
     play music "assets/sound/bgm/noodle.mp3"
     
     scene bg void with Dissolve(4.0)

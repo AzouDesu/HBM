@@ -2291,9 +2291,7 @@
     #$ affection_max = 10.0
 
     "Should I keep trying with Allise, or should I go back to Dravenia and the others?"
-    
-    "[ku_like]"
-    
+
     menu:
         
         "'Head back upstairs.'":
