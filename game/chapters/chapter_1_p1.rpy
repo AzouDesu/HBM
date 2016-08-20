@@ -1,5 +1,3 @@
-#Seb is ToA's number one fan
-#I don't remember writing this
 
 label start:
     

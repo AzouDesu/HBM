@@ -2,8 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/chapters/chapter_2.rpy", line 2503: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "'She's scared of a lot of things...'"
-                                          ^
+File "game/statuses.rpy", line 25: invalid syntax
+            if lovePts
+    
 
 Ren'Py Version: Ren'Py 6.99.10.1227

@@ -25,37 +25,12 @@ One character works up courage - if you turn them down, you have to work your as
 Kamao asks ~once a month regardless of love
 
 
+Eavesdropping/napping gives a multiplier of 3x the points.
+
+if each interaction gives 1 point, and a multiplier gives 3 points...
 
 
+Two time periods:
+	Day and Night
 
-
-
-
-
-
-Four time periods
-	Morning: 6a - 12p
-	Afternoon: 12p - 6p
-	Evening: 6p - 12a
-	Night: 12a - 6a
-
-Certain characters are interactable at certain times during the day.
-
-	Allise is always available.
-
-	Dravenia & Fenira, are available in the morning.
-	Everyone is available in the afternoon and evening.
-	Viscella & Kumiru are available at night.
-
-
-
-Activities
-
-Each girl (except Allise) offers a particular activity to raise their respective stat. Signing up for an
-	activity will allow you to raise a stat, but will mean you will be preoccupied at certain times.
-
-	Viscella: Watch Anime (Cooperation)
-	Kumiru: Play Games (Caution)
-	Kamao: 
-
-All girls start interested in protag on a simple level (except Allise)
+All girls start interested in protag on a simple level (except Allise, who's on a more complex level)
