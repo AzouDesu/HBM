@@ -32,109 +32,6 @@ label start:
     
     "WARNING: GAME IS WORK IN PROGRESS. MAY (WILL) CONTAIN PLACEHOLDER ART."
     
-<<<<<<< HEAD
-    #TESTING KAMAYO 2.0#
-
-    show kamao neutral at kamao_center
-    
-    ""
-    
-    show kamao angry at kamao_center
-    
-    ""
-    show kamao bluffing at kamao_center
-    
-    ""
-    
-    show kamao bored at kamao_center
-    
-    ""
-
-    show kamao confident at kamao_center
-    
-    ""
-    
-    show kamao confused at kamao_center
-    
-    ""
-
-    show kamao embarrassed at kamao_center
-    
-    ""
-    
-    show kamao unhappy at kamao_center
-    
-    ""
-    
-    show kamao embarrassed_open at kamao_center
-    
-    ""
-    show kamao flustered at kamao_center
-    
-    ""
-    
-    show kamao happy at kamao_center
-    
-    ""
-    show kamao horny at kamao_center
-    
-    ""
-    
-    show kamao lovestruck at kamao_center
-    
-    ""
-
-    show kamao sad at kamao_center
-    
-    ""
-    
-    show kamao pained at kamao_center
-    
-    ""
-
-    show kamao shocked at kamao_center
-    
-    ""
-    
-    show kamao shockblush at kamao_center
-    
-    ""
-    
-    show kamao shocked_open at kamao_center
-    
-    ""
-    show kamao sleepy at kamao_center
-    
-    ""
-    
-    show kamao starry at kamao_center
-    
-    ""
-
-    show kamao starry_s at kamao_center
-    
-    ""
-    
-    show kamao teasing at kamao_center
-    
-    ""
-
-    show kamao vangry at kamao_center
-    
-    ""
-    
-    show kamao vhappy at kamao_center
-    
-    ""
-    show kamao wink at kamao_center
-    
-    ""
-    
-    show kamao winkblush at kamao_center
-    
-    ""
-    #END TEST OF KAMAYO 2.0#
-=======
     $ ku_dating = True
     
     show kamao neutral at kamao_center
@@ -143,7 +40,6 @@ label start:
     show kamao neutral2 at kamao2_center
     
     ""
->>>>>>> e3e95e0063144a50e088a7268a7a9d583f55f4fc
     
     play music "assets/sound/bgm/noodle.mp3"
     
@@ -163,7 +59,7 @@ label start:
     
     "Just a moment? Forever? I'm not sure. Is time even progressing normally?"
     
-    "I briefly consider the possibility that I'm dead. If so, this is a pretty big let-down."
+    "I briefly consider the possibility that I'm dead. If so, that's a pretty big let-down."
     
     "My worries are cut short, however, by a strange new sensation. The sensation of being watched."
     

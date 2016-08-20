@@ -1098,6 +1098,14 @@ transform kamao2_center:
     yanchor 340
     zoom 0.5
     xzoom 1.0
+    
+transform kamao2_center:
+    xpos 0.62
+    xanchor 0.5
+    ypos 0.93
+    yanchor 340
+    zoom 0.5
+    xzoom 1.0
 
 transform kamao_center_flipped:
     xpos 0.5
