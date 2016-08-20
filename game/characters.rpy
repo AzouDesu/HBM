@@ -640,6 +640,17 @@ transform nagi_full:
     zoom 0.4
     xzoom -1.0
 
+# NEW Kamao
+
+image kamao neutral2 = LiveComposite(
+        (848, 1534), # Width x Height
+        (0, 0), "assets/kamao2/ka_defaultbody.png", # base
+        (-3, -582), "assets/kamao2/ka_defaulthair.png", # hair
+        (8, 255), "assets/kamao2/ka_foxxy.png", # shirtwords   
+        (93, -253), "assets/kamao2/faces/ka_neutral.png" # head     
+        )
+
+
 # Kamao
 
 #Valid outfits:
@@ -1074,6 +1085,14 @@ image kamao winkblush_f = LiveComposite(
 
 transform kamao_center:
     xpos 0.65
+    xanchor 0.5
+    ypos 0.93
+    yanchor 340
+    zoom 0.5
+    xzoom 1.0
+    
+transform kamao2_center:
+    xpos 0.62
     xanchor 0.5
     ypos 0.93
     yanchor 340

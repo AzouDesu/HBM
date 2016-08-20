@@ -1,15 +1,27 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
+<<<<<<< HEAD
 While loading <'Image' 'assets/kamao/faces/ka_wink.png'>:
   File "game/chapters/chapter_1_p1.rpy", line 130, in script
     $ pc_n = pc
 IOError: Couldn't find file 'assets/kamao/faces/ka_wink.png'.
+=======
+While loading <'Image' 'assets/kamao2/ka_foxxxy.png'>:
+  File "game/chapters/chapter_1_p1.rpy", line 40, in script
+    
+IOError: Couldn't find file 'assets/kamao2/ka_foxxxy.png'.
+>>>>>>> e3e95e0063144a50e088a7268a7a9d583f55f4fc
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
+<<<<<<< HEAD
   File "game/chapters/chapter_1_p1.rpy", line 130, in script
     $ pc_n = pc
+=======
+  File "game/chapters/chapter_1_p1.rpy", line 40, in script
+    
+>>>>>>> e3e95e0063144a50e088a7268a7a9d583f55f4fc
   File "E:\Users\Nick\Downloads\Programs\renpy-6.99.10-sdk\renpy\ast.py", line 604, in execute
     renpy.exports.say(who, what, interact=self.interact)
   File "E:\Users\Nick\Downloads\Programs\renpy-6.99.10-sdk\renpy\exports.py", line 1122, in say
@@ -82,7 +94,11 @@ Full traceback:
     surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
   File "E:\Users\Nick\Downloads\Programs\renpy-6.99.10-sdk\renpy\loader.py", line 533, in load
     raise IOError("Couldn't find file '%s'." % name)
+<<<<<<< HEAD
 IOError: Couldn't find file 'assets/kamao/faces/ka_wink.png'.
+=======
+IOError: Couldn't find file 'assets/kamao2/ka_foxxxy.png'.
+>>>>>>> e3e95e0063144a50e088a7268a7a9d583f55f4fc
 
 Windows-7-6.1.7601-SP1
 Ren'Py 6.99.10.1227

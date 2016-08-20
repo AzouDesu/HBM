@@ -32,6 +32,7 @@ label start:
     
     "WARNING: GAME IS WORK IN PROGRESS. MAY (WILL) CONTAIN PLACEHOLDER ART."
     
+<<<<<<< HEAD
     #TESTING KAMAYO 2.0#
 
     show kamao neutral at kamao_center
@@ -133,6 +134,16 @@ label start:
     
     ""
     #END TEST OF KAMAYO 2.0#
+=======
+    $ ku_dating = True
+    
+    show kamao neutral at kamao_center
+    
+    ""
+    show kamao neutral2 at kamao2_center
+    
+    ""
+>>>>>>> e3e95e0063144a50e088a7268a7a9d583f55f4fc
     
     play music "assets/sound/bgm/noodle.mp3"
     
