@@ -5,3 +5,4 @@ traceback.txt
 errors.txt
 *.rpyc
 *.rpyb
+tmp/

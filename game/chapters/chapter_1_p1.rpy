@@ -32,8 +32,7 @@ label start:
     
     "WARNING: GAME IS WORK IN PROGRESS. MAY (WILL) CONTAIN PLACEHOLDER ART."
     
-    $ ku_dating = True
-    
+
     #TESTING KAMAYO 2.0#
 
     show kamao neutral at kamao_center
