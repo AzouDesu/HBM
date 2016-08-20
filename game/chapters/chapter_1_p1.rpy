@@ -32,7 +32,7 @@ label start:
     
     "WARNING: GAME IS WORK IN PROGRESS. MAY (WILL) CONTAIN PLACEHOLDER ART."
     
-    $ ka_dating = 1
+    $ f_dating = 1
     
 
     #TESTING KAMAYO 2.0#
