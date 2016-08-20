@@ -308,20 +308,17 @@ init -1 python hide:
     style.like_bar.right_gutter = 0
     
     style.like_bar.left_bar = Frame("assets/menus/like_bar_full.png", 0, 0)
-    style.like_bar.right_bar = Frame("assets/menus/bar_empty2.png", 0, 0)
+    style.like_bar.right_bar = Frame("assets/menus/bar_empty.png", 0, 0)
     
     #Love Bar
-    style.love_bar = Style(style.vbar)
-    style.love_bar.xmaximum = 63 # bar width
-    style.love_bar.ymaximum = 51 # bar height
-    style.love_bar.bottom_gutter = 0
-    style.love_bar.top_gutter = -3
-    style.love_bar.thumb_offset = 0
-    style.love_bar.thumb_shadow = None
+    style.love_bar = Style(style.default)
+    style.love_bar.xmaximum = 258 # bar width  
+    style.love_bar.ymaximum = 18 # bar height
+    style.love_bar.left_gutter = 0
+    style.love_bar.right_gutter = 0
     
-    style.love_bar.thumb = ("assets/menus/love_thumb.png")
-    style.love_bar.bottom_bar = ("assets/menus/love_bar_full2.png")
-    style.love_bar.top_bar = ("assets/menus/bar_empty4.png")
+    style.love_bar.left_bar = Frame("assets/menus/love_bar_full.png", 0, 0)
+    style.love_bar.right_bar = Frame("assets/menus/bar_empty.png", 0, 0)
     
     # Stat Bar (Spontaneous/Cautious)
     style.sc_bar = Style(style.default)
