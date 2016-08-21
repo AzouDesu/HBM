@@ -612,7 +612,9 @@
           
         ka "Hayo!!"
         
-        show kamao vhappy_f at kamao_left
+        $ kaFlip()
+        
+        show kamao vhappy at kamao_left
     
         show kamao:
             xalign -3.0
@@ -620,7 +622,7 @@
         show kamao with MoveTransition(0.2):
             xalign 0.0
             
-        show kamao shocked_f
+        show kamao shocked
         
         ka "Wha-"
         
@@ -632,7 +634,7 @@
         
         play sound "assets/sound/sfx/body_hit.wav"
         
-        show kamao pained_f
+        show kamao pained
         with vpunch
         
         ka "Ack!"

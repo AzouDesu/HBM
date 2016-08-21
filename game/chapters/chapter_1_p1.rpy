@@ -31,115 +31,6 @@ label start:
     $ renpy.pause(2.0)
     
     "WARNING: GAME IS WORK IN PROGRESS. MAY (WILL) CONTAIN PLACEHOLDER ART."
-
-    #TESTING KAMAYO 2.0#
-
-    $ kaFlip()
-
-    show kamao neutral at kamao_center_flipped
-    
-    ""
-    
-    show kamao angry at kamao_center_flipped
-    
-    ""
-    
-    $ kaUnFlip()
-    
-    show kamao bluffing at kamao_center
-    
-    ""
-    
-    $ kaFlip()
-    
-    show kamao bored at kamao_left
-    
-    ""
-
-    show kamao confident at kamao_center_flipped
-    
-    ""
-    
-    show kamao confused at kamao_center_flipped
-    
-    ""
-
-    show kamao embarrassed at kamao_center_flipped
-    
-    ""
-    
-    show kamao unhappy at kamao_center_flipped
-    
-    ""
-    
-    show kamao embarrassed_open at kamao_center_flipped
-    
-    ""
-    show kamao flustered at kamao_center_flipped
-    
-    ""
-    
-    show kamao happy at kamao_center_flipped
-    
-    ""
-    show kamao horny at kamao_center_flipped
-    
-    ""
-    
-    show kamao lovestruck at kamao_center_flipped
-    
-    ""
-
-    show kamao sad at kamao_center_flipped
-    
-    ""
-    
-    show kamao pained at kamao_center_flipped
-    
-    ""
-
-    show kamao shocked at kamao_center_flipped
-    
-    ""
-    
-    show kamao shockblush at kamao_center_flipped
-    
-    ""
-    
-    show kamao shocked_open at kamao_center_flipped
-    
-    ""
-    show kamao sleepy at kamao_center_flipped
-    
-    ""
-    
-    show kamao starry at kamao_center_flipped
-    
-    ""
-
-    show kamao starry_s at kamao_center_flipped
-    
-    ""
-    
-    show kamao teasing at kamao_center_flipped
-    
-    ""
-
-    show kamao vangry at kamao_center_flipped
-    
-    ""
-    
-    show kamao vhappy at kamao_center_flipped
-    
-    ""
-    show kamao wink at kamao_center_flipped
-    
-    ""
-    
-    show kamao winkblush at kamao_center_flipped
-    
-    ""
-    #END TEST OF KAMAYO 2.0#
     
     play music "assets/sound/bgm/noodle.mp3"
     
@@ -2363,6 +2254,8 @@ label ch1_scene04:
     
     hide kamao with dissolve
     
+    $ kaUnFlip()
+    
     jump ch1_scene05
     
 label ch1_scene05:
@@ -2401,7 +2294,9 @@ label ch1_scene05:
     
     f_un "N-Nagi! Get your ass back here and get this fleabag off of me!"
     
-    show kamao teasing_f at kamao_center_flipped with dissolve
+    $ kaFlip()
+    
+    show kamao teasing at kamao_center_flipped with dissolve
     
     ka "Fleabag? I'll have you know I haven't had fleas since I was four!"
     
@@ -2409,7 +2304,7 @@ label ch1_scene05:
     
     ka "I'll let you go if you give me a..."
     
-    show kamao shocked_f
+    show kamao shocked
     
     stop music
     
@@ -2419,7 +2314,7 @@ label ch1_scene05:
     
     ka "...kiss?"
     
-    show kamao shocked_f at kamao_left with MoveTransition(0.1)
+    show kamao shocked at kamao_left with MoveTransition(0.1)
     
     ka "..."
     
@@ -2440,17 +2335,17 @@ label ch1_scene05:
     
     f_un "Are you serious?"
     
-    show kamao neutral_f
+    show kamao neutral
     
     ka "Dead serious. You don't walk like a chick."
     
     f_un "And you don't walk like you've got your head stuck up your ass. Guess appearances can be deceiving, huh?"
     
-    show kamao shocked_f
+    show kamao shocked
 
     ka "Well! I never!"
     
-    show kamao neutral_f
+    show kamao neutral
     
     ka "[pc], are you gonna let her mad burn your girlfriend like that?"
     
@@ -2473,11 +2368,11 @@ label ch1_scene05:
             
             f_un "And you're not a fox. Can you get lost before I remember how to properly break someone's arm?"
             
-            show kamao shocked_f
+            show kamao shocked
             
             ka "Hoo boy, sounds like someone's got some aggression they need to work out."
             
-            show kamao unhappy_f
+            show kamao unhappy
             
             ka "Watch it, [pc] she'll probably break your nose the moment you glance at her boobs."
             
@@ -2489,11 +2384,11 @@ label ch1_scene05:
             
         "'You had fleas when you were four?'":
             
-            show kamao shocked_f
+            show kamao shocked
             
             ka "N-no!"
             
-            show kamao embarrassed_open_f
+            show kamao embarrassed_open
             
             ka "Only a little bit!"
             
@@ -2501,7 +2396,7 @@ label ch1_scene05:
             
             f_un "Fleas, huh? Who'd you get 'em from? Dog? Cat? Parents?"
             
-            show kamao sad_f
+            show kamao sad
             
             ka "My parents are dead."
             
@@ -2509,7 +2404,7 @@ label ch1_scene05:
             
             f_un "O-oh. Uh... shit. Sorry."
             
-            show kamao wink_f
+            show kamao wink
             
             ka "Just kidding."
             
@@ -2520,7 +2415,7 @@ label ch1_scene05:
             show fenira angry with MoveTransition(0.5):
                 xalign 0.4
             
-            show kamao shocked_f
+            show kamao shocked
             
             ka "Oop! I think I hear my flea-free laundry calling! Laters!"
             
@@ -2528,7 +2423,7 @@ label ch1_scene05:
             
             $ ka_like += kamAff(1)
             
-            show kamao happy_f
+            show kamao happy
             
             ka "Hah! You didn't actually deny I was your girlfriend!"
             
@@ -2540,7 +2435,7 @@ label ch1_scene05:
             
             f_un "Why do I find that hard to believe?"
             
-            show kamao neutral_f
+            show kamao neutral
             
             ka "Because you're basically a dude."
             
@@ -2554,20 +2449,20 @@ label ch1_scene05:
             
             f_un "If you open your mouth one more goddamned time I'm gonna fill it with my-"
             
-            show kamao winkblush_f
+            show kamao winkblush
             
             ka "Whoa there, lover boy! I know you want a piece of this, but let's not rush too {i}deep{/i} into this relationship just yet, mkay?"
             
             f_un "That's it, fleabag, I'm gonna-"
             
-            show kamao neutral_f
+            show kamao neutral
             
             ka "Take a chill pill and relax, right?"
             
             show fenira vangry with MoveTransition(0.5):
                 xalign 0.4
                 
-            show kamao shocked_f
+            show kamao shocked
             
             ka "On second thought, I have to finish unpacking. Toodles!"
             

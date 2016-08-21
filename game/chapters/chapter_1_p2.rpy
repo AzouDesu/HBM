@@ -2001,7 +2001,9 @@ label ch1_scene08_nagVisit:
     
     play sound "assets/sound/sfx/door_open.wav"
      
-    show kamao wink_f:
+    $ kaFlip()
+     
+    show kamao wink:
         xpos 0.1
         xanchor 0.5
         ypos 0.55
@@ -2019,7 +2021,7 @@ label ch1_scene08_nagVisit:
     
     n "Normally, you knock and {i}then{/i} enter."
     
-    show kamao confused_f
+    show kamao confused
     
     ka "Really?"
     
@@ -2027,15 +2029,15 @@ label ch1_scene08_nagVisit:
     
     n "I think that's the point. Can I help you?"
     
-    show kamao neutral_f
+    show kamao neutral
     
     ka "Yeah, I'm looking for-"
     
-    show kamao shocked_f
+    show kamao shocked
     
     ka "..."
     
-    show kamao vhappy_f at kamao_left with MoveTransition(0.2)
+    show kamao vhappy at kamao_left with MoveTransition(0.2)
     
     ka "[pc]!"
 
@@ -2047,7 +2049,7 @@ label ch1_scene08_nagVisit:
     
     ka "I've been looking for you since thirty-two seconds ago!"
     
-    show kamao neutral_f
+    show kamao neutral
     
     ka "Anyways, let's go."
     
@@ -2061,11 +2063,11 @@ label ch1_scene08_nagVisit:
     
     ka "..."
     
-    show kamao shocked_f
+    show kamao shocked
     
     ka "Eh?"
     
-    show kamao unhappy_f
+    show kamao unhappy
     
     ka "I mean, pfft. Nice try, snake lady, but I used that trick like two hours ago."
     
@@ -2075,7 +2077,7 @@ label ch1_scene08_nagVisit:
         
         "'Sorry, Nagi, she beat you to it.'":
             
-            show kamao vhappy_f
+            show kamao vhappy
             
             show nagi neutral
             
@@ -2085,7 +2087,7 @@ label ch1_scene08_nagVisit:
             
             n "Did you just {i}say{/i} 'heeheehee'?"
             
-            show kamao confident_f
+            show kamao confident
             
             ka "Who knows? Fufufu."
             
@@ -2095,7 +2097,7 @@ label ch1_scene08_nagVisit:
             
             n "You're like a walking, talking aneurysm."
             
-            show kamao unhappy_f
+            show kamao unhappy
             
             ka "At least this walking, talking aneurysm has a boyfriend!"
             
@@ -2111,7 +2113,7 @@ label ch1_scene08_nagVisit:
             
             n "Perfect. I can't wait."
             
-            show kamao confused_f
+            show kamao confused
             
             ka "Can't wait for what?"
     
@@ -2119,11 +2121,11 @@ label ch1_scene08_nagVisit:
             
             n "Our date. Are you even listening?"
             
-            show kamao embarrassed_open_f
+            show kamao embarrassed_open
             
             ka "Wha? B-But that was just bullshit you came up with to get rid of me!"
             
-            show kamao confused_f behind nagi
+            show kamao confused behind nagi
             
             n "Right." 
 
@@ -2131,7 +2133,7 @@ label ch1_scene08_nagVisit:
 
             n "Anyways, [pc], what do you think about crashing at my place afterwards? It's not far, and it'll afford us a bit more privacy."
             
-            show kamao embarrassed_f behind nagi
+            show kamao embarrassed behind nagi
             
             ka "Hmph! If you guys wanna bone so badly, prove it! Start snogging right now! I dare you! I double dare you!"
             
@@ -2144,7 +2146,7 @@ label ch1_scene08_nagVisit:
                 xanchor 525
                 zoom 1.5
                 
-            show kamao flustered_f
+            show kamao flustered
             
             ka "Whoa whoa whoa, whaddya think you're doing?!"
             
@@ -2152,11 +2154,11 @@ label ch1_scene08_nagVisit:
             
             n "I thought you wanted snogging?"
             
-            show kamao bluffing_f
+            show kamao bluffing
             
             ka "I lied! I am a liar and a scoundrel! Now move {i}away{/i} from my boyfriend!"
             
-            show kamao unhappy_f
+            show kamao unhappy
             
             show nagi confused at nagi_right with dissolve
             
@@ -2176,17 +2178,17 @@ label ch1_scene08_nagVisit:
             
             ka "A {i}not{/i}."
             
-            show kamao wink_f
+            show kamao wink
             
             ka "Besides, if I'm crazy, I don't wanna be sane."
             
         "'She's been doing this since the moment we met.'":
             
-            show kamao neutral_f
+            show kamao neutral
             
             ka "And what a moment it was."
             
-            show kamao sleepy_f
+            show kamao sleepy
             
             ka "Aah, I remember it like it was two hours ago..."
             
@@ -2196,11 +2198,11 @@ label ch1_scene08_nagVisit:
             
     n "Hey, if you need any help filing a restraining order, I know a girl."
             
-    show kamao unhappy_f
+    show kamao unhappy
             
     ka "What's up with you people and your restraining orders? You can't contain me. I'm a force of nature."
     
-    show kamao shocked_f with vpunch
+    show kamao shocked with vpunch
     
     ka "Hrk!"
     
@@ -2210,7 +2212,7 @@ label ch1_scene08_nagVisit:
     
     "You glance down at Kamao's feet. Nagi's tail is squeezing around her calves and ankles."
     
-    show kamao shockblush_f
+    show kamao shockblush
     
     ka "I've seen enough hentai to know where this is going."
     
@@ -2222,7 +2224,7 @@ label ch1_scene08_nagVisit:
     
     ka "..."
     
-    show kamao shocked_f
+    show kamao shocked
     
     ka "Alright."
     
@@ -2242,11 +2244,11 @@ label ch1_scene08_nagVisit:
         
     play sound "assets/sound/sfx/body_hit.wav"
     
-    show kamao pained_f with vpunch
+    show kamao pained with vpunch
         
     ka "Gah!"
     
-    show kamao unhappy_f at kamao_left with MoveTransition(0.8)
+    show kamao unhappy at kamao_left with MoveTransition(0.8)
     
     ka "Jeeze. At least I haven't physically assaulted anyone."
     
@@ -2262,17 +2264,19 @@ label ch1_scene08_nagVisit:
     
     n "Ugh. Can you just leave? Please? I'll give you a dollar."
     
-    show kamao confident_f
+    show kamao confident
     
     ka "Hah! I can't be bought!"
     
     n "Two dollars."
     
-    show kamao happy_f
+    show kamao happy
     
     ka "Deal."
     
     hide kamao with dissolve
+    
+    $ kaUnFlip()
     
     stop music fadeout 2.0
     
@@ -3402,7 +3406,9 @@ label ch1_scene09:
         
     $ renpy.pause(1.0)
     
-    show kamao neutral_f at kamao_left
+    $ kaFlip()
+    
+    show kamao neutral at kamao_left
     
     show kamao:
         xalign -3.0
@@ -3418,21 +3424,21 @@ label ch1_scene09:
     
     n "Oh, no."
     
-    show kamao wink_f
+    show kamao wink
     
     ka "Oh, yes."
     
-    show kamao neutral_f at kamao_left with MoveTransition(0.3)
+    show kamao neutral at kamao_left with MoveTransition(0.3)
     
     ka "You know why I'm here."
     
     n "To annoy me. Again."
     
-    show kamao vhappy_f
+    show kamao vhappy
     
     ka "Yes!"
     
-    show kamao unhappy_f
+    show kamao unhappy
     
     ka "And no."
     
@@ -3446,19 +3452,19 @@ label ch1_scene09:
     
     n "Whatever you're going to ask, the answer is no."
 
-    show kamao confident_f
+    show kamao confident
     
     ka "Concerned? You are right to fear me, tits-for-brains."
     
     n "I've heard kitsune tastes like fried tofu. Any truth to that?"
     
-    show kamao shocked_f
+    show kamao shocked
     
     ka "Alright, let's start over."
 
     n "Let's."
     
-    show kamao neutral_f
+    show kamao neutral
     
     ka "So, basically, I demand exclusive [pc] rights."
     
@@ -3470,7 +3476,7 @@ label ch1_scene09:
     
     n "And?"
     
-    show kamao confused_f
+    show kamao confused
     
     ka "And what?"
     
@@ -3478,13 +3484,13 @@ label ch1_scene09:
     
     n "And in exchange for these exclusive rights? What's in it for me?"
     
-    show kamao shocked_f
+    show kamao shocked
     
     ka "Whoah, you're actually considering it?"
     
     n "No. But I figured I'd hear your reasoning before I shoot you down."
 
-    show kamao unhappy_f
+    show kamao unhappy
     
     ka "Uncool!"
     
@@ -3496,13 +3502,13 @@ label ch1_scene09:
     
         n "Kidnapping doesn't count."
         
-        show kamao confident_f
+        show kamao confident
         
         ka "Hah! I didn't have to! He came to see me all on his own!"
 
         n "Right."
         
-        show kamao confused_f
+        show kamao confused
         
         ka "You... don't believe me?"
         
@@ -3510,7 +3516,7 @@ label ch1_scene09:
         
         n "Of course not."
         
-        show kamao unhappy_f
+        show kamao unhappy
         
         ka "Well, I'm not gonna waste my breath trying to convince you of this {i}100\% real thing that actually happened{/i}."
 
@@ -3524,11 +3530,11 @@ label ch1_scene09:
     
     n "You know, besides the loss of all my pride and dignity."
     
-    show kamao confused_f
+    show kamao confused
     
     ka "Hmm..."
     
-    show kamao neutral_f
+    show kamao neutral
     
     ka "I won't annoy you anymore."
     
@@ -3542,19 +3548,19 @@ label ch1_scene09:
     
     n "You think threats are gonna work? We've already established that I'm higher on the food chain."
     
-    show kamao confident_f
+    show kamao confident
     
     ka "Not so fast! I did some internet searching, and found to my amazement that eating people is illegal."
     
     n "Is reporting you to the supervisor also illegal?"
         
-    show kamao shocked_f
+    show kamao shocked
         
     ka "Uh... yes?"
     
     n "Wrong. Do not pass go. Do not collect $200."
         
-    show kamao angry_f
+    show kamao angry
         
     ka "Okay, fine. I don't need any stupid exclusivity anyways. I'll beat you the good old fashioned way."
     
@@ -3562,7 +3568,7 @@ label ch1_scene09:
     
     n "Since when have I been competing with {i}you{/i}?"
     
-    show kamao unhappy_f
+    show kamao unhappy
     
     ka "Don't try to play wise. You're the only person standing in my way."
     
@@ -3570,7 +3576,7 @@ label ch1_scene09:
     
     n "What?"
     
-    show kamao neutral_f
+    show kamao neutral
     
     ka "The spider's a nerd, the slime's a bigger nerd, and the bird's not a problem."
     
@@ -3582,7 +3588,7 @@ label ch1_scene09:
     
     n "I wish she was here to have heard that. I really do."
     
-    show kamao unhappy_f
+    show kamao unhappy
     
     ka "Anyways, through this process of elimination I realized you were the only person here with the potential to tear [pc] away from my tender, loving grasp."
     
@@ -3604,23 +3610,23 @@ label ch1_scene09:
         
         n "Playing dumb? Remind me who [pc] decided to visit in his free time? It was one of us, I recall. And by that I mean it was me."
         
-        show kamao confident_f
+        show kamao confident
         
         ka "He probably just wanted advice on how to approach someone as drop-dead gorgeous as me!"
 
         n "If that was the case, it meant he trusted me more than anyone in this house. Probably more than anyone he knows, considering the whole 'amnesia' thing."
         
-        show kamao confused_f
+        show kamao confused
 
         show nagi neutral
 
         n "And trust makes people pliant. Maybe I could suggest he practice asking me on a date? Calm his nerves before asking you, of course."
         
-        show kamao shockblush_f
+        show kamao shockblush
         
         n "Then maybe he's nervous about kissing you, so I give him some practice with that, too?"
         
-        show kamao embarrassed_f
+        show kamao embarrassed
         
         show nagi teasing
         
@@ -3630,7 +3636,7 @@ label ch1_scene09:
 
         ka "..."
         
-        show kamao confused_f
+        show kamao confused
         
         ka "So you'll let me have him?"
 
@@ -3646,7 +3652,7 @@ label ch1_scene09:
         
         n "Maybe I'm a lesbian."
         
-        show kamao shocked_f
+        show kamao shocked
         
         ka "A- are you?"
         
@@ -3654,7 +3660,7 @@ label ch1_scene09:
         
         n "No."
         
-        show kamao unhappy_f
+        show kamao unhappy
         
         ka "My point exactly!"
         
@@ -3664,7 +3670,7 @@ label ch1_scene09:
         
         ka "..."
         
-        show kamao confused_f
+        show kamao confused
         
         ka "What's another word for 'desperate?'"
         
@@ -3685,7 +3691,7 @@ label ch1_scene09:
         
     n "Absolutely..."
     
-    show kamao shocked_open_f
+    show kamao shocked_open
     
     ka "R-Really?"
     
@@ -3693,7 +3699,7 @@ label ch1_scene09:
     
     n "...not."
         
-    show kamao angry_f
+    show kamao angry
         
     ka "Tch!"
         
@@ -3711,19 +3717,19 @@ label ch1_scene09:
     
     n "...Whatever it is you're doing."
     
-    show kamao unhappy_f
+    show kamao unhappy
     
     ka "I'm doing a lot of things."
     
     n "Yeah. Stop doing all of them. Including breathing, please."
     
-    show kamao shocked_f
+    show kamao shocked
     
     ka "Oooh, ice queen."
     
     n "Uh-huh. You can leave, now."
     
-    show kamao unhappy_f
+    show kamao unhappy
     
     ka "Fine!" 
 
@@ -3731,7 +3737,7 @@ label ch1_scene09:
 
     n "Really? How about just one?"
     
-    show kamao confused_f
+    show kamao confused
     
     ka "What?"
     
@@ -3739,7 +3745,7 @@ label ch1_scene09:
     
     n "Just one Hellguard."
     
-    show kamao unhappy_f
+    show kamao unhappy
     
     ka "Well, duh. If I can handle a legion, I'd definitely be able to take on one. Probably with my tails tied behind my back."
     
