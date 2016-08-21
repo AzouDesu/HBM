@@ -31,108 +31,112 @@ label start:
     $ renpy.pause(2.0)
     
     "WARNING: GAME IS WORK IN PROGRESS. MAY (WILL) CONTAIN PLACEHOLDER ART."
-    
-    $ f_dating = 1
-    
 
     #TESTING KAMAYO 2.0#
 
-    show kamao neutral at kamao_center
+    $ kaFlip()
+
+    show kamao neutral at kamao_center_flipped
     
     ""
     
-    show kamao angry at kamao_center
+    show kamao angry at kamao_center_flipped
     
     ""
+    
+    $ kaUnFlip()
+    
     show kamao bluffing at kamao_center
     
     ""
     
-    show kamao bored at kamao_center
+    $ kaFlip()
+    
+    show kamao bored at kamao_left
     
     ""
 
-    show kamao confident at kamao_center
+    show kamao confident at kamao_center_flipped
     
     ""
     
-    show kamao confused at kamao_center
-    
-    ""
-
-    show kamao embarrassed at kamao_center
-    
-    ""
-    
-    show kamao unhappy at kamao_center
-    
-    ""
-    
-    show kamao embarrassed_open at kamao_center
-    
-    ""
-    show kamao flustered at kamao_center
-    
-    ""
-    
-    show kamao happy at kamao_center
-    
-    ""
-    show kamao horny at kamao_center
-    
-    ""
-    
-    show kamao lovestruck at kamao_center
+    show kamao confused at kamao_center_flipped
     
     ""
 
-    show kamao sad at kamao_center
+    show kamao embarrassed at kamao_center_flipped
     
     ""
     
-    show kamao pained at kamao_center
-    
-    ""
-
-    show kamao shocked at kamao_center
+    show kamao unhappy at kamao_center_flipped
     
     ""
     
-    show kamao shockblush at kamao_center
+    show kamao embarrassed_open at kamao_center_flipped
+    
+    ""
+    show kamao flustered at kamao_center_flipped
     
     ""
     
-    show kamao shocked_open at kamao_center
+    show kamao happy at kamao_center_flipped
     
     ""
-    show kamao sleepy at kamao_center
-    
-    ""
-    
-    show kamao starry at kamao_center
-    
-    ""
-
-    show kamao starry_s at kamao_center
+    show kamao horny at kamao_center_flipped
     
     ""
     
-    show kamao teasing at kamao_center
+    show kamao lovestruck at kamao_center_flipped
     
     ""
 
-    show kamao vangry at kamao_center
+    show kamao sad at kamao_center_flipped
     
     ""
     
-    show kamao vhappy at kamao_center
+    show kamao pained at kamao_center_flipped
     
     ""
-    show kamao wink at kamao_center
+
+    show kamao shocked at kamao_center_flipped
     
     ""
     
-    show kamao winkblush at kamao_center
+    show kamao shockblush at kamao_center_flipped
+    
+    ""
+    
+    show kamao shocked_open at kamao_center_flipped
+    
+    ""
+    show kamao sleepy at kamao_center_flipped
+    
+    ""
+    
+    show kamao starry at kamao_center_flipped
+    
+    ""
+
+    show kamao starry_s at kamao_center_flipped
+    
+    ""
+    
+    show kamao teasing at kamao_center_flipped
+    
+    ""
+
+    show kamao vangry at kamao_center_flipped
+    
+    ""
+    
+    show kamao vhappy at kamao_center_flipped
+    
+    ""
+    show kamao wink at kamao_center_flipped
+    
+    ""
+    
+    show kamao winkblush at kamao_center_flipped
     
     ""
     #END TEST OF KAMAYO 2.0#

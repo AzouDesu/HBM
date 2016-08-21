@@ -78,6 +78,41 @@ init python:
     
     #Functions
 
+    #If clothes with flipped text variants exist, add them to these two functions
+
+    def kaFlip():
+        
+        global ka_Outfit
+        
+        if ka_Outfit == "default":
+            
+            ka_Outfit = "default_f"
+            
+            return
+            
+        #Clothing goes here#
+            
+        else:
+            
+            return
+            
+    def kaUnFlip():
+        
+        global ka_Outfit
+        
+        if ka_Outfit == "default_f":
+            
+            ka_Outfit = "default"
+            
+            return
+            
+        #Clothing goes here#
+            
+        else:
+            
+            return
+
+
     def visAff(affPts):
         tempVar = 0.0  
         tempVar = (100 - stat_coop_comp) - 50.0
