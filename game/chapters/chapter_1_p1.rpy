@@ -36,10 +36,12 @@ label start:
     
     scene bg void with Dissolve(4.0)
     
-    $ renpy.pause(3.0)
+    "TESTING"
     
-    #Relationships
- 
+    
+    #$ renpy.pause(3.0)
+    
+
     "It's cold."
     
     "Very cold."

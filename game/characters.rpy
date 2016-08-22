@@ -155,153 +155,195 @@ transform allise_full:
 # Kumiru
 
 image kumiru angry = LiveComposite(
-        (1500, 1518), # Width x Height
-        (0, 0), "assets/kumiru/ku_body.png", # base
-        (690, 120), "assets/kumiru/ku_face_angry.png", # head
-        (682, 108), "assets/kumiru/ku_glasses.png", # glasses
+        (2687, 3036), # Width x Height
+        (0, 0), ConditionSwitch(
+            "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
+            ), # base
+        (1080, 245), "assets/kumiru/faces/ku_angry.png", # head     
+        (1052, 245), "assets/kumiru/ku_glasses.png" # glasses
         )
 
-image kumiru angry open = LiveComposite(
-        (1500, 1518), # Width x Height
-        (0, 0), "assets/kumiru/ku_body.png", # base
-        (690, 120), "assets/kumiru/ku_face_angry_open.png", # head
-        (682, 108), "assets/kumiru/ku_glasses.png", # glasses
+image kumiru angry_open = LiveComposite(
+        (2687, 3036), # Width x Height
+        (0, 0), ConditionSwitch(
+            "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
+            ), # base
+        (1080, 245), "assets/kumiru/faces/ku_angry_open.png", # head     
+        (1052, 245), "assets/kumiru/ku_glasses.png" # glasses
         )
 
 image kumiru confident = LiveComposite(
-        (1500, 1518), # Width x Height
-        (0, 0), "assets/kumiru/ku_body.png", # base
-        (690, 120), "assets/kumiru/ku_face_confident.png", # head
-        (682, 108), "assets/kumiru/ku_glasses.png", # glasses
+        (2687, 3036), # Width x Height
+        (0, 0), ConditionSwitch(
+            "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
+            ), # base
+        (1080, 245), "assets/kumiru/faces/ku_confident.png", # head     
+        (1052, 245), "assets/kumiru/ku_glasses.png" # glasses
         )
 
 image kumiru confused = LiveComposite(
-        (1500, 1518), # Width x Height
-        (0, 0), "assets/kumiru/ku_body.png", # base
-        (690, 120), "assets/kumiru/ku_face_confused.png", # head
-        (682, 108), "assets/kumiru/ku_glasses.png", # glasses
+        (2687, 3036), # Width x Height
+        (0, 0), ConditionSwitch(
+            "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
+            ), # base
+        (1080, 245), "assets/kumiru/faces/ku_confused.png", # head     
+        (1052, 245), "assets/kumiru/ku_glasses.png" # glasses
         )
 
 image kumiru embarrassed = LiveComposite(
-        (1500, 1518), # Width x Height
-        (0, 0), "assets/kumiru/ku_body.png", # base
-        (690, 120), "assets/kumiru/ku_face_embarrassed.png", # head
-        (682, 108), "assets/kumiru/ku_glasses.png", # glasses
+        (2687, 3036), # Width x Height
+        (0, 0), ConditionSwitch(
+            "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
+            ), # base
+        (1080, 245), "assets/kumiru/faces/ku_embarrassed.png", # head     
+        (1052, 245), "assets/kumiru/ku_glasses.png", # glasses   
+        (1075, 310), "assets/kumiru/ku_blush.png" # blush 
         )
 image kumiru flustered = LiveComposite(
-        (1500, 1518), # Width x Height
-        (0, 0), "assets/kumiru/ku_body.png", # base
-        (690, 120), "assets/kumiru/ku_face_flustered.png", # head
-        (682, 108), "assets/kumiru/ku_glasses.png", # glasses
+        (2687, 3036), # Width x Height
+        (0, 0), ConditionSwitch(
+            "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
+            ), # base
+        (1080, 245), "assets/kumiru/faces/ku_flustered.png", # head     
+        (1052, 245), "assets/kumiru/ku_glasses.png", # glasses   
+        (1075, 310), "assets/kumiru/ku_blush.png" # blush 
         )
 
 image kumiru happy = LiveComposite(
-        (1500, 1518), # Width x Height
-        (0, 0), "assets/kumiru/ku_body.png", # base
-        (690, 120), "assets/kumiru/ku_face_happy.png", # head
-        (682, 108), "assets/kumiru/ku_glasses.png", # glasses
+        (2687, 3036), # Width x Height
+        (0, 0), ConditionSwitch(
+            "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
+            ), # base
+        (1080, 245), "assets/kumiru/faces/ku_happy.png", # head     
+        (1052, 245), "assets/kumiru/ku_glasses.png" # glasses   
         )
 
 image kumiru horny = LiveComposite(
-        (1500, 1518), # Width x Height
-        (0, 0), "assets/kumiru/ku_body.png", # base
-        (690, 120), "assets/kumiru/ku_face_horny.png", # head
-        (682, 108), "assets/kumiru/ku_glasses.png", # glasses
+        (2687, 3036), # Width x Height
+        (0, 0), ConditionSwitch(
+            "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
+            ), # base
+        (1080, 245), "assets/kumiru/faces/ku_horny.png", # head     
+        (1052, 245), "assets/kumiru/ku_glasses.png", # glasses   
+        (1075, 310), "assets/kumiru/ku_blush.png" # blush 
         )
 
 image kumiru lovestruck = LiveComposite(
-        (1500, 1518), # Width x Height
-        (0, 0), "assets/kumiru/ku_body.png", # base
-        (690, 120), "assets/kumiru/ku_face_lovestruck.png", # head
-        (682, 108), "assets/kumiru/ku_glasses.png", # glasses
+        (2687, 3036), # Width x Height
+        (0, 0), ConditionSwitch(
+            "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
+            ), # base
+        (1080, 245), "assets/kumiru/faces/ku_lovestruck.png", # head     
+        (1052, 245), "assets/kumiru/ku_glasses.png", # glasses   
+        (1075, 310), "assets/kumiru/ku_blush.png" # blush 
         )
+
 
 image kumiru neutral = LiveComposite(
-        (1500, 1518), # Width x Height
-        (0, 0), "assets/kumiru/ku_body.png", # base
-        (690, 120), "assets/kumiru/ku_face_neutral.png", # head
-        (682, 108), "assets/kumiru/ku_glasses.png", # glasses
+        (2687, 3036), # Width x Height
+        (0, 0), ConditionSwitch(
+            "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
+            ), # base
+        (1080, 245), "assets/kumiru/faces/ku_neutral.png", # head     
+        (1052, 245), "assets/kumiru/ku_glasses.png" # glasses   
         )
 
+
 image kumiru sad = LiveComposite(
-        (1500, 1518), # Width x Height
-        (0, 0), "assets/kumiru/ku_body.png", # base
-        (690, 120), "assets/kumiru/ku_face_sad.png", # head
-        (682, 108), "assets/kumiru/ku_glasses.png", # glasses
+        (2687, 3036), # Width x Height
+        (0, 0), ConditionSwitch(
+            "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
+            ), # base
+        (1080, 245), "assets/kumiru/faces/ku_sad.png", # head     
+        (1052, 245), "assets/kumiru/ku_glasses.png" # glasses
         )
 
 image kumiru scream = LiveComposite(
-        (1500, 1518), # Width x Height
-        (0, 0), "assets/kumiru/ku_body.png", # base
-        (690, 120), "assets/kumiru/ku_face_scream.png", # head
-        (682, 108), "assets/kumiru/ku_glasses.png", # glasses
+        (2687, 3036), # Width x Height
+        (0, 0), ConditionSwitch(
+            "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
+            ), # base
+        (1080, 245), "assets/kumiru/faces/ku_scream.png", # head     
+        (1052, 245), "assets/kumiru/ku_glasses.png" # glasses
         )
 
 image kumiru shocked = LiveComposite(
-        (1500, 1518), # Width x Height
-        (0, 0), "assets/kumiru/ku_body.png", # base
-        (690, 120), "assets/kumiru/ku_face_shocked.png", # head
-        (682, 108), "assets/kumiru/ku_glasses.png", # glasses
+        (2687, 3036), # Width x Height
+        (0, 0), ConditionSwitch(
+            "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
+            ), # base
+        (1080, 245), "assets/kumiru/faces/ku_shocked.png", # head     
+        (1052, 245), "assets/kumiru/ku_glasses.png" # glasses
         )
 
 image kumiru surprised = LiveComposite(
-        (1500, 1518), # Width x Height
-        (0, 0), "assets/kumiru/ku_body.png", # base
-        (690, 120), "assets/kumiru/ku_face_surprised.png", # head
-        (682, 108), "assets/kumiru/ku_glasses.png", # glasses
+        (2687, 3036), # Width x Height
+        (0, 0), ConditionSwitch(
+            "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
+            ), # base
+        (1080, 245), "assets/kumiru/faces/ku_surprised.png", # head     
+        (1052, 245), "assets/kumiru/ku_glasses.png" # glasses
         )
 
 image kumiru unamused = LiveComposite(
-        (1500, 1518), # Width x Height
-        (0, 0), "assets/kumiru/ku_body.png", # base
-        (690, 120), "assets/kumiru/ku_face_unamused.png", # head
-        (682, 108), "assets/kumiru/ku_glasses.png", # glasses
+        (2687, 3036), # Width x Height
+        (0, 0), ConditionSwitch(
+            "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
+            ), # base
+        (1080, 245), "assets/kumiru/faces/ku_unamused.png", # head     
+        (1052, 245), "assets/kumiru/ku_glasses.png" # glasses
         )
 
 image kumiru vangry = LiveComposite(
-        (1500, 1518), # Width x Height
-        (0, 0), "assets/kumiru/ku_body.png", # base
-        (690, 120), "assets/kumiru/ku_face_vangry.png", # head
-        (682, 108), "assets/kumiru/ku_glasses.png", # glasses
+        (2687, 3036), # Width x Height
+        (0, 0), ConditionSwitch(
+            "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
+            ), # base
+        (1080, 245), "assets/kumiru/faces/ku_vangry.png", # head     
+        (1052, 245), "assets/kumiru/ku_glasses.png", # glasses
+        (1220, 200), "assets/gen_vein.png" # vein 
         )
 
 image kumiru vhorny = LiveComposite(
-        (1500, 1518), # Width x Height
-        (0, 0), "assets/kumiru/ku_body.png", # base
-        (690, 120), "assets/kumiru/ku_face_vhorny.png", # head
-        (682, 108), "assets/kumiru/ku_glasses.png", # glasses
+        (2687, 3036), # Width x Height
+        (0, 0), ConditionSwitch(
+            "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
+            ), # base
+        (1080, 248), "assets/kumiru/faces/ku_vhorny.png", # head     
+        (1052, 245), "assets/kumiru/ku_glasses.png", # glasses   
+        (1075, 310), "assets/kumiru/ku_blush.png" # blush 
         )
-
+    
 transform kumiru_center:
-    xpos 0.5
+    xpos 0.57
     xanchor 0.5
-    ypos 0.6
+    ypos 0.60
     yanchor 327
-    zoom 1.0
+    zoom 0.5
     xzoom 1.0
 
 transform kumiru_center_flipped:
-    xpos 0.5
+    xpos 0.4
     xanchor 0.5
     ypos 0.6
     yanchor 327
-    zoom 1.0
+    zoom 0.5
     xzoom -1.0
 
 transform kumiru_right:
-    xpos 0.7
+    xpos 0.8
     xanchor 0.5
     ypos 0.6
     yanchor 327
-    zoom 1.0
+    zoom 0.5
     xzoom 1.0
     
 transform kumiru_left:
-    xpos 0.3
+    xpos 0.2
     xanchor 0.5
     ypos 0.6
     yanchor 327
-    zoom 1.0
+    zoom 0.5
     xzoom -1.0
     
 transform kumiru_full:
@@ -309,133 +351,190 @@ transform kumiru_full:
     ypos 0.45
     yanchor 327
     xcenter 0.5
-    zoom 0.5
+    zoom 0.3
     xzoom 1.0
 
 # Viscella
 
 image viscella angry = LiveComposite(
-        (270, 1320), # Width x Height
-        (0, 0), "assets/viscella/vs_body.png", # base
-        (42, 114), "assets/viscella/vs_face_angry.png" # head
+        (542, 2643), # Width x Height
+        (0, 0), ConditionSwitch(
+            "v_Outfit == 'default'", "assets/viscella/v_outfit_default.png"
+            ), # base
+        (97, 232), "assets/viscella/faces/v_angry.png" # head
         )
 
 image viscella confident = LiveComposite(
-        (270, 1320), # Width x Height
-        (0, 0), "assets/viscella/vs_body.png", # base
-        (42, 114), "assets/viscella/vs_face_confident.png" # head
+        (542, 2643), # Width x Height
+        (0, 0), ConditionSwitch(
+            "v_Outfit == 'default'", "assets/viscella/v_outfit_default.png"
+            ), # base
+        (97, 232), "assets/viscella/faces/v_confident.png" # head
         )
 
 image viscella confused = LiveComposite(
-        (270, 1320), # Width x Height
-        (0, 0), "assets/viscella/vs_body.png", # base
-        (42, 114), "assets/viscella/vs_face_confused.png" # head
+        (542, 2643), # Width x Height
+        (0, 0), ConditionSwitch(
+            "v_Outfit == 'default'", "assets/viscella/v_outfit_default.png"
+            ), # base
+        (97, 232), "assets/viscella/faces/v_confused.png" # head
         )
 
 image viscella embarrassed = LiveComposite(
-        (270, 1320), # Width x Height
-        (0, 0), "assets/viscella/vs_body.png", # base
-        (42, 114), "assets/viscella/vs_face_embarrassed.png" # head
+        (542, 2643), # Width x Height
+        (0, 0), ConditionSwitch(
+            "v_Outfit == 'default'", "assets/viscella/v_outfit_default.png"
+            ), # base
+        (97, 232), "assets/viscella/faces/v_embarrassed.png", # head
+        (100, 290), "assets/viscella/v_blush.png" # head     
         )
 
 image viscella excited = LiveComposite(
-        (270, 1320), # Width x Height
-        (0, 0), "assets/viscella/vs_body.png", # base
-        (42, 114), "assets/viscella/vs_face_excited.png" # head
+        (542, 2643), # Width x Height
+        (0, 0), ConditionSwitch(
+            "v_Outfit == 'default'", "assets/viscella/v_outfit_default.png"
+            ), # base
+        (97, 232), "assets/viscella/faces/v_excited.png" # head 
         )
 
 image viscella flustered = LiveComposite(
-        (270, 1320), # Width x Height
-        (0, 0), "assets/viscella/vs_body.png", # base
-        (42, 114), "assets/viscella/vs_face_flustered.png" # head
+        (542, 2643), # Width x Height
+        (0, 0), ConditionSwitch(
+            "v_Outfit == 'default'", "assets/viscella/v_outfit_default.png"
+            ), # base
+        (97, 232), "assets/viscella/faces/v_flustered.png", # head
+        (100, 290), "assets/viscella/v_blush.png" # head     
         )
-
+        
 image viscella happy = LiveComposite(
-        (270, 1320), # Width x Height
-        (0, 0), "assets/viscella/vs_body.png", # base
-        (42, 114), "assets/viscella/vs_face_happy.png" # head
+        (542, 2643), # Width x Height
+        (0, 0), ConditionSwitch(
+            "v_Outfit == 'default'", "assets/viscella/v_outfit_default.png"
+            ), # base
+        (97, 232), "assets/viscella/faces/v_happy.png" # head  
         )
-
+        
 image viscella horny = LiveComposite(
-        (270, 1320), # Width x Height
-        (0, 0), "assets/viscella/vs_body.png", # base
-        (42, 114), "assets/viscella/vs_face_horny.png" # head
+        (542, 2643), # Width x Height
+        (0, 0), ConditionSwitch(
+            "v_Outfit == 'default'", "assets/viscella/v_outfit_default.png"
+            ), # base
+        (97, 232), "assets/viscella/faces/v_horny.png", # head
+        (100, 290), "assets/viscella/v_blush.png" # head     
         )
 
 image viscella lovestruck = LiveComposite(
-        (270, 1320), # Width x Height
-        (0, 0), "assets/viscella/vs_body.png", # base
-        (42, 114), "assets/viscella/vs_face_lovestruck.png" # head
+        (542, 2643), # Width x Height
+        (0, 0), ConditionSwitch(
+            "v_Outfit == 'default'", "assets/viscella/v_outfit_default.png"
+            ), # base
+        (97, 232), "assets/viscella/faces/v_lovestruck.png", # head
+        (100, 290), "assets/viscella/v_blush.png" # head     
         )
 
 image viscella neutral = LiveComposite(
-        (270, 1320), # Width x Height
-        (0, 0), "assets/viscella/vs_body.png", # base
-        (42, 114), "assets/viscella/vs_face_neutral.png" # head
+        (542, 2643), # Width x Height
+        (0, 0), ConditionSwitch(
+            "v_Outfit == 'default'", "assets/viscella/v_outfit_default.png"
+            ), # base
+        (97, 232), "assets/viscella/faces/v_neutral.png" # head     
         )
 
 image viscella sad = LiveComposite(
-        (270, 1320), # Width x Height
-        (0, 0), "assets/viscella/vs_body.png", # base
-        (42, 114), "assets/viscella/vs_face_sad.png" # head
+        (542, 2643), # Width x Height
+        (0, 0), ConditionSwitch(
+            "v_Outfit == 'default'", "assets/viscella/v_outfit_default.png"
+            ), # base
+        (97, 232), "assets/viscella/faces/v_sad.png" # head 
         )
 
 image viscella scared = LiveComposite(
-        (270, 1320), # Width x Height
-        (0, 0), "assets/viscella/vs_body.png", # base
-        (42, 114), "assets/viscella/vs_face_scared.png" # head
+        (542, 2643), # Width x Height
+        (0, 0), ConditionSwitch(
+            "v_Outfit == 'default'", "assets/viscella/v_outfit_default.png"
+            ), # base
+        (97, 232), "assets/viscella/faces/v_scared.png" # head
         )
 
 image viscella scream = LiveComposite(
-        (270, 1320), # Width x Height
-        (0, 0), "assets/viscella/vs_body.png", # base
-        (42, 114), "assets/viscella/vs_face_scream.png" # head
+        (542, 2643), # Width x Height
+        (0, 0), ConditionSwitch(
+            "v_Outfit == 'default'", "assets/viscella/v_outfit_default.png"
+            ), # base
+        (97, 232), "assets/viscella/faces/v_scream.png" # head
         )
 
 image viscella shocked = LiveComposite(
-        (270, 1320), # Width x Height
-        (0, 0), "assets/viscella/vs_body.png", # base
-        (42, 114), "assets/viscella/vs_face_shocked.png" # head
+        (542, 2643), # Width x Height
+        (0, 0), ConditionSwitch(
+            "v_Outfit == 'default'", "assets/viscella/v_outfit_default.png"
+            ), # base
+        (97, 232), "assets/viscella/faces/v_shocked.png" # head  
         )
 
 image viscella unamused = LiveComposite(
-        (270, 1320), # Width x Height
-        (0, 0), "assets/viscella/vs_body.png", # base
-        (42, 114), "assets/viscella/vs_face_unamused.png" # head
+        (542, 2643), # Width x Height
+        (0, 0), ConditionSwitch(
+            "v_Outfit == 'default'", "assets/viscella/v_outfit_default.png"
+            ), # base
+        (97, 232), "assets/viscella/faces/v_unamused.png" # head
         )
 
 image viscella vangry = LiveComposite(
-        (270, 1320), # Width x Height
-        (0, 0), "assets/viscella/vs_body.png", # base
-        (42, 114), "assets/viscella/vs_face_vangry.png" # head
+        (542, 2643), # Width x Height
+        (0, 0), ConditionSwitch(
+            "v_Outfit == 'default'", "assets/viscella/v_outfit_default.png"
+            ), # base
+        (97, 232), "assets/viscella/faces/v_vangry.png" # head
         )
 
 image viscella vhappy = LiveComposite(
-        (270, 1320), # Width x Height
-        (0, 0), "assets/viscella/vs_body.png", # base
-        (42, 114), "assets/viscella/vs_face_vhappy.png" # head
+        (542, 2643), # Width x Height
+        (0, 0), ConditionSwitch(
+            "v_Outfit == 'default'", "assets/viscella/v_outfit_default.png"
+            ), # base
+        (97, 232), "assets/viscella/faces/v_vhappy.png" # head 
         )
 
-image viscella puddle_neutral = "assets/viscella/vs_puddle_neutral.png"
-image viscella puddle_scared = "assets/viscella/vs_puddle_scared.png"
-image viscella puddle_happy = "assets/viscella/vs_puddle_happy.png"
-image viscella puddle_sad = "assets/viscella/vs_puddle_sad.png"
 
+image viscella puddle_neutral = LiveComposite(
+        (1626, 623), # Width x Height
+        (97, 232), "assets/viscella/v_puddle.png", # head 
+        (1130, 320), "assets/viscella/v_puddle_neutral.png" # head 
+        )
+
+image viscella puddle_happy = LiveComposite(
+        (1626, 623), # Width x Height
+        (97, 232), "assets/viscella/v_puddle.png", # head 
+        (1130, 320), "assets/viscella/v_puddle_happy.png" # head 
+        )
+
+image viscella puddle_sad = LiveComposite(
+        (1626, 623), # Width x Height
+        (97, 232), "assets/viscella/v_puddle.png", # head 
+        (1130, 320), "assets/viscella/v_puddle_sad.png" # head 
+        )
+
+image viscella puddle_scared = LiveComposite(
+        (1626, 623), # Width x Height
+        (97, 232), "assets/viscella/v_puddle.png", # head 
+        (1130, 320), "assets/viscella/v_puddle_scared.png" # head 
+        )
 
 transform viscella_center:
     xpos 0.5
     xanchor 0.5
     ypos 0.6
     yanchor 260
-    zoom 1.0
+    zoom 0.5
     xzoom 1.0
 
 transform viscella_center_flipped:
-    xpos 0.5
+    xpos 0.46
     xanchor 0.5
     ypos 0.6
     yanchor 260
-    zoom 1.0
+    zoom 0.5
     xzoom -1.0
 
 transform viscella_right:
@@ -443,7 +542,7 @@ transform viscella_right:
     xanchor 0.5
     ypos 0.6
     yanchor 260
-    zoom 1.0
+    zoom 0.5
     xzoom 1.0
     
 transform viscella_farright:
@@ -451,7 +550,7 @@ transform viscella_farright:
     xanchor 0.5
     ypos 0.6
     yanchor 260
-    zoom 1.0
+    zoom 0.5
     xzoom 1.0
     
 transform viscella_left:
@@ -459,7 +558,7 @@ transform viscella_left:
     xanchor 0.5
     ypos 0.6
     yanchor 260
-    zoom 1.0
+    zoom 0.5
     xzoom -1.0
     
 transform viscella_full:
@@ -467,26 +566,26 @@ transform viscella_full:
     ypos 0.45
     yanchor 260
     xcenter 0.5
-    zoom 0.5
+    zoom 0.3
     xzoom -1.0
 
 
 
 
 transform viscella_puddle_center:
-    xpos 0.5
+    xpos 0.45
     xanchor 0.5
-    ypos 0.9
+    ypos 0.7
     yanchor 260
-    zoom 1.0
+    zoom 0.5
     xzoom 1.0
     
 transform viscella_puddle_right:
-    xpos 0.7
+    xpos 0.6
     xanchor 0.5
-    ypos 1.0
+    ypos 0.7
     yanchor 260
-    zoom 1.0
+    zoom 0.5
     xzoom 1.0
 
 
@@ -662,7 +761,7 @@ image kamao angry = LiveComposite(
             "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
             ), # base
         (93, -253), "assets/kamao/faces/ka_angry.png", # head 
-        (250, -253), "assets/kamao/gen_vein.png" # vein 
+        (250, -253), "assets/gen_vein.png" # vein 
         )
 
 image kamao bored = LiveComposite(
@@ -857,7 +956,7 @@ image kamao vangry = LiveComposite(
             "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
             ), # base
         (93, -253), "assets/kamao/faces/ka_vangry.png", # head 
-        (250, -253), "assets/kamao/gen_vein.png" # vein 
+        (250, -253), "assets/gen_vein.png" # vein 
         )
 
 image kamao vhappy = LiveComposite(
@@ -886,16 +985,6 @@ image kamao winkblush = LiveComposite(
             ), # base
         (93, -253), "assets/kamao/faces/ka_wink,winkblush.png", # head 
         (70, -165), "assets/kamao/ka_blush.png" # blush 
-        )
-
-#Kamao Foxpatch/Flipped
-
-image kamao neutral_f = LiveComposite(
-        (1042, 3067), # Width x Height
-        (-2, -581), ConditionSwitch(
-            "ka_Outfit == 'default'", "assets/kamao/ka_outfit_default.png"
-            ), # base
-        (93, -253), "assets/kamao/faces/ka_neutral.png", # head 
         )
 
 
