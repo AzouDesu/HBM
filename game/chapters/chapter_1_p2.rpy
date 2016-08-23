@@ -3,7 +3,7 @@ label ch1_scene07:
             
     scene bg street with wipeleft
     
-    show kumiru sad with dissolve:
+    show kumiru sad at kumiru_center with dissolve:
         xpos 0.3
         xanchor 0.5
         ypos 0.6
@@ -24,7 +24,7 @@ label ch1_scene07:
     
     $ renpy.sound.play("assets/sound/sfx/body_hit.wav")
        
-    show kumiru angry open with vpunch
+    show kumiru angry_open with vpunch
        
     ku "Gah, damnit!"
     

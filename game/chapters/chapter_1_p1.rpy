@@ -36,39 +36,18 @@ label start:
     
     scene bg void with Dissolve(4.0)
     
-    scene debugscreen
+    if gamedebug == True:
     
-    "TESTING"
-
-    
-    show fenira neutral at fenira_center
-    
-    ""
-    
-    show fenira angry at fenira_center_flipped
-    
-    ""
-    
-    show kumiru neutral at kumiru_left
-    
-    show fenira bluffing at fenira_right
-    
-    ""
-    
+        #scene debugscreen
         
-
-    
-    show viscella neutral at viscella_left
-    
-    show fenira confident at fenira_left
-    
-    ""
-    show fenira horny at fenira_full
-    
-    ""
-    
+        "TESTING"
+        
+        jump ch1_scene07
+        
+        "END TESTING"
+        
     #$ renpy.pause(3.0)
-    
+        
 
     "It's cold."
     
@@ -351,7 +330,7 @@ label ch1_scene01:
     
     hide viscella
     
-    show kumiru at kumiru_full
+    show kumiru at kumiru_legs
     
     $ renpy.pause(2.0)
     
@@ -451,15 +430,13 @@ label ch1_scene02:
             
             ku_un "Oh."
             
-    show kumiru at kumiru_full with dissolve
-            
     "There's no doubt about it. From the waist down, she's got about six more legs than what I'd expect on a woman. Her face looks normal at first, until I realize the small, almond-shaped black spots are actually small eyes."
             
     "She seems harmless enough."
     
     "Well, as harmless as an eight-legged spider-woman can get, anyways."
     
-    show kumiru at kumiru_center with dissolve
+    show kumiru neutral
     
     ku_un "You know, I might still have to call that ambulance. I'm pretty sure you gave Viscella a heart attack, and she doesn't even have a heart."
     
@@ -619,13 +596,7 @@ label ch1_scene02:
             
             ku "Anyways, please don't be too angry with her. She's, um... fragile."
             
-            show viscella flustered with moveinleft:
-                xpos 0.05
-                xanchor 0.5
-                ypos 0.6
-                yanchor 260
-                zoom 1.0
-                xzoom -1.0
+            show viscella flustered at viscella_farleft with moveinleft
             
             v "I'm not fragile!"
             
@@ -645,7 +616,7 @@ label ch1_scene02:
     
     hide kumiru with dissolve
     
-    show viscella at viscella_full with dissolve
+    show viscella at viscella_center_flipped with dissolve
     
     "... Yep, there's no mistake about it. She's made out of goo. The only thing solid about her is some sort of opaque orb floating in the middle of her chest - the rest of her is composed of a viscous liquid, like honey."
     
@@ -1589,7 +1560,7 @@ label ch1_scene04:
     
     play sound "assets/sound/sfx/door_open.wav"
 
-    show kamao starry_s at kamao_full with dissolve
+    show kamao starry_s at kamao_center with dissolve
     
     $renpy.pause (1.0)
     
@@ -1896,8 +1867,6 @@ label ch1_scene04:
     hide kumiru
     
     hide viscella
-    
-    show kamao at kamao_full with dissolve
     
     "A kitsune? Apart from the ears and tails, she doesn't seem all that unusual. Certainly less unusual than the other two."
     
@@ -2558,14 +2527,9 @@ label ch1_scene05:
     show fenira neutral
     
     f_un "I think she dragged the other two tenants off to help her with her stuff. A drider and a slime, I think."
-    
-    show fenira neutral at fenira_full with dissolve
-    
+
     "This one seems to be some sort of bird hybrid. Those talons would probably be able to make short work of me. It's probably a good idea not to piss her off too much."
-    
-    show  fenira neutral at fenira_center with dissolve:
-        zoom 1.0
-    
+
     f_un "..."
     
     show fenira inquisitive

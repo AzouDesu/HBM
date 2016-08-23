@@ -318,44 +318,44 @@ image kumiru vhorny = LiveComposite(
         )
     
 transform kumiru_center:
-    xpos 0.57
-    xanchor 0.5
+    xpos 0.5
+    xanchor 0.45
     ypos 0.60
     yanchor 327
     zoom 0.5
     xzoom 1.0
 
 transform kumiru_center_flipped:
-    xpos 0.4
-    xanchor 0.5
+    xpos 0.5
+    xanchor 0.55
     ypos 0.6
     yanchor 327
     zoom 0.5
     xzoom -1.0
 
 transform kumiru_right:
-    xpos 0.7
-    xanchor 0.5
+    xpos 0.67
+    xanchor 0.45
     ypos 0.6
     yanchor 327
     zoom 0.5
     xzoom 1.0
     
 transform kumiru_left:
-    xpos 0.3
-    xanchor 0.5
+    xpos 0.33
+    xanchor 0.55
     ypos 0.6
     yanchor 327
     zoom 0.5
     xzoom -1.0
     
-transform kumiru_full:
-    xanchor 0.5
-    ypos 0.45
-    yanchor 327
-    xcenter 0.5
-    zoom 0.3
+transform kumiru_legs:
+    xpos 0.5
+    xanchor 0.45
+    ycenter 0.65
+    zoom 0.5
     xzoom 1.0
+
 
 # Viscella
 
@@ -526,53 +526,51 @@ image viscella puddle_scared = LiveComposite(
 
 transform viscella_center:
     xpos 0.5
-    xanchor 0.5
+    xanchor 0.4
     ypos 0.6
     yanchor 260
     zoom 0.5
     xzoom 1.0
 
 transform viscella_center_flipped:
-    xpos 0.46
-    xanchor 0.5
+    xpos 0.5
+    xanchor 0.6
     ypos 0.6
     yanchor 260
     zoom 0.5
     xzoom -1.0
 
 transform viscella_right:
-    xpos 0.65
-    xanchor 0.5
+    xpos 0.67
+    xanchor 0.4
     ypos 0.6
     yanchor 260
     zoom 0.5
     xzoom 1.0
     
 transform viscella_farright:
-    xpos 0.8
-    xanchor 0.5
+    xpos 0.83
+    xanchor 0.4
     ypos 0.6
     yanchor 260
     zoom 0.5
     xzoom 1.0
     
 transform viscella_left:
-    xpos 0.3
-    xanchor 0.5
+    xpos 0.33
+    xanchor 0.6
     ypos 0.6
     yanchor 260
     zoom 0.5
     xzoom -1.0
-    
-transform viscella_full:
-    xanchor 0.5
-    ypos 0.45
+
+transform viscella_farleft:
+    xpos 0.17
+    xanchor 0.6
+    ypos 0.6
     yanchor 260
-    xcenter 0.5
-    zoom 0.3
+    zoom 0.5
     xzoom -1.0
-
-
 
 
 transform viscella_puddle_center:
@@ -992,43 +990,36 @@ image kamao winkblush = LiveComposite(
 
 
 transform kamao_center:
-    xpos 0.65
-    xanchor 0.5
+    xpos 0.5
+    xanchor 0.2
     ypos 0.93
     yanchor 340
     zoom 0.5
     xzoom 1.0
     
 transform kamao_center_flipped:
-    xpos 0.35
-    xanchor 0.5
+    xpos 0.5
+    xanchor 0.8
     ypos 0.93
     yanchor 340
     zoom 0.5
     xzoom -1.0
 
 transform kamao_right:
-    xpos 0.85
-    xanchor 0.5
+    xpos 0.67
+    xanchor 0.2
     ypos 0.93
     yanchor 340
     zoom 0.5
     xzoom 1.0
     
 transform kamao_left:
-    xpos 0.15
-    xanchor 0.5
+    xpos 0.33
+    xanchor 0.8
     ypos 0.93
     yanchor 340
     zoom 0.5
     xzoom -1.0
-
-transform kamao_full:
-    xanchor 0.5
-    yanchor 340
-    ypos 0.72
-    xcenter 0.58
-    zoom 0.35
 
     
 # Fenira
@@ -1196,43 +1187,36 @@ image fenira wink = LiveComposite(
         )
 
 transform fenira_center:
-    xpos 0.76
-    xanchor 0.5
+    xpos 0.5
+    xanchor 0.25
     ypos 0.5
     yanchor 330
     zoom 0.5
     xzoom 1.0
 
 transform fenira_center_flipped:
-    xpos 0.24
-    xanchor 0.5
+    xpos 0.5
+    xanchor 0.75
     ypos 0.5
     yanchor 330
     zoom 0.5
     xzoom -1.0
 
 transform fenira_right:
-    xpos 0.9
-    xanchor 0.5
+    xpos 0.68
+    xanchor 0.25
     ypos 0.5
     yanchor 330
     zoom 0.5
     xzoom 1.0
     
 transform fenira_left:
-    xpos 0.1
-    xanchor 0.5
+    xpos 0.32
+    xanchor 0.75
     ypos 0.5
     yanchor 330
     zoom 0.5
     xzoom -1.0
-
-transform fenira_full:
-    xanchor 677
-    ypos 0.5
-    yanchor 327
-    xcenter 0.5
-    zoom 0.25
 
 # Dravenia
 

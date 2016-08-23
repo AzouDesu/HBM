@@ -226,49 +226,49 @@ image debugscreen = "assets/bg/debugscreen.png"
 image bg pBedroom = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom day.png", # base
-        (128, 32), "assets/menus/rooms/playerroom.png" # head
+        (0, 0), "assets/menus/rooms/playerroom.png" # head
         )
 
 image bg kuBedroom = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom day.png", # base
-        (128, 32), "assets/menus/rooms/kumiruroom.png" # head
+        (0, 0), "assets/menus/rooms/kumiruroom.png" # head
         )
 
 image bg vBedroom = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom day.png", # base
-        (128, 32), "assets/menus/rooms/viscellaroom.png" # head
+        (0, 0), "assets/menus/rooms/viscellaroom.png" # head
         )
 
 image bg nBedroom = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom day.png", # base
-        (128, 32), "assets/menus/rooms/nagiroom.png" # head
+        (0, 0), "assets/menus/rooms/nagiroom.png" # head
         )
 
 image bg kaBedroom = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom day.png", # base
-        (128, 32), "assets/menus/rooms/kamaoroom.png" # head
+        (0, 0), "assets/menus/rooms/kamaoroom.png" # head
         )
 
 image bg fBedroom = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom day.png", # base
-        (128, 32), "assets/menus/rooms/feniraroom.png" # head
+        (0, 0), "assets/menus/rooms/feniraroom.png" # head
         )
 
 image bg dBedroom = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom day.png", # base
-        (128, 32), "assets/menus/rooms/draveniaroom.png" # head
+        (0, 0), "assets/menus/rooms/draveniaroom.png" # head
         )
 
 image bg aBedroom = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom day.png", # base
-        (128, 32), "assets/menus/rooms/alliseroom.png" # head
+        (0, 0), "assets/menus/rooms/alliseroom.png" # head
         )
 
 #NIGHT
@@ -276,49 +276,49 @@ image bg aBedroom = LiveComposite(
 image bg pBedroom_n = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom night.png", # base
-        (128, 32), "assets/menus/rooms/playerroom.png" # head
+        (0, 0), "assets/menus/rooms/playerroom.png" # head
         )
 
 image bg kuBedroom_n = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom night.png", # base
-        (128, 32), "assets/menus/rooms/kumiruroom.png" # head
+        (0, 0), "assets/menus/rooms/kumiruroom.png" # head
         )
 
 image bg vBedroom_n = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom night.png", # base
-        (128, 32), "assets/menus/rooms/viscellaroom.png" # head
+        (0, 0), "assets/menus/rooms/viscellaroom.png" # head
         )
 
 image bg nBedroom_n = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom night.png", # base
-        (128, 32), "assets/menus/rooms/nagiroom.png" # head
+        (0, 0), "assets/menus/rooms/nagiroom.png" # head
         )
 
 image bg kaBedroom_n = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom night.png", # base
-        (128, 32), "assets/menus/rooms/kamaoroom.png" # head
+        (0, 0), "assets/menus/rooms/kamaoroom.png" # head
         )
 
 image bg fBedroom_n = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom night.png", # base
-        (128, 32), "assets/menus/rooms/feniraroom.png" # head
+        (0, 0), "assets/menus/rooms/feniraroom.png" # head
         )
 
 image bg dBedroom_n = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom night.png", # base
-        (128, 32), "assets/menus/rooms/draveniaroom.png" # head
+        (0, 0), "assets/menus/rooms/draveniaroom.png" # head
         )
 
 image bg aBedroom_n = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom night.png", # base
-        (128, 32), "assets/menus/rooms/alliseroom.png" # head
+        (0, 0), "assets/menus/rooms/alliseroom.png" # head
         )
 
 
