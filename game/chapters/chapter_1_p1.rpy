@@ -36,8 +36,35 @@ label start:
     
     scene bg void with Dissolve(4.0)
     
+    scene debugscreen
+    
     "TESTING"
     
+    show fenira neutral at fenira_center
+    
+    ""
+    
+    show fenira angry at fenira_center_flipped
+    
+    ""
+    
+    show kumiru neutral at kumiru_left
+    
+    show fenira bluffing at fenira_right
+    
+    ""
+    
+        
+
+    
+    show viscella neutral at viscella_left
+    
+    show fenira confident at fenira_left
+    
+    ""
+    show fenira horny at fenira_full
+    
+    ""
     
     #$ renpy.pause(3.0)
     
@@ -2394,7 +2421,7 @@ label ch1_scene05:
             
             ka "Only a little bit!"
             
-            show fenira teasing
+            show fenira smirk_open
             
             f_un "Fleas, huh? Who'd you get 'em from? Dog? Cat? Parents?"
             
@@ -2709,7 +2736,7 @@ label ch1_scene06:
     
     v "I didn't do it."
     
-    show fenira teasing
+    show fenira smirk_open
     
     f "Right. You might wanna bunker down inside. If Nagi finds out you shattered her collection of antique wine bottles, she'll..."
     
@@ -2770,7 +2797,7 @@ label ch1_scene06:
             
             f "Yeah, I didn't think that would actually work."
             
-            show fenira teasing
+            show fenira smirk_open
             
             f "But, I mean, she's a slime. Whaddya expect, right?"
             
@@ -2935,7 +2962,7 @@ label ch1_scene06:
             
             f "Like what?" 
             
-            show fenira teasing
+            show fenira smirk_open
             
             f "'Hi, I'm Nagi!'"
             

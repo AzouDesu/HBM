@@ -16,6 +16,10 @@ init python:
     ka_Outfit = "default"
     ku_Outfit = "default"
     v_Outfit = "default"
+    f_Outfit = "default"
+    n_Outfit = "default"
+    d_Outfit = "default"
+    a_Outfit = "default"
     
     ku_like = 0.0
     ku_love = 0.0
@@ -215,6 +219,8 @@ image bg study = "assets/bg/placeholder study.jpg"
 image bg gym = "assets/bg/placeholder gym.png"
 image bg rec = "assets/bg/placeholder rec.png"
 image bg street = "assets/bg/placeholder street.png"
+
+image debugscreen = "assets/bg/debugscreen.png"
 
 
 image bg pBedroom = LiveComposite(

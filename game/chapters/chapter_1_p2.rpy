@@ -1489,7 +1489,7 @@ label ch1_scene08_fenVisit_fenWins:
     
     f "You know."
     
-    show fenira teasing
+    show fenira smirk_open
     
     f "Ji-"
     
@@ -1505,7 +1505,7 @@ label ch1_scene08_fenVisit_fenWins:
     
     v "Stop!"
     
-    show fenira teasing
+    show fenira smirk_open
     
     f "Stop what? Telling [pc] how much you love-"
     
@@ -1571,7 +1571,7 @@ label ch1_scene08_fenVisit_fenWins:
                 
                 f "You didn't? You sure about that?"
                 
-                show fenira teasing
+                show fenira smirk_open
                 
                 f "Whatever happened to 'you better start rehearsing?'"
                 
@@ -3296,7 +3296,7 @@ label ch1_scene09:
     
     n "For once in your life."
     
-    show fenira teasing
+    show fenira smirk_open
     
     f "Yeah, and while I was doing that, you were focusing on me. Which was a better use of time, I wonder?"
     

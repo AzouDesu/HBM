@@ -160,7 +160,9 @@ image kumiru angry = LiveComposite(
             "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
             ), # base
         (1080, 245), "assets/kumiru/faces/ku_angry.png", # head     
-        (1052, 245), "assets/kumiru/ku_glasses.png" # glasses
+        (1052, 245), "assets/kumiru/ku_glasses.png", # glasses
+        (1220, 200), "assets/gen_vein.png" # vein 
+        
         )
 
 image kumiru angry_open = LiveComposite(
@@ -169,7 +171,8 @@ image kumiru angry_open = LiveComposite(
             "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
             ), # base
         (1080, 245), "assets/kumiru/faces/ku_angry_open.png", # head     
-        (1052, 245), "assets/kumiru/ku_glasses.png" # glasses
+        (1052, 245), "assets/kumiru/ku_glasses.png", # glasses
+        (1220, 200), "assets/gen_vein.png" # vein 
         )
 
 image kumiru confident = LiveComposite(
@@ -331,7 +334,7 @@ transform kumiru_center_flipped:
     xzoom -1.0
 
 transform kumiru_right:
-    xpos 0.8
+    xpos 0.7
     xanchor 0.5
     ypos 0.6
     yanchor 327
@@ -339,7 +342,7 @@ transform kumiru_right:
     xzoom 1.0
     
 transform kumiru_left:
-    xpos 0.2
+    xpos 0.3
     xanchor 0.5
     ypos 0.6
     yanchor 327
@@ -538,7 +541,7 @@ transform viscella_center_flipped:
     xzoom -1.0
 
 transform viscella_right:
-    xpos 0.7
+    xpos 0.65
     xanchor 0.5
     ypos 0.6
     yanchor 260
@@ -1031,144 +1034,197 @@ transform kamao_full:
 # Fenira
 
 image fenira neutral = LiveComposite(
-        (1564, 1696), # Width x Height
-        (0, 0), "assets/fenira/fe_body.png", # base
-        (704, 138), "assets/fenira/fe_face_neutral.png" # head
+        (2045, 3404), # Width x Height
+        (0, 0), ConditionSwitch(
+            "f_Outfit == 'default'", "assets/fenira/f_outfit_default.png"
+            ),
+        (355, 354), "assets/fenira/faces/f_neutral.png"
         )
 
 image fenira angry = LiveComposite(
-        (1564, 1696), # Width x Height
-        (0, 0), "assets/fenira/fe_body.png", # base
-        (704, 138), "assets/fenira/fe_face_angry.png" # head
+        (2045, 3404), # Width x Height
+        (0, 0), ConditionSwitch(
+            "f_Outfit == 'default'", "assets/fenira/f_outfit_default.png"
+            ), 
+        (355, 354), "assets/fenira/faces/f_angry.png", 
+        (500, 325), "assets/gen_vein.png"
         )
 
 image fenira bluffing = LiveComposite(
-        (1564, 1696), # Width x Height
-        (0, 0), "assets/fenira/fe_body.png", # base
-        (704, 138), "assets/fenira/fe_face_bluffing.png", # head
-        (704, 162), "assets/fenira/fe_sweat.png"
+        (2045, 3404), # Width x Height
+        (0, 0), ConditionSwitch(
+            "f_Outfit == 'default'", "assets/fenira/f_outfit_default.png"
+            ), 
+        (355, 354), "assets/fenira/faces/f_bluffing.png",  
+        (355, 430), "assets/fenira/f_blush.png", 
         )
 image fenira confident = LiveComposite(
-        (1564, 1696), # Width x Height
-        (0, 0), "assets/fenira/fe_body.png", # base
-        (704, 138), "assets/fenira/fe_face_confident.png" # head
+        (2045, 3404), # Width x Height
+        (0, 0), ConditionSwitch(
+            "f_Outfit == 'default'", "assets/fenira/f_outfit_default.png"
+            ), 
+        (355, 354), "assets/fenira/faces/f_confident,horny.png"  
         )
 
 image fenira confused = LiveComposite(
-        (1564, 1696), # Width x Height
-        (0, 0), "assets/fenira/fe_body.png", # base
-        (704, 138), "assets/fenira/fe_face_confused.png" # head
+        (2045, 3404), # Width x Height
+        (0, 0), ConditionSwitch(
+            "f_Outfit == 'default'", "assets/fenira/f_outfit_default.png"
+            ), 
+        (355, 354), "assets/fenira/faces/f_confused.png"  
         )
 
 image fenira embarrassed = LiveComposite(
-        (1564, 1696), # Width x Height
-        (0, 0), "assets/fenira/fe_body.png", # base
-        (704, 138), "assets/fenira/fe_face_embarrassed.png", # head
-        (704, 162), "assets/fenira/fe_sweat.png"
+        (2045, 3404), # Width x Height
+        (0, 0), ConditionSwitch(
+            "f_Outfit == 'default'", "assets/fenira/f_outfit_default.png"
+            ), 
+        (355, 354), "assets/fenira/faces/f_embarrassed.png",  
+        (340, 327), "assets/fenira/f_sweat.png", 
+        (355, 430), "assets/fenira/f_blush.png" 
         )
 image fenira flustered = LiveComposite(
-        (1564, 1696), # Width x Height
-        (0, 0), "assets/fenira/fe_body.png", # base
-        (704, 138), "assets/fenira/fe_face_flustered.png", # head
-        (704, 162), "assets/fenira/fe_sweat.png"
+        (2045, 3404), # Width x Height
+        (0, 0), ConditionSwitch(
+            "f_Outfit == 'default'", "assets/fenira/f_outfit_default.png"
+            ), 
+        (355, 354), "assets/fenira/faces/f_flustered.png", 
+        (340, 327), "assets/fenira/f_sweat.png", 
+        (355, 430), "assets/fenira/f_blush.png" 
         )
 
 image fenira happy = LiveComposite(
-        (1564, 1696), # Width x Height
-        (0, 0), "assets/fenira/fe_body.png", # base
-        (704, 138), "assets/fenira/fe_face_happy.png" # head
+        (2045, 3404), # Width x Height
+        (0, 0), ConditionSwitch(
+            "f_Outfit == 'default'", "assets/fenira/f_outfit_default.png"
+            ), 
+        (355, 354), "assets/fenira/faces/f_happy.png"
         )
 
 image fenira horny = LiveComposite(
-        (1564, 1696), # Width x Height
-        (0, 0), "assets/fenira/fe_body.png", # base
-        (704, 138), "assets/fenira/fe_face_horny.png", # head
-        (704, 162), "assets/fenira/fe_sweat.png"
+        (2045, 3404), # Width x Height
+        (0, 0), ConditionSwitch(
+            "f_Outfit == 'default'", "assets/fenira/f_outfit_default.png"
+            ), 
+        (355, 354), "assets/fenira/faces/f_confident,horny.png",
+        (340, 327), "assets/fenira/f_sweat.png",
+        (355, 430), "assets/fenira/f_blush.png"
         )
+
+image fenira horny_open = LiveComposite(
+        (2045, 3404), # Width x Height
+        (0, 0), ConditionSwitch(
+            "f_Outfit == 'default'", "assets/fenira/f_outfit_default.png"
+            ), 
+        (355, 354), "assets/fenira/faces/f_horny_open.png",
+        (340, 327), "assets/fenira/f_sweat.png",
+        (355, 430), "assets/fenira/f_blush.png"
+        )
+
 image fenira inquisitive = LiveComposite(
-        (1564, 1696), # Width x Height
-        (0, 0), "assets/fenira/fe_body.png", # base
-        (704, 138), "assets/fenira/fe_face_inquisitive.png" # head
+        (2045, 3404), # Width x Height
+        (0, 0), ConditionSwitch(
+            "f_Outfit == 'default'", "assets/fenira/f_outfit_default.png"
+            ), 
+        (355, 354), "assets/fenira/faces/f_inquisitive.png",  
         )
 
 image fenira lovestruck = LiveComposite(
-        (1564, 1696), # Width x Height
-        (0, 0), "assets/fenira/fe_body.png", # base
-        (704, 138), "assets/fenira/fe_face_lovestruck.png" # head
+        (2045, 3404), # Width x Height
+        (0, 0), ConditionSwitch(
+            "f_Outfit == 'default'", "assets/fenira/f_outfit_default.png"
+            ), 
+        (355, 354), "assets/fenira/faces/f_lovestruck,sad.png", 
+        (355, 430), "assets/fenira/f_blush.png" 
         )
 
 image fenira sad = LiveComposite(
-        (1564, 1696), # Width x Height
-        (0, 0), "assets/fenira/fe_body.png", # base
-        (704, 138), "assets/fenira/fe_face_sad.png" # head
+        (2045, 3404), # Width x Height
+        (0, 0), ConditionSwitch(
+            "f_Outfit == 'default'", "assets/fenira/f_outfit_default.png"
+            ), 
+        (355, 354), "assets/fenira/faces/f_lovestruck,sad.png" 
         )
 
 image fenira shocked = LiveComposite(
-        (1564, 1696), # Width x Height
-        (0, 0), "assets/fenira/fe_body.png", # base
-        (704, 138), "assets/fenira/fe_face_shocked.png" # head
+        (2045, 3404), # Width x Height
+        (0, 0), ConditionSwitch(
+            "f_Outfit == 'default'", "assets/fenira/f_outfit_default.png"
+            ), 
+        (355, 354), "assets/fenira/faces/f_shocked.png"
         )
 
 image fenira smirk = LiveComposite(
-        (1564, 1696), # Width x Height
-        (0, 0), "assets/fenira/fe_body.png", # base
-        (704, 138), "assets/fenira/fe_face_smirk.png" # head
+        (2045, 3404), # Width x Height
+        (0, 0), ConditionSwitch(
+            "f_Outfit == 'default'", "assets/fenira/f_outfit_default.png"
+            ), 
+        (355, 354), "assets/fenira/faces/f_smirk.png"
         )
 
-image fenira teasing = LiveComposite(
-        (1564, 1696), # Width x Height
-        (0, 0), "assets/fenira/fe_body.png", # base
-        (704, 138), "assets/fenira/fe_face_teasing.png" # head
+image fenira smirk_open = LiveComposite(
+        (2045, 3404), # Width x Height
+        (0, 0), ConditionSwitch(
+            "f_Outfit == 'default'", "assets/fenira/f_outfit_default.png"
+            ), 
+        (355, 354), "assets/fenira/faces/f_smirk_open.png"
         )
 
 image fenira vangry = LiveComposite(
-        (1564, 1696), # Width x Height
-        (0, 0), "assets/fenira/fe_body.png", # base
-        (704, 138), "assets/fenira/fe_face_vangry.png" # head
+        (2045, 3404), # Width x Height
+        (0, 0), ConditionSwitch(
+            "f_Outfit == 'default'", "assets/fenira/f_outfit_default.png"
+            ), 
+        (355, 354), "assets/fenira/faces/f_vangry.png", 
+        (500, 325), "assets/gen_vein.png"
         )
 
 image fenira vhappy = LiveComposite(
-        (1564, 1696), # Width x Height
-        (0, 0), "assets/fenira/fe_body.png", # base
-        (704, 138), "assets/fenira/fe_face_vhappy.png" # head
+        (2045, 3404), # Width x Height
+        (0, 0), ConditionSwitch(
+            "f_Outfit == 'default'", "assets/fenira/f_outfit_default.png"
+            ), 
+        (355, 354), "assets/fenira/faces/f_vhappy.png"
         )
 
 image fenira wink = LiveComposite(
-        (1564, 1696), # Width x Height
-        (0, 0), "assets/fenira/fe_body.png", # base
-        (704, 138), "assets/fenira/fe_face_wink.png" # head
+        (2045, 3404), # Width x Height
+        (0, 0), ConditionSwitch(
+            "f_Outfit == 'default'", "assets/fenira/f_outfit_default.png"
+            ), 
+        (355, 354), "assets/fenira/faces/f_wink.png"
         )
 
 transform fenira_center:
-    xpos 0.5
+    xpos 0.76
     xanchor 0.5
     ypos 0.5
     yanchor 330
-    zoom 1.0
+    zoom 0.5
     xzoom 1.0
 
 transform fenira_center_flipped:
-    xpos 0.5
+    xpos 0.24
     xanchor 0.5
     ypos 0.5
     yanchor 330
-    zoom 1.0
+    zoom 0.5
     xzoom -1.0
 
 transform fenira_right:
-    xpos 0.7
+    xpos 0.9
     xanchor 0.5
     ypos 0.5
     yanchor 330
-    zoom 1.0
+    zoom 0.5
     xzoom 1.0
     
 transform fenira_left:
-    xpos 0.3
+    xpos 0.1
     xanchor 0.5
     ypos 0.5
     yanchor 330
-    zoom 1.0
+    zoom 0.5
     xzoom -1.0
 
 transform fenira_full:
@@ -1176,7 +1232,7 @@ transform fenira_full:
     ypos 0.5
     yanchor 327
     xcenter 0.5
-    zoom 0.4
+    zoom 0.25
 
 # Dravenia
 
