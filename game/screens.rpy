@@ -638,79 +638,86 @@ screen aff_screen:
     #Diff between chars: 51y
     #Diff between char bars: 42y
     
+    #Aligns:
+    
+    #Diff between chars: 0.065
+    #Diff between char bars: 0.054
+    
     add "assets/menus/phonebg.png" xalign 0.5 yalign 0.5
     
     if gamedebug:
-        bar pos (393,76) value FieldValue(store, "ku_like", affection_max) range affection_max style "like_bar"
-        bar pos (393,118) value FieldValue(store, "ku_love", affection_max) range affection_max style "love_bar"
+        bar xalign 0.51 yalign 0.118 value FieldValue(store, "ku_like", affection_max) range affection_max style "like_bar"
+        bar xalign 0.51 yalign 0.172 value FieldValue(store, "ku_love", affection_max) range affection_max style "love_bar"
         
-        bar pos (393,169) value FieldValue(store, "v_like", affection_max) range affection_max style "like_bar"
-        bar pos (393,211) value FieldValue(store, "v_love", affection_max) range affection_max style "love_bar"
+        bar xalign 0.51 yalign 0.237 value FieldValue(store, "v_like", affection_max) range affection_max style "like_bar"
+        bar xalign 0.51 yalign 0.291 value FieldValue(store, "v_love", affection_max) range affection_max style "love_bar"
         
-        bar pos (393,262) value FieldValue(store, "n_like", affection_max) range affection_max style "like_bar"
-        bar pos (393,304) value FieldValue(store, "n_love", affection_max) range affection_max style "love_bar"
+        bar xalign 0.51 yalign 0.356 value FieldValue(store, "n_like", affection_max) range affection_max style "like_bar"
+        bar xalign 0.51 yalign 0.410 value FieldValue(store, "n_love", affection_max) range affection_max style "love_bar"
         
-        bar pos (393,355) value FieldValue(store, "ka_like", affection_max) range affection_max style "like_bar"
-        bar pos (393,397) value FieldValue(store, "ka_love", affection_max) range affection_max style "love_bar"
+        bar xalign 0.51 yalign 0.475 value FieldValue(store, "ka_like", affection_max) range affection_max style "like_bar"
+        bar xalign 0.51 yalign 0.529 value FieldValue(store, "ka_love", affection_max) range affection_max style "love_bar"
         
-        bar pos (393,448) value FieldValue(store, "f_like", affection_max) range affection_max style "like_bar"
-        bar pos (393,490) value FieldValue(store, "f_love", affection_max) range affection_max style "love_bar"
+        bar xalign 0.51 yalign 0.594 value FieldValue(store, "f_like", affection_max) range affection_max style "like_bar"
+        bar xalign 0.51 yalign 0.648 value FieldValue(store, "f_love", affection_max) range affection_max style "love_bar"
         
-        bar pos (393,541) value FieldValue(store, "d_like", affection_max) range affection_max style "like_bar"
-        bar pos (393,583) value FieldValue(store, "d_love", affection_max) range affection_max style "love_bar"
+        bar xalign 0.51 yalign 0.713 value FieldValue(store, "d_like", affection_max) range affection_max style "like_bar"
+        bar xalign 0.51 yalign 0.767 value FieldValue(store, "d_love", affection_max) range affection_max style "love_bar"
         
-        bar pos (393,634) value FieldValue(store, "a_like", affection_max) range affection_max style "like_bar"
-        bar pos (393,676) value FieldValue(store, "a_love", affection_max) range affection_max style "love_bar"
+        bar xalign 0.51 yalign 0.832 value FieldValue(store, "a_like", affection_max) range affection_max style "like_bar"
+        bar xalign 0.51 yalign 0.885 value FieldValue(store, "a_love", affection_max) range affection_max style "love_bar"
 
     else:
-        bar pos (393,121) value ku_like range affection_max style "like_bar"
-        bar pos (672,79) value ku_love range affection_max style "love_bar"
+        bar xalign 0.51 yalign 0.118 value ku_like range affection_max style "like_bar"
+        bar xalign 0.51 yalign 0.172 value ku_love range affection_max style "love_bar"
         
-        bar pos (393,214) value v_like range affection_max style "like_bar"
-        bar pos (672,172) value v_love range affection_max style "love_bar"
+        bar xalign 0.51 yalign 0.237 value v_like range affection_max style "like_bar"
+        bar xalign 0.51 yalign 0.291 value v_love range affection_max style "love_bar"
         
-        bar pos (393,307) value n_like range affection_max style "like_bar"
-        bar pos (672,265) value n_love range affection_max style "love_bar"
+        bar xalign 0.51 yalign 0.356 value n_like range affection_max style "like_bar"
+        bar xalign 0.51 yalign 0.410 value n_love range affection_max style "love_bar"
         
-        bar pos (393,400) value ka_like range affection_max style "like_bar"
-        bar pos (672,358) value ka_love range affection_max style "love_bar"
+        bar xalign 0.51 yalign 0.475 value ka_like range affection_max style "like_bar"
+        bar xalign 0.51 yalign 0.529 value ka_love range affection_max style "love_bar"
         
-        bar pos (393,493) value f_like range affection_max style "like_bar"
-        bar pos (672,451) value f_love range affection_max style "love_bar"
+        bar xalign 0.51 yalign 0.594 value f_like range affection_max style "like_bar"
+        bar xalign 0.51 yalign 0.648 value f_love range affection_max style "love_bar"
         
-        bar pos (393,586) value d_like range affection_max style "like_bar"
-        bar pos (672,544) value d_love range affection_max style "love_bar"
+        bar xalign 0.51 yalign 0.713 value d_like range affection_max style "like_bar"
+        bar xalign 0.51 yalign 0.767 value d_love range affection_max style "love_bar"
         
-        bar pos (393,679) value a_like range affection_max style "like_bar"
-        bar pos (672,637) value a_love range affection_max style "love_bar"
+        bar xalign 0.51 yalign 0.832 value a_like range affection_max style "like_bar"
+        bar xalign 0.51 yalign 0.885 value a_love range affection_max style "love_bar"
     
     add "assets/menus/relationshipscreen.png" xalign 0.5 yalign 0.5
     add "assets/menus/relationshipscreenpips.png" xalign 0.5 yalign 0.5
     
+    # 0.131
+    
     #94y distance
     
     if ku_dating:
-        add "assets/menus/heartwallpaper.png" pos (272, 60)
+        add "assets/menus/heartwallpaper.png" xalign 0.50 yalign 0.108
         
     if v_dating:
-        add "assets/menus/heartwallpaper.png" pos (272, 154)
+        add "assets/menus/heartwallpaper.png" xalign 0.50 yalign 0.239
     
     if n_dating:
-        add "assets/menus/heartwallpaper.png" pos (272, 247)
+        add "assets/menus/heartwallpaper.png" xalign 0.50 yalign 0.37
     
     if ka_dating:
-        add "assets/menus/heartwallpaper.png" pos (272, 340)
+        add "assets/menus/heartwallpaper.png" xalign 0.50 yalign 0.501
     
     if f_dating:
-        add "assets/menus/heartwallpaper.png" pos (272, 433)
+        add "assets/menus/heartwallpaper.png" xalign 0.50 yalign 0.632 
     
     if d_dating:
-        add "assets/menus/heartwallpaper.png" pos (272, 526)
+        add "assets/menus/heartwallpaper.png" xalign 0.50 yalign 0.763
     
     if a_dating:
-        add "assets/menus/heartwallpaper.png" pos (272, 619)
-    
-    add "assets/menus/icons.png" pos (282, 73)
+        add "assets/menus/heartwallpaper.png" xalign 0.50 yalign 0.894
+
+    add "assets/menus/icons.png" xalign 0.34 yalign 0.5
     
     vbox xalign 1.0 yalign 0.0:
         imagebutton:
@@ -719,12 +726,12 @@ screen aff_screen:
             activate_sound "assets/sound/sfx/blip.wav"
             action Hide("aff_screen", wipeup)
 
-    vbox xalign 0.765 yalign 0.5:
-        imagebutton:
-            idle "assets/menus/button_next.png"
-            hover "assets/menus/button_nexth.png"
-            activate_sound "assets/sound/sfx/blip.wav"
-            action [Hide("aff_screen"), Show("stat_screen")]
+#    vbox xalign 0.765 yalign 0.5:
+#        imagebutton:
+#            idle "assets/menus/button_next.png"
+#            hover "assets/menus/button_nexth.png"
+#            activate_sound "assets/sound/sfx/blip.wav"
+#            action [Hide("aff_screen"), Show("stat_screen")]
             
 screen stat_screen:
     

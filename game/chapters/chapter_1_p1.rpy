@@ -39,6 +39,7 @@ label start:
     scene debugscreen
     
     "TESTING"
+
     
     show fenira neutral at fenira_center
     
