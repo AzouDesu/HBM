@@ -44,67 +44,8 @@ label start:
         
         "TESTING"
         
-        show nagi neutral at nagi_center
         
-        ""
-        
-        show nagi angry at nagi_center_flipped
-        
-        ""
-        
-        show nagi bored at nagi_left
-        
-        ""
-        
-        show nagi confident at nagi_right
-        
-        ""
-        
-        show nagi confused at nagi_full
-        
-        ""
-        
-        show nagi embarrassed at nagi_center
-        
-        ""
-        
-        show nagi flustered at nagi_center
-        
-        ""
-        
-        show nagi happy at nagi_center
-        
-        ""
-        
-        show nagi horny at nagi_center
-        
-        ""
-        
-        show nagi lovestruck at nagi_center
-        
-        ""
-        
-        show nagi sad at nagi_center
-        
-        ""
-        
-        show nagi surprised at nagi_center
-        
-        ""
-        
-        show nagi teasing at nagi_center
-        
-        ""
-        
-        show nagi wink at nagi_center
-        
-        ""
-        
-        show nagi closed at nagi_center
-        
-        ""
-        
-        jump ch1_scene06
+        jump ch2_scene01
         
         "END TESTING"
         
@@ -3176,17 +3117,19 @@ label ch1_scene06:
         
         f "Damnit, Nagi, no more games. I'll apologize, okay?"
         
+        show nagi happy
+        
         n "Good girl."
         
         f "Don't you 'good girl' me."
+        
+        show fenira neutral
         
         f "I have no idea how I'm going to survive living with you {i}and{/i} that kitsune."
     
         show nagi confident    
     
         n "It'll be fine. Just keep your eyes on the prize."
-    
-        show fenira neutral
     
         show nagi teasing
     

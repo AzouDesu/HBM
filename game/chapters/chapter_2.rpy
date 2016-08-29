@@ -121,7 +121,7 @@
         
         pc "..."
         
-        show dravenia surprised
+        show dravenia shocked
         
         play sound "assets/sound/sfx/vinylscratch.wav"
         
@@ -1287,7 +1287,7 @@
         
         pc "Yesterday."
         
-        show dravenia surprised
+        show dravenia shocked
         
         d "Yesterday? And you went to the police, yes?"
         
@@ -1823,7 +1823,7 @@
 
         a "I was not lying. I was joking."
         
-        show dravenia surprised
+        show dravenia shocked
 
         show viscella neutral
         

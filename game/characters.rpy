@@ -1242,112 +1242,146 @@ transform fenira_left:
 # Dravenia
 
 image dravenia neutral = LiveComposite(
-        (932, 1682), # Width x Height
-        (0, 0), "assets/dravenia/dr_body.png", # base
-        (372, 98), "assets/dravenia/dr_face_neutral.png" # head
+        (1870, 3362), # Width x Height
+        (0, 0), ConditionSwitch(
+            "d_Outfit == 'default'", "assets/dravenia/d_outfit_default.png"
+            ),
+        (775, 245), "assets/dravenia/faces/d_horny,neutral.png"
         )
 
 image dravenia angry = LiveComposite(
-        (932, 1682), # Width x Height
-        (0, 0), "assets/dravenia/dr_body.png", # base
-        (372, 98), "assets/dravenia/dr_face_angry.png" # head
+        (1870, 3362), # Width x Height
+        (0, 0), ConditionSwitch(
+            "d_Outfit == 'default'", "assets/dravenia/d_outfit_default.png"
+            ),
+        (775, 245), "assets/dravenia/faces/d_angry.png"
         )
-
 image dravenia vangry = LiveComposite(
-        (932, 1682), # Width x Height
-        (0, 0), "assets/dravenia/dr_body.png", # base
-        (372, 98), "assets/dravenia/dr_face_vangry.png" # head
+        (1870, 3362), # Width x Height
+        (0, 0), ConditionSwitch(
+            "d_Outfit == 'default'", "assets/dravenia/d_outfit_default.png"
+            ),
+        (775, 245), "assets/dravenia/faces/d_vangry.png"
         )
-
 image dravenia embarrassed = LiveComposite(
-        (932, 1682), # Width x Height
-        (0, 0), "assets/dravenia/dr_body.png", # base
-        (372, 98), "assets/dravenia/dr_face_embarrassed.png" # head
+        (1870, 3362), # Width x Height
+        (0, 0), ConditionSwitch(
+            "d_Outfit == 'default'", "assets/dravenia/d_outfit_default.png"
+            ),
+        (775, 245), "assets/dravenia/faces/d_embarrassed.png",
+        (760, 370), "assets/dravenia/d_blush.png",
         )
 
 image dravenia flustered = LiveComposite(
-        (932, 1682), # Width x Height
-        (0, 0), "assets/dravenia/dr_body.png", # base
-        (372, 98), "assets/dravenia/dr_face_flustered.png" # head
+        (1870, 3362), # Width x Height
+        (0, 0), ConditionSwitch(
+            "d_Outfit == 'default'", "assets/dravenia/d_outfit_default.png"
+            ),
+        (722, 185), "assets/dravenia/d_megablush.png",
+        (775, 245), "assets/dravenia/faces/d_flustered.png"
         )
 
 image dravenia happy = LiveComposite(
-        (932, 1682), # Width x Height
-        (0, 0), "assets/dravenia/dr_body.png", # base
-        (372, 98), "assets/dravenia/dr_face_happy.png" # head
+        (1870, 3362), # Width x Height
+        (0, 0), ConditionSwitch(
+            "d_Outfit == 'default'", "assets/dravenia/d_outfit_default.png"
+            ),
+        (775, 245), "assets/dravenia/faces/d_happy.png"
         )
 
 image dravenia horny = LiveComposite(
-        (932, 1682), # Width x Height
-        (0, 0), "assets/dravenia/dr_body.png", # base
-        (372, 98), "assets/dravenia/dr_face_horny.png" # head
+        (1870, 3362), # Width x Height
+        (0, 0), ConditionSwitch(
+            "d_Outfit == 'default'", "assets/dravenia/d_outfit_default.png"
+            ),
+        (775, 245), "assets/dravenia/faces/d_horny,neutral.png",
+        (760, 370), "assets/dravenia/d_blush.png",
+        (859, 457), "assets/dravenia/d_nosebleed.png"
         )
 
 image dravenia lovestruck = LiveComposite(
-        (932, 1682), # Width x Height
-        (0, 0), "assets/dravenia/dr_body.png", # base
-        (372, 98), "assets/dravenia/dr_face_lovestruck.png" # head
+        (1870, 3362), # Width x Height
+        (0, 0), ConditionSwitch(
+            "d_Outfit == 'default'", "assets/dravenia/d_outfit_default.png"
+            ),
+        (775, 245), "assets/dravenia/faces/d_lovestruck,sad.png",
+        (760, 370), "assets/dravenia/d_blush.png"
         )
 
 image dravenia sad = LiveComposite(
-        (932, 1682), # Width x Height
-        (0, 0), "assets/dravenia/dr_body.png", # base
-        (372, 98), "assets/dravenia/dr_face_sad.png" # head
+        (1870, 3362), # Width x Height
+        (0, 0), ConditionSwitch(
+            "d_Outfit == 'default'", "assets/dravenia/d_outfit_default.png"
+            ),
+        (775, 245), "assets/dravenia/faces/d_lovestruck,sad.png"
         )
 
 image dravenia stern = LiveComposite(
-        (932, 1682), # Width x Height
-        (0, 0), "assets/dravenia/dr_body.png", # base
-        (372, 98), "assets/dravenia/dr_face_stern.png" # head
+        (1870, 3362), # Width x Height
+        (0, 0), ConditionSwitch(
+            "d_Outfit == 'default'", "assets/dravenia/d_outfit_default.png"
+            ),
+        (775, 245), "assets/dravenia/faces/d_stern.png"
         )
 
-image dravenia surprised = LiveComposite(
-        (932, 1682), # Width x Height
-        (0, 0), "assets/dravenia/dr_body.png", # base
-        (372, 98), "assets/dravenia/dr_face_surprised.png" # head
+image dravenia shocked = LiveComposite(
+        (1870, 3362), # Width x Height
+        (0, 0), ConditionSwitch(
+            "d_Outfit == 'default'", "assets/dravenia/d_outfit_default.png"
+            ),
+        (775, 245), "assets/dravenia/faces/d_shocked.png"
         )
 
-image dravenia vflustered = LiveComposite(
-        (932, 1682), # Width x Height
-        (0, 0), "assets/dravenia/dr_body.png", # base
-        (372, 98), "assets/dravenia/dr_face_vflustered.png" # head
-        )
 
 image dravenia vhorny = LiveComposite(
-        (932, 1682), # Width x Height
-        (0, 0), "assets/dravenia/dr_body.png", # base
-        (372, 98), "assets/dravenia/dr_face_vhorny.png" # head
+        (1870, 3362), # Width x Height
+        (0, 0), ConditionSwitch(
+            "d_Outfit == 'default'", "assets/dravenia/d_outfit_default.png"
+            ),
+        (722, 185), "assets/dravenia/d_megablush.png",
+        (775, 245), "assets/dravenia/faces/d_vhorny.png",
+        (859, 457), "assets/dravenia/d_nosebleed.png"
         )
 
 image dravenia confused = LiveComposite(
-        (932, 1682), # Width x Height
-        (0, 0), "assets/dravenia/dr_body.png", # base
-        (372, 98), "assets/dravenia/dr_face_confused.png" # head
+        (1870, 3362), # Width x Height
+        (0, 0), ConditionSwitch(
+            "d_Outfit == 'default'", "assets/dravenia/d_outfit_default.png"
+            ),
+        (775, 245), "assets/dravenia/faces/d_confused.png"
         )
 
 image dravenia smug = LiveComposite(
-        (932, 1682), # Width x Height
-        (0, 0), "assets/dravenia/dr_body.png", # base
-        (372, 98), "assets/dravenia/dr_face_smug.png" # head
+        (1870, 3362), # Width x Height
+        (0, 0), ConditionSwitch(
+            "d_Outfit == 'default'", "assets/dravenia/d_outfit_default.png"
+            ),
+        (775, 245), "assets/dravenia/faces/d_smug.png"
         )
 
 image dravenia confident = LiveComposite(
-        (932, 1682), # Width x Height
-        (0, 0), "assets/dravenia/dr_body.png", # base
-        (372, 98), "assets/dravenia/dr_face_confident.png" # head
+        (1870, 3362), # Width x Height
+        (0, 0), ConditionSwitch(
+            "d_Outfit == 'default'", "assets/dravenia/d_outfit_default.png"
+            ),
+        (775, 245), "assets/dravenia/faces/d_confident.png"
         )
 
 image dravenia closed = LiveComposite(
-        (932, 1682), # Width x Height
-        (0, 0), "assets/dravenia/dr_body.png", # base
-        (372, 98), "assets/dravenia/dr_face_closed.png" # head
+        (1870, 3362), # Width x Height
+        (0, 0), ConditionSwitch(
+            "d_Outfit == 'default'", "assets/dravenia/d_outfit_default.png"
+            ),
+        (775, 245), "assets/dravenia/faces/d_closed.png"
         )
-
-image dravenia flamethrower = LiveComposite(
-        (932, 1682), # Width x Height
-        (0, 0), "assets/dravenia/dr_body.png", # base
-        (372, 98), "assets/dravenia/dr_face_vflustered.png", # head
-        (186, 174), "assets/dravenia/dr_flamethrower.png"
+image dravenia vflustered = LiveComposite(
+        (1870, 3362), # Width x Height
+        (0, 0), ConditionSwitch(
+            "d_Outfit == 'default'", "assets/dravenia/d_outfit_default.png"
+            ),
+        (722, 185), "assets/dravenia/d_megablush.png",
+        (775, 245), "assets/dravenia/faces/d_vflustered.png",
+        (388, 378), "assets/dravenia/d_flamethrower.png"
         )
 
 transform dravenia_center:
@@ -1355,46 +1389,54 @@ transform dravenia_center:
     xanchor 0.5
     ypos 0.5
     yanchor 381
-    zoom 1.0
+    zoom 0.5
     xzoom 1.0
-
+    
 transform dravenia_center_flipped:
     xpos 0.5
     xanchor 0.5
     ypos 0.5
     yanchor 381
-    zoom 1.0
+    zoom 0.5
     xzoom -1.0
 
 transform dravenia_right:
-    xpos 0.7
+    xpos 0.67
     xanchor 0.5
     ypos 0.5
     yanchor 381
-    zoom 1.0
+    zoom 0.5
     xzoom 1.0
     
 transform dravenia_left:
-    xpos 0.3
+    xpos 0.33
     xanchor 0.5
     ypos 0.5
     yanchor 381
-    zoom 1.0
+    zoom 0.5
     xzoom -1.0
     
 transform dravenia_farleft:
-    xpos 0.2
+    xpos 0.16
     xanchor 0.5
     ypos 0.5
     yanchor 381
-    zoom 1.0
+    zoom 0.5
     xzoom -1.0
+    
+transform dravenia_farright:
+    xpos 0.84
+    xanchor 0.5
+    ypos 0.5
+    yanchor 381
+    zoom 0.5
+    xzoom 1.0
     
 transform dravenia_full:
     xanchor 0.5
     ypos 0.5
     yanchor 381
-    xcenter 0.52
-    zoom 0.4
+    xcenter 0.5
+    zoom 0.3
     xzoom 1.0
 
