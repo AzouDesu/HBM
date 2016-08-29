@@ -3025,7 +3025,7 @@ label ch1_scene06:
     
     n "After a brief altercation, the suspect informs the slime that, and I quote..."
 
-    show nagi angry
+    show nagi neutral
 
     n "'If Nagi finds out you shattered her collection of antique wine bottles, she'll...'"
     

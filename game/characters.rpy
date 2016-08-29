@@ -502,26 +502,26 @@ image viscella vhappy = LiveComposite(
 
 image viscella puddle_neutral = LiveComposite(
         (1626, 623), # Width x Height
-        (97, 232), "assets/viscella/v_puddle.png", # head 
-        (1130, 320), "assets/viscella/v_puddle_neutral.png" # head 
+        (97, 232), "assets/viscella/puddle/v_puddle.png", # head 
+        (1130, 320), "assets/viscella/puddle/v_puddle_neutral.png" # head 
         )
 
 image viscella puddle_happy = LiveComposite(
         (1626, 623), # Width x Height
-        (97, 232), "assets/viscella/v_puddle.png", # head 
-        (1130, 320), "assets/viscella/v_puddle_happy.png" # head 
+        (97, 232), "assets/viscella/puddle/v_puddle.png", # head 
+        (1130, 320), "assets/viscella/puddle/v_puddle_happy.png" # head 
         )
 
 image viscella puddle_sad = LiveComposite(
         (1626, 623), # Width x Height
-        (97, 232), "assets/viscella/v_puddle.png", # head 
-        (1130, 320), "assets/viscella/v_puddle_sad.png" # head 
+        (97, 232), "assets/viscella/puddle/v_puddle.png", # head 
+        (1130, 320), "assets/viscella/puddle/v_puddle_sad.png" # head 
         )
 
 image viscella puddle_scared = LiveComposite(
         (1626, 623), # Width x Height
-        (97, 232), "assets/viscella/v_puddle.png", # head 
-        (1130, 320), "assets/viscella/v_puddle_scared.png" # head 
+        (97, 232), "assets/viscella/puddle/v_puddle.png", # head 
+        (1130, 320), "assets/viscella/puddle/v_puddle_scared.png" # head 
         )
 
 transform viscella_center:
