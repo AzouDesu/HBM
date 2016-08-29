@@ -40,87 +40,71 @@ label start:
     
         #scene debugscreen
         
+        scene debugscreen
+        
         "TESTING"
         
-        show kumiru neutral at kumiru_center
+        show nagi neutral at nagi_center
         
         ""
         
-        show kumiru angry at kumiru_center_flipped
+        show nagi angry at nagi_center_flipped
         
         ""
         
-        show kumiru angry_open at kumiru_left
+        show nagi bored at nagi_left
         
         ""
         
-        show kumiru confident at kumiru_right
+        show nagi confident at nagi_right
         
         ""
         
-        show kumiru confused at kumiru_legs
+        show nagi confused at nagi_full
         
         ""
         
-        show kumiru embarrassed
+        show nagi embarrassed at nagi_center
         
         ""
         
-        show kumiru flustered
+        show nagi flustered at nagi_center
         
         ""
         
-        show kumiru happy
+        show nagi happy at nagi_center
         
         ""
         
-        show kumiru horny
+        show nagi horny at nagi_center
         
         ""
         
-        show kumiru lovestruck
+        show nagi lovestruck at nagi_center
         
         ""
         
-        show kumiru neutral
+        show nagi sad at nagi_center
         
         ""
         
-        show kumiru angry
+        show nagi surprised at nagi_center
         
         ""
         
-        show kumiru sad
+        show nagi teasing at nagi_center
         
         ""
         
-        show kumiru scream
+        show nagi wink at nagi_center
         
         ""
         
-        show kumiru shocked
+        show nagi closed at nagi_center
         
         ""
         
-        show kumiru surprised
-        
-        ""
-        
-        show kumiru unamused
-        
-        ""
-        
-        show kumiru vangry
-        
-        ""
-        
-        show kumiru vhorny
-        
-        ""
-
-        
-        
-        #jump ch1_scene07
+        jump ch1_scene06
         
         "END TESTING"
         
@@ -1729,14 +1713,14 @@ label ch1_scene04:
     
     show kamao bored at kamao_right with move
     
-    show kumiru angry at kumiru_left with dissolve
+    show kumiru angry at kumiru_left behind kamao with dissolve
     
     show viscella excited:
         xpos -0.5
         xanchor 0.5
         ypos 0.6
         yanchor 260
-        zoom 1.0
+        zoom 0.5
         xzoom -1.0
     
     
@@ -1748,6 +1732,7 @@ label ch1_scene04:
         xanchor 0.5
         ypos 0.6
         yanchor 260
+        zoom 0.5
     
         
     play sound "assets/sound/sfx/body_hit.wav"
@@ -1761,6 +1746,7 @@ label ch1_scene04:
         yanchor 327
         zoom 1.0
         xzoom -1.0
+        zoom 0.5
     
     show kamao shocked
     
@@ -1932,26 +1918,10 @@ label ch1_scene04:
     
     ka "It's a long story that involves a rubber duck and a vacuum cleaner. That's all I'm gonna say."
     
-    hide kumiru
-    
-    hide viscella
-    
     "A kitsune? Apart from the ears and tails, she doesn't seem all that unusual. Certainly less unusual than the other two."
     
     "Not that I remember enough to know what is and is not unusual in this place..."
-    
-    show kamao at kamao_right with dissolve
-        
-    show kumiru neutral at kumiru_left with dissolve
 
-    show viscella neutral with dissolve:
-        xpos 0.12
-        xanchor 0.5
-        ypos 0.6
-        yanchor 260
-        xzoom -1.0
-    
-        
     ka "Now, before you were so rudely interrupted by four- ten eyes here, you were telling me your name."
     
     show kumiru confused
@@ -2387,7 +2357,7 @@ label ch1_scene05:
     
     ka "Why do you have boobs?"
     
-    play music "assets/sound/bgm/scene_comi2.mp3"
+    play music "assets/sound/bgm/scene_comi2.ogg"
     
     
     show fenira confused
@@ -2874,7 +2844,7 @@ label ch1_scene06:
             
             n_un "Oh, I don't think it would be {i}that{/i} bad."
     
-    play music "assets/sound/bgm/scene_comi2.mp3"
+    play music "assets/sound/bgm/scene_comi2.ogg"
     
     f "Oh crap."
     
@@ -2886,25 +2856,31 @@ label ch1_scene06:
     
     f "Nuh-uh. No way. You can take your dumb games and shove 'em up your-"
     
-    show nagi teasing at nagi_left behind fenira with dissolve
+    show nagi confident at nagi_left behind fenira with dissolve
     
-    n_un "Shove them up my...?"
+    n_un "Shove them up my what?"
     
     show fenira shocked at fenira_right with MoveTransition(0.2)
     
     f "Gah!"
     
-    show nagi confident
+    show nagi teasing
     
     n_un "The game's called 'pin the crime on the donkey'."
     
+    show nagi confused
+    
     n_un "Er, phoenix. Whatever."
+    
+    show nagi confident
     
     n_un "I came up with it myself."
     
     show fenira angry
     
     f "Look, Nagi, we didn't break your dumb bottles!"
+    
+    show nagi neutral
     
     n "I'm not talking about the bottles."
     

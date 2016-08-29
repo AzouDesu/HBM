@@ -594,150 +594,171 @@ transform viscella_puddle_right:
 # Nagi
 
 image nagi neutral = LiveComposite(
-        (1202, 1556), # Width x Height
-        (0, 0), "assets/nagi/na_body.png", # base
-        (500, 126), "assets/nagi/na_face_neutral.png" # head
+        (2410, 3118), # Width x Height
+        (0, 0), ConditionSwitch(
+            "n_Outfit == 'default'", "assets/nagi/n_outfit_default.png"
+            ),
+        (1007, 262), "assets/nagi/faces/n_neutral.png"
         )
 
 image nagi angry = LiveComposite(
-        (1202, 1556), # Width x Height
-        (0, 0), "assets/nagi/na_body.png", # base
-        (500, 126), "assets/nagi/na_face_angry.png" # head
+        (2410, 3118), # Width x Height
+        (0, 0), ConditionSwitch(
+            "n_Outfit == 'default'", "assets/nagi/n_outfit_default.png"
+            ),
+        (1007, 262), "assets/nagi/faces/n_angry.png",
+        (1140, 250), "assets/gen_vein.png"
         )
 
+
 image nagi bored = LiveComposite(
-        (1202, 1556), # Width x Height
-        (0, 0), "assets/nagi/na_body.png", # base
-        (500, 126), "assets/nagi/na_face_bored.png" # head
+        (2410, 3118), # Width x Height
+        (0, 0), ConditionSwitch(
+            "n_Outfit == 'default'", "assets/nagi/n_outfit_default.png"
+            ),
+        (1007, 262), "assets/nagi/faces/n_bored,lovestruck.png"
         )
 
 image nagi confident = LiveComposite(
-        (1202, 1556), # Width x Height
-        (0, 0), "assets/nagi/na_body.png", # base
-        (500, 126), "assets/nagi/na_face_confident.png" # head
+        (2410, 3118), # Width x Height
+        (0, 0), ConditionSwitch(
+            "n_Outfit == 'default'", "assets/nagi/n_outfit_default.png"
+            ),
+        (1007, 262), "assets/nagi/faces/n_confident,horny.png"
         )
 
 image nagi confused = LiveComposite(
-        (1202, 1556), # Width x Height
-        (0, 0), "assets/nagi/na_body.png", # base
-        (500, 126), "assets/nagi/na_face_confused.png" # head
+        (2410, 3118), # Width x Height
+        (0, 0), ConditionSwitch(
+            "n_Outfit == 'default'", "assets/nagi/n_outfit_default.png"
+            ),
+        (1007, 262), "assets/nagi/faces/n_confused.png"
         )
 
 image nagi embarrassed = LiveComposite(
-        (1202, 1556), # Width x Height
-        (0, 0), "assets/nagi/na_body.png", # base
-        (500, 126), "assets/nagi/na_face_embarrassed.png" # head
+        (2410, 3118), # Width x Height
+        (0, 0), ConditionSwitch(
+            "n_Outfit == 'default'", "assets/nagi/n_outfit_default.png"
+            ),
+        (1007, 262), "assets/nagi/faces/n_embarrassed,sad.png",
+        (986, 325), "assets/nagi/n_blush.png"
         )
 
 image nagi flustered = LiveComposite(
-        (1202, 1556), # Width x Height
-        (0, 0), "assets/nagi/na_body.png", # base
-        (500, 126), "assets/nagi/na_face_flustered.png" # head
+        (2410, 3118), # Width x Height
+        (0, 0), ConditionSwitch(
+            "n_Outfit == 'default'", "assets/nagi/n_outfit_default.png"
+            ),
+        (1007, 262), "assets/nagi/faces/n_flustered.png",
+        (986, 325), "assets/nagi/n_blush.png"
         )
 
 
 image nagi happy = LiveComposite(
-        (1202, 1556), # Width x Height
-        (0, 0), "assets/nagi/na_body.png", # base
-        (500, 126), "assets/nagi/na_face_happy.png" # head
+        (2410, 3118), # Width x Height
+        (0, 0), ConditionSwitch(
+            "n_Outfit == 'default'", "assets/nagi/n_outfit_default.png"
+            ),
+        (1007, 262), "assets/nagi/faces/n_happy.png"
         )
 
 image nagi horny = LiveComposite(
-        (1202, 1556), # Width x Height
-        (0, 0), "assets/nagi/na_body.png", # base
-        (500, 126), "assets/nagi/na_face_horny.png" # head
+        (2410, 3118), # Width x Height
+        (0, 0), ConditionSwitch(
+            "n_Outfit == 'default'", "assets/nagi/n_outfit_default.png"
+            ),
+        (1007, 262), "assets/nagi/faces/n_confident,horny.png",
+        (986, 325), "assets/nagi/n_blush.png"
         )
 
 image nagi lovestruck = LiveComposite(
-        (1202, 1556), # Width x Height
-        (0, 0), "assets/nagi/na_body.png", # base
-        (500, 126), "assets/nagi/na_face_lovestruck.png" # head
+        (2410, 3118), # Width x Height
+        (0, 0), ConditionSwitch(
+            "n_Outfit == 'default'", "assets/nagi/n_outfit_default.png"
+            ),
+        (1007, 262), "assets/nagi/faces/n_bored,lovestruck.png",
+        (986, 325), "assets/nagi/n_blush.png"
         )
 
 image nagi sad = LiveComposite(
-        (1202, 1556), # Width x Height
-        (0, 0), "assets/nagi/na_body.png", # base
-        (500, 126), "assets/nagi/na_face_sad.png" # head
+        (2410, 3118), # Width x Height
+        (0, 0), ConditionSwitch(
+            "n_Outfit == 'default'", "assets/nagi/n_outfit_default.png"
+            ),
+        (1007, 262), "assets/nagi/faces/n_embarrassed,sad.png"
         )
 
 image nagi surprised = LiveComposite(
-        (1202, 1556), # Width x Height
-        (0, 0), "assets/nagi/na_body.png", # base
-        (500, 126), "assets/nagi/na_face_surprised.png" # head
+        (2410, 3118), # Width x Height
+        (0, 0), ConditionSwitch(
+            "n_Outfit == 'default'", "assets/nagi/n_outfit_default.png"
+            ),
+        (1007, 262), "assets/nagi/faces/n_surprised.png"
         )
 
 image nagi teasing = LiveComposite(
-        (1202, 1556), # Width x Height
-        (0, 0), "assets/nagi/na_body.png", # base
-        (500, 126), "assets/nagi/na_face_teasing.png" # head
+        (2410, 3118), # Width x Height
+        (0, 0), ConditionSwitch(
+            "n_Outfit == 'default'", "assets/nagi/n_outfit_default.png"
+            ),
+        (1007, 262), "assets/nagi/faces/n_teasing.png"
         )
 
 image nagi wink = LiveComposite(
-        (1202, 1556), # Width x Height
-        (0, 0), "assets/nagi/na_body.png", # base
-        (500, 126), "assets/nagi/na_face_wink.png" # head
+        (2410, 3118), # Width x Height
+        (0, 0), ConditionSwitch(
+            "n_Outfit == 'default'", "assets/nagi/n_outfit_default.png"
+            ),
+        (1007, 262), "assets/nagi/faces/n_wink.png"
         )
 
 image nagi closed = LiveComposite(
-        (1202, 1556), # Width x Height
-        (0, 0), "assets/nagi/na_body.png", # base
-        (500, 126), "assets/nagi/na_face_closed.png" # head
+        (2410, 3118), # Width x Height
+        (0, 0), ConditionSwitch(
+            "n_Outfit == 'default'", "assets/nagi/n_outfit_default.png"
+            ),
+        (1007, 262), "assets/nagi/faces/n_closed.png"
         )
-
-image nagi tired = LiveComposite(
-        (1202, 1556), # Width x Height
-        (0, 0), "assets/nagi/na_body.png", # base
-        (500, 126), "assets/nagi/na_face_bored.png", # head
-        (504, 160), "assets/nagi/na_face_eyebags.png" #eye bags
-        )
-
-image nagi tired_closed = LiveComposite(
-        (1202, 1556), # Width x Height
-        (0, 0), "assets/nagi/na_body.png", # base
-        (500, 126), "assets/nagi/na_face_closed.png", # head
-        (504, 160), "assets/nagi/na_face_eyebags.png" #eye bags
-        )
-
 
 
 transform nagi_center:
     xpos 0.5
-    xanchor 525
+    xanchor 0.45
     ypos 0.55
     yanchor 327
-    zoom 1.0
+    zoom 0.5
     xzoom 1.0
 
 transform nagi_center_flipped:
-    xpos 0.55
-    xanchor 677
+    xpos 0.5
+    xanchor 0.55
     ypos 0.55
     yanchor 327
-    zoom 1.0
+    zoom 0.5
     xzoom -1.0
 
 transform nagi_right:
-    xpos 0.7
-    xanchor 525
+    xpos 0.65
+    xanchor 0.45
     ypos 0.55
     yanchor 327
-    zoom 1.0
+    zoom 0.5
     xzoom 1.0
     
 transform nagi_left:
     xpos 0.35
-    xanchor 677
+    xanchor 0.55
     ypos 0.55
     yanchor 327
-    zoom 1.0
+    zoom 0.5
     xzoom -1.0
     
 transform nagi_full:
-    xanchor 677
-    ypos 0.5
+    xanchor 0.5
+    ypos 0.1
     yanchor 327
     xcenter 0.5
-    zoom 0.4
+    zoom 0.3
     xzoom -1.0
 
 # Kamao
