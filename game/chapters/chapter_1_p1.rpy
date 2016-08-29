@@ -42,7 +42,85 @@ label start:
         
         "TESTING"
         
-        jump ch1_scene07
+        show kumiru neutral at kumiru_center
+        
+        ""
+        
+        show kumiru angry at kumiru_center_flipped
+        
+        ""
+        
+        show kumiru angry_open at kumiru_left
+        
+        ""
+        
+        show kumiru confident at kumiru_right
+        
+        ""
+        
+        show kumiru confused at kumiru_legs
+        
+        ""
+        
+        show kumiru embarrassed
+        
+        ""
+        
+        show kumiru flustered
+        
+        ""
+        
+        show kumiru happy
+        
+        ""
+        
+        show kumiru horny
+        
+        ""
+        
+        show kumiru lovestruck
+        
+        ""
+        
+        show kumiru neutral
+        
+        ""
+        
+        show kumiru angry
+        
+        ""
+        
+        show kumiru sad
+        
+        ""
+        
+        show kumiru scream
+        
+        ""
+        
+        show kumiru shocked
+        
+        ""
+        
+        show kumiru surprised
+        
+        ""
+        
+        show kumiru unamused
+        
+        ""
+        
+        show kumiru vangry
+        
+        ""
+        
+        show kumiru vhorny
+        
+        ""
+
+        
+        
+        #jump ch1_scene07
         
         "END TESTING"
         
@@ -548,13 +626,8 @@ label ch1_scene02:
             
             "Kumiru sighs, glancing away momentarily. Before long, her eyes are drawn to the entrance to the living room. A small blue figure is peeking around the archway."
             
-            show viscella sad with dissolve:
-                    xpos 0.05
-                    xanchor 0.5
-                    ypos 0.6
-                    yanchor 260
-                    zoom 1.0
-                    xzoom -1.0
+            show viscella sad at viscella_farleft with dissolve:
+                xalign -0.1
             
             show kumiru confused
             
@@ -564,13 +637,8 @@ label ch1_scene02:
             
             v "!"
             
-            show viscella sad with move:
-                xpos -0.5
-                xanchor 0.5
-                ypos 0.6
-                yanchor 260
-                zoom 1.0
-                xzoom -1.0 
+            show viscella sad at viscella_farleft with move:
+                xalign -0.7
                 
             show kumiru unamused
                 

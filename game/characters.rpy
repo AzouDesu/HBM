@@ -156,9 +156,9 @@ transform allise_full:
 
 image kumiru angry = LiveComposite(
         (2687, 3036), # Width x Height
-        (0, 0), ConditionSwitch(
+        (137, -20), ConditionSwitch(
             "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
-            ), # base
+            ),
         (1080, 245), "assets/kumiru/faces/ku_angry.png", # head     
         (1052, 245), "assets/kumiru/ku_glasses.png", # glasses
         (1220, 200), "assets/gen_vein.png" # vein 
@@ -167,9 +167,9 @@ image kumiru angry = LiveComposite(
 
 image kumiru angry_open = LiveComposite(
         (2687, 3036), # Width x Height
-        (0, 0), ConditionSwitch(
+        (137, -20), ConditionSwitch(
             "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
-            ), # base
+            ),
         (1080, 245), "assets/kumiru/faces/ku_angry_open.png", # head     
         (1052, 245), "assets/kumiru/ku_glasses.png", # glasses
         (1220, 200), "assets/gen_vein.png" # vein 
@@ -177,36 +177,36 @@ image kumiru angry_open = LiveComposite(
 
 image kumiru confident = LiveComposite(
         (2687, 3036), # Width x Height
-        (0, 0), ConditionSwitch(
+        (137, -20), ConditionSwitch(
             "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
-            ), # base
+            ),
         (1080, 245), "assets/kumiru/faces/ku_confident.png", # head     
         (1052, 245), "assets/kumiru/ku_glasses.png" # glasses
         )
 
 image kumiru confused = LiveComposite(
         (2687, 3036), # Width x Height
-        (0, 0), ConditionSwitch(
+        (137, -20), ConditionSwitch(
             "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
-            ), # base
+            ),
         (1080, 245), "assets/kumiru/faces/ku_confused.png", # head     
         (1052, 245), "assets/kumiru/ku_glasses.png" # glasses
         )
 
 image kumiru embarrassed = LiveComposite(
         (2687, 3036), # Width x Height
-        (0, 0), ConditionSwitch(
+        (137, -20), ConditionSwitch(
             "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
-            ), # base
+            ),
         (1080, 245), "assets/kumiru/faces/ku_embarrassed.png", # head     
         (1052, 245), "assets/kumiru/ku_glasses.png", # glasses   
         (1075, 310), "assets/kumiru/ku_blush.png" # blush 
         )
 image kumiru flustered = LiveComposite(
         (2687, 3036), # Width x Height
-        (0, 0), ConditionSwitch(
+        (137, -20), ConditionSwitch(
             "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
-            ), # base
+            ),
         (1080, 245), "assets/kumiru/faces/ku_flustered.png", # head     
         (1052, 245), "assets/kumiru/ku_glasses.png", # glasses   
         (1075, 310), "assets/kumiru/ku_blush.png" # blush 
@@ -214,18 +214,18 @@ image kumiru flustered = LiveComposite(
 
 image kumiru happy = LiveComposite(
         (2687, 3036), # Width x Height
-        (0, 0), ConditionSwitch(
+        (137, -20), ConditionSwitch(
             "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
-            ), # base
+            ),
         (1080, 245), "assets/kumiru/faces/ku_happy.png", # head     
         (1052, 245), "assets/kumiru/ku_glasses.png" # glasses   
         )
 
 image kumiru horny = LiveComposite(
         (2687, 3036), # Width x Height
-        (0, 0), ConditionSwitch(
+        (137, -20), ConditionSwitch(
             "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
-            ), # base
+            ),
         (1080, 245), "assets/kumiru/faces/ku_horny.png", # head     
         (1052, 245), "assets/kumiru/ku_glasses.png", # glasses   
         (1075, 310), "assets/kumiru/ku_blush.png" # blush 
@@ -233,9 +233,9 @@ image kumiru horny = LiveComposite(
 
 image kumiru lovestruck = LiveComposite(
         (2687, 3036), # Width x Height
-        (0, 0), ConditionSwitch(
+        (137, -20), ConditionSwitch(
             "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
-            ), # base
+            ),
         (1080, 245), "assets/kumiru/faces/ku_lovestruck.png", # head     
         (1052, 245), "assets/kumiru/ku_glasses.png", # glasses   
         (1075, 310), "assets/kumiru/ku_blush.png" # blush 
@@ -244,64 +244,64 @@ image kumiru lovestruck = LiveComposite(
 
 image kumiru neutral = LiveComposite(
         (2687, 3036), # Width x Height
-        (0, 0), ConditionSwitch(
+        (137, -20), ConditionSwitch(
             "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
-            ), # base
-        (1080, 245), "assets/kumiru/faces/ku_neutral.png", # head     
-        (1052, 245), "assets/kumiru/ku_glasses.png" # glasses   
+            ),
+        (1080, 245), "assets/kumiru/faces/ku_neutral.png",     
+        (1052, 245), "assets/kumiru/ku_glasses.png" 
         )
 
 
 image kumiru sad = LiveComposite(
         (2687, 3036), # Width x Height
-        (0, 0), ConditionSwitch(
+        (137, -20), ConditionSwitch(
             "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
-            ), # base
+            ),
         (1080, 245), "assets/kumiru/faces/ku_sad.png", # head     
         (1052, 245), "assets/kumiru/ku_glasses.png" # glasses
         )
 
 image kumiru scream = LiveComposite(
         (2687, 3036), # Width x Height
-        (0, 0), ConditionSwitch(
+        (137, -20), ConditionSwitch(
             "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
-            ), # base
+            ),
         (1080, 245), "assets/kumiru/faces/ku_scream.png", # head     
         (1052, 245), "assets/kumiru/ku_glasses.png" # glasses
         )
 
 image kumiru shocked = LiveComposite(
         (2687, 3036), # Width x Height
-        (0, 0), ConditionSwitch(
+        (137, -20), ConditionSwitch(
             "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
-            ), # base
+            ),
         (1080, 245), "assets/kumiru/faces/ku_shocked.png", # head     
         (1052, 245), "assets/kumiru/ku_glasses.png" # glasses
         )
 
 image kumiru surprised = LiveComposite(
         (2687, 3036), # Width x Height
-        (0, 0), ConditionSwitch(
+        (137, -20), ConditionSwitch(
             "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
-            ), # base
+            ),
         (1080, 245), "assets/kumiru/faces/ku_surprised.png", # head     
         (1052, 245), "assets/kumiru/ku_glasses.png" # glasses
         )
 
 image kumiru unamused = LiveComposite(
         (2687, 3036), # Width x Height
-        (0, 0), ConditionSwitch(
+        (137, -20), ConditionSwitch(
             "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
-            ), # base
+            ),
         (1080, 245), "assets/kumiru/faces/ku_unamused.png", # head     
         (1052, 245), "assets/kumiru/ku_glasses.png" # glasses
         )
 
 image kumiru vangry = LiveComposite(
         (2687, 3036), # Width x Height
-        (0, 0), ConditionSwitch(
+        (137, -20), ConditionSwitch(
             "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
-            ), # base
+            ),
         (1080, 245), "assets/kumiru/faces/ku_vangry.png", # head     
         (1052, 245), "assets/kumiru/ku_glasses.png", # glasses
         (1220, 200), "assets/gen_vein.png" # vein 
@@ -309,9 +309,9 @@ image kumiru vangry = LiveComposite(
 
 image kumiru vhorny = LiveComposite(
         (2687, 3036), # Width x Height
-        (0, 0), ConditionSwitch(
+        (137, -20), ConditionSwitch(
             "ku_Outfit == 'default'", "assets/kumiru/ku_outfit_default.png"
-            ), # base
+            ),
         (1080, 248), "assets/kumiru/faces/ku_vhorny.png", # head     
         (1052, 245), "assets/kumiru/ku_glasses.png", # glasses   
         (1075, 310), "assets/kumiru/ku_blush.png" # blush 
@@ -350,7 +350,7 @@ transform kumiru_left:
     xzoom -1.0
     
 transform kumiru_legs:
-    xpos 0.5
+    xpos 0.4
     xanchor 0.45
     ycenter 0.65
     zoom 0.5
