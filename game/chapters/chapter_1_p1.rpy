@@ -44,8 +44,7 @@ label start:
         
         "TESTING"
         
-        
-        jump ch2_scene01
+        jump ch2_scene03
         
         "END TESTING"
         

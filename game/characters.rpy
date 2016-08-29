@@ -33,81 +33,137 @@ define pc_a = "???"
 
 # Allise
 
-image allise silhouette = "assets/allise/al_body_s2.png"
+image allise silhouette = "assets/allise/a_outfit_silhouette.png"
 
 image allise neutral = LiveComposite(
-        (629, 1504), # Width x Height
-        (0, 0), "assets/allise/al_body.png", # base
-        (256, 124), "assets/allise/al_face_neutral.png" # head
+        (639, 3010), # Width x Height
+        (0, 0), ConditionSwitch(
+            "a_Outfit == 'default'", "assets/allise/a_outfit_default.png"
+            ),
+        (230, 241), "assets/allise/faces/a_neutral.png",   
         )
 
 image allise angry = LiveComposite(
-        (629, 1504), # Width x Height
-        (0, 0), "assets/allise/al_body.png", # base
-        (256, 124), "assets/allise/al_face_angry.png" # head
+        (639, 3010), # Width x Height
+        (0, 0), ConditionSwitch(
+            "a_Outfit == 'default'", "assets/allise/a_outfit_default.png"
+            ),
+        (230, 241), "assets/allise/faces/a_angry,embarrassed.png",   
+        )
+
+image allise confident = LiveComposite(
+        (639, 3010), # Width x Height
+        (0, 0), ConditionSwitch(
+            "a_Outfit == 'default'", "assets/allise/a_outfit_default.png"
+            ),
+        (230, 241), "assets/allise/faces/a_confident,horny.png",  
         )
 
 image allise embarrassed = LiveComposite(
-        (629, 1504), # Width x Height
-        (0, 0), "assets/allise/al_body.png", # base
-        (256, 124), "assets/allise/al_face_embarrassed.png" # head
+        (639, 3010), # Width x Height
+        (0, 0), ConditionSwitch(
+            "a_Outfit == 'default'", "assets/allise/a_outfit_default.png"
+            ),
+        (230, 241), "assets/allise/faces/a_angry,embarrassed.png",   
+        (230, 310), "assets/allise/a_blush.png"
         )
 
 image allise happy = LiveComposite(
-        (629, 1504), # Width x Height
-        (0, 0), "assets/allise/al_body.png", # base
-        (256, 124), "assets/allise/al_face_happy.png" # head
+        (639, 3010), # Width x Height
+        (0, 0), ConditionSwitch(
+            "a_Outfit == 'default'", "assets/allise/a_outfit_default.png"
+            ),
+        (230, 241), "assets/allise/faces/a_happy.png",  
         )
 
 image allise horny = LiveComposite(
-        (629, 1504), # Width x Height
-        (0, 0), "assets/allise/al_body.png", # base
-        (256, 124), "assets/allise/al_face_horny.png" # head
+        (639, 3010), # Width x Height
+        (0, 0), ConditionSwitch(
+            "a_Outfit == 'default'", "assets/allise/a_outfit_default.png"
+            ),
+        (230, 241), "assets/allise/faces/a_confident,horny.png",   
+        (230, 310), "assets/allise/a_blush.png"
         )
 
 image allise lovestruck = LiveComposite(
-        (629, 1504), # Width x Height
-        (0, 0), "assets/allise/al_body.png", # base
-        (256, 124), "assets/allise/al_face_lovestruck.png" # head
+        (639, 3010), # Width x Height
+        (0, 0), ConditionSwitch(
+            "a_Outfit == 'default'", "assets/allise/a_outfit_default.png"
+            ),
+        (230, 241), "assets/allise/faces/a_lovestruck,sad.png",   
+        (230, 310), "assets/allise/a_blush.png"
         )
 
 image allise sad = LiveComposite(
-        (629, 1504), # Width x Height
-        (0, 0), "assets/allise/al_body.png", # base
-        (256, 124), "assets/allise/al_face_sad.png" # head
+        (639, 3010), # Width x Height
+        (0, 0), ConditionSwitch(
+            "a_Outfit == 'default'", "assets/allise/a_outfit_default.png"
+            ),
+        (230, 241), "assets/allise/faces/a_lovestruck,sad.png"   
         )
 
-image allise e_neutral = LiveComposite(
-        (629, 1504), # Width x Height
-        (0, 0), "assets/allise/al_body_e.png", # base
-        (256, 124), "assets/allise/al_face_e_neutral.png" # head
+image allise p_neutral = LiveComposite(
+        (639, 3010), # Width x Height
+        (0, 0), ConditionSwitch(
+            "a_Outfit == 'default'", "assets/allise/a_outfit_possessed.png"
+            ),
+        (230, 241), "assets/allise/faces/a_p_neutral.png",
+        (236, 183), "assets/allise/a_p_signglow.png"
         )
 
-image allise e_angry = LiveComposite(
-        (629, 1504), # Width x Height
-        (0, 0), "assets/allise/al_body_e.png", # base
-        (256, 124), "assets/allise/al_face_e_angry.png" # head
+image allise p_angry = LiveComposite(
+        (639, 3010), # Width x Height
+        (0, 0), ConditionSwitch(
+            "a_Outfit == 'default'", "assets/allise/a_outfit_possessed.png"
+            ),
+        (230, 241), "assets/allise/faces/a_p_angry.png",
+        (236, 183), "assets/allise/a_p_signglow.png"
         )
 
-image allise e_sad = LiveComposite(
-        (629, 1504), # Width x Height
-        (0, 0), "assets/allise/al_body_e.png", # base
-        (256, 124), "assets/allise/al_face_e_sad.png" # head
+image allise p_sad = LiveComposite(
+        (639, 3010), # Width x Height
+        (0, 0), ConditionSwitch(
+            "a_Outfit == 'default'", "assets/allise/a_outfit_possessed.png"
+            ),
+        (230, 241), "assets/allise/faces/a_p_sad.png",
+        (236, 183), "assets/allise/a_p_signglow.png"
+        )
+
+image allise p_vsad = LiveComposite(
+        (639, 3010), # Width x Height
+        (0, 0), ConditionSwitch(
+            "a_Outfit == 'default'", "assets/allise/a_outfit_possessed.png"
+            ),
+        (230, 241), "assets/allise/faces/a_p_sad.png",   
+        (245, 305), "assets/allise/a_p_tears.png",
+        (236, 183), "assets/allise/a_p_signglow.png"
         )
 
 image allise vsad = LiveComposite(
-        (629, 1504), # Width x Height
-        (0, 0), "assets/allise/al_body.png", # base
-        (256, 124), "assets/allise/al_face_sad.png", # head
-        (262, 146), "assets/allise/al_tears.png" #tears
+        (639, 3010), # Width x Height
+        (0, 0), ConditionSwitch(
+            "a_Outfit == 'default'", "assets/allise/a_outfit_default.png"
+            ),
+        (230, 241), "assets/allise/faces/a_lovestruck,sad.png",   
+        (245, 305), "assets/allise/a_tears.png"
+        )
+
+image allise vhappy = LiveComposite(
+        (639, 3010), # Width x Height
+        (0, 0), ConditionSwitch(
+            "a_Outfit == 'default'", "assets/allise/a_outfit_default.png"
+            ),
+        (230, 241), "assets/allise/faces/a_vhappy.png",   
+        (245, 305), "assets/allise/a_tearbubbles.png"
         )
 
 image allise closed = LiveComposite(
-        (629, 1504), # Width x Height
-        (0, 0), "assets/allise/al_body.png", # base
-        (256, 124), "assets/allise/al_face_closed.png" # head
+        (639, 3010), # Width x Height
+        (0, 0), ConditionSwitch(
+            "a_Outfit == 'default'", "assets/allise/a_outfit_default.png"
+            ),
+        (230, 241), "assets/allise/faces/a_closed.png"
         )
-
 
 
 transform allise_center:
@@ -115,7 +171,7 @@ transform allise_center:
     xanchor 0.5
     ypos 0.55
     yanchor 275
-    zoom 1.0
+    zoom 0.5
     xzoom 1.0
 
 transform allise_center_flipped:
@@ -123,23 +179,41 @@ transform allise_center_flipped:
     xanchor 0.5
     ypos 0.55
     yanchor 275
-    zoom 1.0
+    zoom 0.5
     xzoom -1.0
 
-transform allise_right:
-    xpos 0.7
+transform allise_farright:
+    xpos 0.83
     xanchor 0.5
     ypos 0.55
     yanchor 275
-    zoom 1.0
+    zoom 0.5
+    xzoom 1.0
+
+transform allise_right:
+    xpos 0.65
+    xanchor 0.5
+    ypos 0.55
+    yanchor 275
+    zoom 0.5
     xzoom 1.0
     
+    
 transform allise_left:
-    xpos 0.3
+    xpos 0.35
     xanchor 0.5
     ypos 0.55
     yanchor 275
-    zoom 1.0
+    zoom 0.5
+    xzoom -1.0
+
+    
+transform allise_farleft:
+    xpos 0.17
+    xanchor 0.5
+    ypos 0.55
+    yanchor 275
+    zoom 0.5
     xzoom -1.0
     
 transform allise_full:
@@ -147,7 +221,7 @@ transform allise_full:
     ypos 0.55
     yanchor 275
     xcenter 0.52
-    zoom 0.4
+    zoom 0.3
     xzoom 1.0
 
 
@@ -1254,15 +1328,19 @@ image dravenia angry = LiveComposite(
         (0, 0), ConditionSwitch(
             "d_Outfit == 'default'", "assets/dravenia/d_outfit_default.png"
             ),
-        (775, 245), "assets/dravenia/faces/d_angry.png"
+        (775, 245), "assets/dravenia/faces/d_angry.png",
+        (975, 220), "assets/gen_vein.png"
         )
+
 image dravenia vangry = LiveComposite(
         (1870, 3362), # Width x Height
         (0, 0), ConditionSwitch(
             "d_Outfit == 'default'", "assets/dravenia/d_outfit_default.png"
             ),
-        (775, 245), "assets/dravenia/faces/d_vangry.png"
+        (775, 245), "assets/dravenia/faces/d_vangry.png",
+        (975, 220), "assets/gen_vein.png"
         )
+
 image dravenia embarrassed = LiveComposite(
         (1870, 3362), # Width x Height
         (0, 0), ConditionSwitch(
