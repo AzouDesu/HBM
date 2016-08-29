@@ -423,6 +423,22 @@ transform kumiru_left:
     zoom 0.5
     xzoom -1.0
     
+transform kumiru_farright:
+    xpos 0.84
+    xanchor 0.45
+    ypos 0.6
+    yanchor 327
+    zoom 0.5
+    xzoom 1.0
+    
+transform kumiru_farleft:
+    xpos 0.16
+    xanchor 0.55
+    ypos 0.6
+    yanchor 327
+    zoom 0.5
+    xzoom -1.0
+    
 transform kumiru_legs:
     xpos 0.4
     xanchor 0.45
@@ -827,6 +843,22 @@ transform nagi_left:
     zoom 0.5
     xzoom -1.0
     
+transform nagi_farright:
+    xpos 0.82
+    xanchor 0.45
+    ypos 0.55
+    yanchor 327
+    zoom 0.5
+    xzoom 1.0
+    
+transform nagi_farleft:
+    xpos 0.18
+    xanchor 0.55
+    ypos 0.55
+    yanchor 327
+    zoom 0.5
+    xzoom -1.0
+    
 transform nagi_full:
     xanchor 0.5
     ypos 0.1
@@ -1101,7 +1133,7 @@ transform kamao_center_flipped:
     xzoom -1.0
 
 transform kamao_right:
-    xpos 0.67
+    xpos 0.66
     xanchor 0.2
     ypos 0.93
     yanchor 340
@@ -1109,7 +1141,23 @@ transform kamao_right:
     xzoom 1.0
     
 transform kamao_left:
-    xpos 0.33
+    xpos 0.34
+    xanchor 0.8
+    ypos 0.93
+    yanchor 340
+    zoom 0.5
+    xzoom -1.0
+    
+transform kamao_farright:
+    xpos 0.83
+    xanchor 0.2
+    ypos 0.93
+    yanchor 340
+    zoom 0.5
+    xzoom 1.0
+    
+transform kamao_farleft:
+    xpos 0.17
     xanchor 0.8
     ypos 0.93
     yanchor 340
@@ -1307,6 +1355,22 @@ transform fenira_right:
     
 transform fenira_left:
     xpos 0.32
+    xanchor 0.75
+    ypos 0.5
+    yanchor 330
+    zoom 0.5
+    xzoom -1.0
+    
+transform fenira_farright:
+    xpos 0.85
+    xanchor 0.25
+    ypos 0.5
+    yanchor 330
+    zoom 0.5
+    xzoom 1.0
+    
+transform fenira_farleft:
+    xpos 0.15
     xanchor 0.75
     ypos 0.5
     yanchor 330
