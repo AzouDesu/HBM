@@ -876,9 +876,10 @@ image kamao neutral = LiveComposite(
         (1042, 3067), # Width x Height
         (-2, -581), ConditionSwitch(
             "ka_Outfit == 'default'", "assets/kamao/ka_outfit_default.png",
-            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
+            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png",
+            "ka_Outfit == 'swimwear'", "assets/kamao/ka_outfit_swimwear.png"
             ), # base
-        (93, -253), "assets/kamao/faces/ka_neutral.png" # head     
+        (100, -253), "assets/kamao/faces/ka_neutral.png" # head     
         )
 
 
@@ -886,9 +887,10 @@ image kamao angry = LiveComposite(
         (1042, 3067), # Width x Height
         (-2, -581), ConditionSwitch(
             "ka_Outfit == 'default'", "assets/kamao/ka_outfit_default.png",
-            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
+            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png",
+            "ka_Outfit == 'swimwear'", "assets/kamao/ka_outfit_swimwear.png"
             ), # base
-        (93, -253), "assets/kamao/faces/ka_angry.png", # head 
+        (100, -253), "assets/kamao/faces/ka_angry.png", # head 
         (250, -253), "assets/gen_vein.png" # vein 
         )
 
@@ -896,18 +898,20 @@ image kamao bored = LiveComposite(
         (1042, 3067), # Width x Height
         (-2, -581), ConditionSwitch(
             "ka_Outfit == 'default'", "assets/kamao/ka_outfit_default.png",
-            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
+            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png",
+            "ka_Outfit == 'swimwear'", "assets/kamao/ka_outfit_swimwear.png"
             ), # base
-        (93, -253), "assets/kamao/faces/ka_bored.png" # head 
+        (100, -253), "assets/kamao/faces/ka_bored.png" # head 
         )
 
 image kamao bluffing = LiveComposite(
         (1042, 3067), # Width x Height
         (-2, -581), ConditionSwitch(
             "ka_Outfit == 'default'", "assets/kamao/ka_outfit_default.png",
-            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
+            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png",
+            "ka_Outfit == 'swimwear'", "assets/kamao/ka_outfit_swimwear.png"
             ), # base
-        (93, -253), "assets/kamao/faces/ka_bluffing.png", # head 
+        (100, -253), "assets/kamao/faces/ka_bluffing.png", # head 
         (70, -165), "assets/kamao/ka_blush.png" # blush 
         )
 
@@ -915,18 +919,20 @@ image kamao confident = LiveComposite(
         (1042, 3067), # Width x Height
         (-2, -581), ConditionSwitch(
             "ka_Outfit == 'default'", "assets/kamao/ka_outfit_default.png",
-            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
+            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png",
+            "ka_Outfit == 'swimwear'", "assets/kamao/ka_outfit_swimwear.png"
             ), # base
-        (93, -253), "assets/kamao/faces/ka_confident.png" # head 
+        (100, -253), "assets/kamao/faces/ka_confident.png" # head 
         )
 
 image kamao confused = LiveComposite(
         (1042, 3067), # Width x Height
         (-2, -581), ConditionSwitch(
             "ka_Outfit == 'default'", "assets/kamao/ka_outfit_default.png",
-            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
+            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png",
+            "ka_Outfit == 'swimwear'", "assets/kamao/ka_outfit_swimwear.png"
             ), # base
-        (93, -253), "assets/kamao/faces/ka_confused.png" # head 
+        (100, -253), "assets/kamao/faces/ka_confused.png" # head 
         )
 
 
@@ -934,9 +940,10 @@ image kamao embarrassed = LiveComposite(
         (1042, 3067), # Width x Height
         (-2, -581), ConditionSwitch(
             "ka_Outfit == 'default'", "assets/kamao/ka_outfit_default.png",
-            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
+            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png",
+            "ka_Outfit == 'swimwear'", "assets/kamao/ka_outfit_swimwear.png"
             ), # base
-        (93, -253), "assets/kamao/faces/ka_embarrassed,unhappy.png", # head 
+        (100, -253), "assets/kamao/faces/ka_embarrassed,unhappy.png", # head 
         (70, -165), "assets/kamao/ka_blush.png" # blush 
         )
 
@@ -944,9 +951,10 @@ image kamao embarrassed_open = LiveComposite(
         (1042, 3067), # Width x Height
         (-2, -581), ConditionSwitch(
             "ka_Outfit == 'default'", "assets/kamao/ka_outfit_default.png",
-            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
+            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png",
+            "ka_Outfit == 'swimwear'", "assets/kamao/ka_outfit_swimwear.png"
             ), # base  
-        (93, -253), "assets/kamao/faces/ka_embarrassed_open.png", # head 
+        (100, -253), "assets/kamao/faces/ka_embarrassed_open.png", # head 
         (70, -165), "assets/kamao/ka_blush.png" # blush 
         )
 
@@ -954,9 +962,10 @@ image kamao flustered = LiveComposite(
         (1042, 3067), # Width x Height
         (-2, -581), ConditionSwitch(
             "ka_Outfit == 'default'", "assets/kamao/ka_outfit_default.png",
-            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
+            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png",
+            "ka_Outfit == 'swimwear'", "assets/kamao/ka_outfit_swimwear.png"
             ), # base
-        (93, -253), "assets/kamao/faces/ka_flustered.png", # head 
+        (100, -253), "assets/kamao/faces/ka_flustered.png", # head 
         (70, -165), "assets/kamao/ka_blush.png" # blush 
         )
 
@@ -964,27 +973,30 @@ image kamao happy = LiveComposite(
         (1042, 3067), # Width x Height
         (-2, -581), ConditionSwitch(
             "ka_Outfit == 'default'", "assets/kamao/ka_outfit_default.png",
-            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
+            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png",
+            "ka_Outfit == 'swimwear'", "assets/kamao/ka_outfit_swimwear.png"
             ), # base
-        (93, -253), "assets/kamao/faces/ka_happy.png" # head 
+        (100, -253), "assets/kamao/faces/ka_happy.png" # head 
         )
 
 image kamao horny = LiveComposite(
         (1042, 3067), # Width x Height
         (-2, -581), ConditionSwitch(
             "ka_Outfit == 'default'", "assets/kamao/ka_outfit_default.png",
-            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
+            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png",
+            "ka_Outfit == 'swimwear'", "assets/kamao/ka_outfit_swimwear.png"
             ), # base
-        (93, -253), "assets/kamao/faces/ka_horny.png", # head 
+        (100, -253), "assets/kamao/faces/ka_horny.png", # head 
         (70, -165), "assets/kamao/ka_blush.png" # blush 
         )
 image kamao lovestruck = LiveComposite(
         (1042, 3067), # Width x Height
         (-2, -581), ConditionSwitch(
             "ka_Outfit == 'default'", "assets/kamao/ka_outfit_default.png",
-            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
+            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png",
+            "ka_Outfit == 'swimwear'", "assets/kamao/ka_outfit_swimwear.png"
             ), # base
-        (93, -253), "assets/kamao/faces/ka_lovestruck,sad.png", # head 
+        (100, -253), "assets/kamao/faces/ka_lovestruck,sad.png", # head 
         (70, -165), "assets/kamao/ka_blush.png" # blush 
         )
 
@@ -992,9 +1004,10 @@ image kamao pained = LiveComposite(
         (1042, 3067), # Width x Height
         (-2, -581), ConditionSwitch(
             "ka_Outfit == 'default'", "assets/kamao/ka_outfit_default.png",
-            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
+            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png",
+            "ka_Outfit == 'swimwear'", "assets/kamao/ka_outfit_swimwear.png"
             ), # base
-        (93, -253), "assets/kamao/faces/ka_pained.png" # head 
+        (100, -253), "assets/kamao/faces/ka_pained.png" # head 
         )
 
 
@@ -1002,50 +1015,67 @@ image kamao sad = LiveComposite(
         (1042, 3067), # Width x Height
         (-2, -581), ConditionSwitch(
             "ka_Outfit == 'default'", "assets/kamao/ka_outfit_default.png",
-            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
+            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png",
+            "ka_Outfit == 'swimwear'", "assets/kamao/ka_outfit_swimwear.png"
             ), # base
-        (93, -253), "assets/kamao/faces/ka_lovestruck,sad.png" # head 
+        (100, -253), "assets/kamao/faces/ka_lovestruck,sad.png" # head 
         )
 
 image kamao shocked = LiveComposite(
         (1042, 3067), # Width x Height
         (-2, -581), ConditionSwitch(
             "ka_Outfit == 'default'", "assets/kamao/ka_outfit_default.png",
-            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
+            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png",
+            "ka_Outfit == 'swimwear'", "assets/kamao/ka_outfit_swimwear.png"
             ), # base
-        (93, -253), "assets/kamao/faces/ka_shocked,shockblush.png" # head 
+        (100, -253), "assets/kamao/faces/ka_shocked,shockblush.png" # head 
         )
 image kamao shocked_open = LiveComposite(
         (1042, 3067), # Width x Height
         (-2, -581), ConditionSwitch(
             "ka_Outfit == 'default'", "assets/kamao/ka_outfit_default.png",
-            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
+            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png",
+            "ka_Outfit == 'swimwear'", "assets/kamao/ka_outfit_swimwear.png"
             ), # base   
-        (93, -253), "assets/kamao/faces/ka_shocked_open.png" # head 
+        (100, -253), "assets/kamao/faces/ka_shocked_open.png" # head 
         )
 image kamao shockblush = LiveComposite(
         (1042, 3067), # Width x Height
         (-2, -581), ConditionSwitch(
             "ka_Outfit == 'default'", "assets/kamao/ka_outfit_default.png",
-            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
+            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png",
+            "ka_Outfit == 'swimwear'", "assets/kamao/ka_outfit_swimwear.png"
             ), # base
-        (93, -253), "assets/kamao/faces/ka_shocked,shockblush.png", # head 
+        (100, -253), "assets/kamao/faces/ka_shocked,shockblush.png", # head 
         (70, -165), "assets/kamao/ka_blush.png" # blush 
         )
 image kamao sleepy = LiveComposite(
         (1042, 3067), # Width x Height
         (-2, -581), ConditionSwitch(
             "ka_Outfit == 'default'", "assets/kamao/ka_outfit_default.png",
-            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
+            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png",
+            "ka_Outfit == 'swimwear'", "assets/kamao/ka_outfit_swimwear.png"
             ), # base 
-        (93, -253), "assets/kamao/faces/ka_sleepy.png" # head 
+        (100, -253), "assets/kamao/faces/ka_sleepy.png" # head 
         )
+
+image kamao smirk = LiveComposite(
+        (1042, 3067), # Width x Height
+        (-2, -581), ConditionSwitch(
+            "ka_Outfit == 'default'", "assets/kamao/ka_outfit_default.png",
+            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png",
+            "ka_Outfit == 'swimwear'", "assets/kamao/ka_outfit_swimwear.png"
+            ), # base 
+        (100, -253), "assets/kamao/faces/ka_smirk.png" # head 
+        )
+
 
 image kamao starry = LiveComposite(
         (1042, 3067), # Width x Height
         (-2, -581), ConditionSwitch(
             "ka_Outfit == 'default'", "assets/kamao/ka_outfit_default.png",
-            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
+            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png",
+            "ka_Outfit == 'swimwear'", "assets/kamao/ka_outfit_swimwear.png"
             ), # base
         (82, -253), "assets/kamao/faces/ka_starry.png" # head 
         )
@@ -1054,7 +1084,8 @@ image kamao starry_s = LiveComposite(
         (1042, 3067), # Width x Height
         (-2, -581), ConditionSwitch(
             "ka_Outfit == 'default'", "assets/kamao/ka_outfit_silhouette.png",
-            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
+            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png",
+            "ka_Outfit == 'swimwear'", "assets/kamao/ka_outfit_swimwear.png"
             ), # base
         (82, -253), "assets/kamao/faces/ka_starry_s.png" # head 
         )
@@ -1063,27 +1094,30 @@ image kamao teasing = LiveComposite(
         (1042, 3067), # Width x Height
         (-2, -581), ConditionSwitch(
             "ka_Outfit == 'default'", "assets/kamao/ka_outfit_default.png",
-            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
+            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png",
+            "ka_Outfit == 'swimwear'", "assets/kamao/ka_outfit_swimwear.png"
             ), # base
-        (93, -253), "assets/kamao/faces/ka_teasing.png" # head 
+        (100, -253), "assets/kamao/faces/ka_teasing.png" # head 
         )
 
 image kamao unhappy = LiveComposite(
         (1042, 3067), # Width x Height
         (-2, -581), ConditionSwitch(
             "ka_Outfit == 'default'", "assets/kamao/ka_outfit_default.png",
-            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
+            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png",
+            "ka_Outfit == 'swimwear'", "assets/kamao/ka_outfit_swimwear.png"
             ), # base
-        (93, -253), "assets/kamao/faces/ka_embarrassed,unhappy.png" # head 
+        (100, -253), "assets/kamao/faces/ka_embarrassed,unhappy.png" # head 
         )
 
 image kamao vangry = LiveComposite(
         (1042, 3067), # Width x Height
         (-2, -581), ConditionSwitch(
             "ka_Outfit == 'default'", "assets/kamao/ka_outfit_default.png",
-            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
+            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png",
+            "ka_Outfit == 'swimwear'", "assets/kamao/ka_outfit_swimwear.png"
             ), # base
-        (93, -253), "assets/kamao/faces/ka_vangry.png", # head 
+        (100, -253), "assets/kamao/faces/ka_vangry.png", # head 
         (250, -253), "assets/gen_vein.png" # vein 
         )
 
@@ -1091,27 +1125,30 @@ image kamao vhappy = LiveComposite(
         (1042, 3067), # Width x Height
         (-2, -581), ConditionSwitch(
             "ka_Outfit == 'default'", "assets/kamao/ka_outfit_default.png",
-            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
+            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png",
+            "ka_Outfit == 'swimwear'", "assets/kamao/ka_outfit_swimwear.png"
             ), # base
-        (93, -253), "assets/kamao/faces/ka_vhappy.png" # head 
+        (100, -253), "assets/kamao/faces/ka_vhappy.png" # head 
         )
 
 image kamao wink = LiveComposite(
         (1042, 3067), # Width x Height
         (-2, -581), ConditionSwitch(
             "ka_Outfit == 'default'", "assets/kamao/ka_outfit_default.png",
-            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
+            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png",
+            "ka_Outfit == 'swimwear'", "assets/kamao/ka_outfit_swimwear.png"
             ), # base 
-        (93, -253), "assets/kamao/faces/ka_wink,winkblush.png" # head 
+        (100, -253), "assets/kamao/faces/ka_wink,winkblush.png" # head 
         )
 
 image kamao winkblush = LiveComposite(
         (1042, 3067), # Width x Height
         (-2, -581), ConditionSwitch(
             "ka_Outfit == 'default'", "assets/kamao/ka_outfit_default.png",
-            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png"
+            "ka_Outfit == 'default_f'", "assets/kamao/ka_outfit_default_f.png",
+            "ka_Outfit == 'swimwear'", "assets/kamao/ka_outfit_swimwear.png"
             ), # base
-        (93, -253), "assets/kamao/faces/ka_wink,winkblush.png", # head 
+        (100, -253), "assets/kamao/faces/ka_wink,winkblush.png", # head 
         (70, -165), "assets/kamao/ka_blush.png" # blush 
         )
 
@@ -1376,6 +1413,14 @@ transform fenira_farleft:
     yanchor 330
     zoom 0.5
     xzoom -1.0
+    
+transform fenira_legs:
+    xpos 0.5
+    xanchor 0.25
+    ypos -0.1
+    yanchor 330
+    zoom 0.3
+    xzoom 1.0
 
 # Dravenia
 

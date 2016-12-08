@@ -40,13 +40,18 @@ label start:
     
         #scene debugscreen
         
-        scene debugscreen
+        "GAME IS IN DEBUG MODE."
         
         "TESTING"
         
+        show kamao neutral at kamao_center
+        
+        ""
+        
+        
         "END TESTING"
         
-    #$ renpy.pause(3.0)
+    $ renpy.pause(3.0)
         
 
     "It's cold."
@@ -2337,11 +2342,13 @@ label ch1_scene05:
             
             show fenira angry
             
-            f_un "Bullshit. Crows are way smarter than foxes."
+            f_un "Sure, but I'm willing to bet my fist is harder than your face."
             
-            ka "First, that's wrong. Second, you're not a crow."
+            show kamao horny
             
-            f_un "And you're not a fox. Can you get lost before I remember how to properly break someone's arm?"
+            ka "Not the only part of you that's hard right now, I bet..."
+            
+            f_un "Can you get lost before I remember how to properly break someone's arm?"
             
             show kamao shocked
             
@@ -2387,8 +2394,7 @@ label ch1_scene05:
             
             f_un "That's it, fleabag."
             
-            show fenira angry with MoveTransition(0.5):
-                xalign 0.4
+            show fenira angry at fenira_center with move
             
             show kamao shocked
             
@@ -2434,8 +2440,7 @@ label ch1_scene05:
             
             ka "Take a chill pill and relax, right?"
             
-            show fenira vangry with MoveTransition(0.5):
-                xalign 0.4
+            show fenira vangry at fenira_center with move
                 
             show kamao shocked
             
@@ -2450,7 +2455,7 @@ label ch1_scene05:
         
     "Kamao darts off, back up the stairs I just descended."
     
-    play music "assets/sound/bgm/noodle.mp3" fadein 3.0
+    play music "assets/sound/bgm/Town2.ogg" fadein 3.0
     
     
     f_un "Ugh."
@@ -2504,7 +2509,11 @@ label ch1_scene05:
     
     f_un "I think she dragged the other two tenants off to help her with her stuff. A drider and a slime, I think."
 
+    show fenira at fenira_legs with dissolve
+
     "This one seems to be some sort of bird hybrid. Those talons would probably be able to make short work of me. It's probably a good idea not to piss her off too much."
+
+    show fenira at fenira_center with dissolve
 
     f_un "..."
     
@@ -2617,7 +2626,7 @@ label ch1_scene05:
             
             f "C-Come on, let's go introduce you to Nagi!"
             
-            $ renpy.sound.play("assets/sound/sfx/glass_break.wav")
+            $ renpy.sound.play("assets/sound/sfx/glass_break.mp3")
             
             show fenira shocked with vpunch
             
@@ -2635,7 +2644,7 @@ label ch1_scene05:
             
             pc "Aw, they're probably not {i}that{/i} weak."
             
-            $ renpy.sound.play("assets/sound/sfx/glass_break.wav")
+            $ renpy.sound.play("assets/sound/sfx/glass_break.mp3")
             
             show fenira shocked with vpunch
             
@@ -2931,7 +2940,7 @@ label ch1_scene06:
             
             n "How about we of the court review the case?"
             
-    n "A cute, innocent, and somewhat clumsy slime shatters a collection of wine bottles that date back to the nineteenth century."
+    n "An adorable little slime shatters a collection of wine bottles that date back to the nineteenth century."
     
     f "Then why are you-"
     
@@ -2993,9 +3002,9 @@ label ch1_scene06:
     
     show nagi angry
     
-    n "Because you decided to repay my friendship with lies and slander, I now have an adorable roommate with an overactive imagination who thinks I'm the devil incarnate."
+    n "Because you decided to repay my friendship with lies and slander, I now have a roommate with an overactive imagination who thinks I'm the devil incarnate."
     
-    f "And she's right."
+    f "She's not far off..."
     
     show nagi neutral
     
@@ -3184,10 +3193,9 @@ label ch1_scene06:
     
     hide fenira with dissolve
     
-    show nagi confident at nagi_center_flipped with move
+    show nagi neutral at nagi_center_flipped with move
         
     play music "assets/sound/bgm/093.mp3" fadein 3.0
-    
         
     n "Well, that was fun."
     

@@ -41,6 +41,10 @@ label ch1_scene07:
         
     ku "Ah, Miss Forques!"
     
+    show nagi bored
+    
+    n "Just 'Nagi', please."
+    
     ku "And [pc]!"
     
     show kumiru surprised
@@ -51,13 +55,13 @@ label ch1_scene07:
     
     ku "Well, this is embarrassing."
     
-    n "Just call me Nagi."
+    show nagi neutral
     
-    n "So why'd you offer to carry it if you couldn't handle it?"
+    n "Why'd you offer to carry it if you couldn't handle it?"
     
     show kumiru confident
     
-    ku "Because it was the polite thing to do."
+    ku "Because it was polite."
     
     ku "..."
     
@@ -89,25 +93,7 @@ label ch1_scene07:
             
             show nagi happy
             
-            n "And my spine's as strong as you'd expect."
-            
-            show kumiru confused
-            
-            ku "You know..."
-            
-            ku "You vaguely remind me of our new kitsune tenant."
-            
-            show nagi bored
-            
-            n "I've got the feeling that's a bad thing."
-               
-            show kumiru surprised
-            
-            ku "Vaguely! Vaguely."
-            
-            show kumiru neutral
-            
-            n "And I've got the feeling that's a good thing. Alright, [pc]. One-step two-step."
+            n "And my spine's as strong as you'd expect. Alright, [pc]. One-step two-step."
             
         "'Huh. This isn't too bad.'":
             
@@ -179,7 +165,7 @@ label ch1_scene07:
                     
                     n "Whoops. C'mon, we can flirt later."
                     
-                    ku "Guys!"
+                    ku "Miss Forques!"
                     
                     show nagi happy
                     
@@ -321,7 +307,7 @@ label ch1_scene07:
     
     show nagi happy
     
-    n "How many 'thank-you's and 'sorry's have you said in the past ten minutes?"
+    n "How many times have you said 'sorry' and 'thank-you' in the last ten minutes?"
     
     ku "Uh..."
     
@@ -353,7 +339,7 @@ label ch1_scene07:
     
     ku "Huh? Wha?"
     
-    "Kumiru's many eyes blink a few times, and then she gives a nervous cough."
+    "Kumiru blinks, and then gives a nervous cough."
     
     show kumiru sad
     
@@ -428,6 +414,10 @@ label ch1_scene07:
             show kumiru happy
             
             ku "I guess that's one way to think about it. Though I'm not sure if that makes you an optimist or a pessimist."
+
+            pc "Probably a bit of both."
+            
+            ku "Yeah, maybe..."
 
     show kumiru neutral
 
@@ -817,11 +807,17 @@ label ch1_scene08_visSearch:
     
     scene bg living with Dissolve(1.5)
     
-    "Viscella and I return to the living room. Kumiru seems to have been waiting for us."
+    "Viscella and I return to the living room. Kumiru seems to have been hard at work trying to align a photo frame..."
     
-    show kumiru neutral at kumiru_center with dissolve
+    show kumiru angry at kumiru_center with dissolve
     
-    ku "No luck in the base- oh, you found her."
+    ku "Who the hell did they hire to organize this place? Come on, I could do better in my sleep..."
+     
+    "She glances over her shoulder."
+     
+    show kumiru surprised
+     
+    ku "O-oh, [pc]! You found her!"
     
     show kumiru neutral at kumiru_right with move
     
@@ -1049,13 +1045,15 @@ label ch1_scene08_visSearch:
     
         ku "Thanks again, [pc]. It's nice to be pleasantly surprised once in a while."
         
-        ku "I guess that it's not fair of my to always assume the worst of Viscella."
+        ku "I guess it's not fair of me to always assume the worst of Viscella."
         
-        show kumiru sad
+        "Er... about that..."
         
         ku "Well, certainly not the {i}worst{/i}."
         
         ku "But you know what I mean."
+        
+        ku "I mean this in the best possible way, but if Viscella {i}can{/i} screw something up, chances are she {i}will{/i}." 
         
     show kumiru happy
     
@@ -1210,13 +1208,13 @@ label ch1_scene08_fenVisit:
             
             show fenira happy
             
-            f "When the kitsune tries sneaking into my room while I'm sleeping, I can at least bludgeon her with the trophies. Wouldn't be able to do that with a certificate. Fenira 1, Society 0."
+            f "Can't bludgeon the Kitsune with a certificate."
             
-    pc "Uh, about those trophies..."
+    pc "What'd you get them for?"
     
     show fenira happy
     
-    f "Oh, right. Yeah, most of 'em are from middle school. Soccer and track, that kinda thing."
+    f "The trophies? Most of 'em are from middle school. Soccer and track, that kinda thing."
     
     show fenira neutral
     
@@ -1232,11 +1230,23 @@ label ch1_scene08_fenVisit:
     
     f "I used to snowboard, but..."
     
-    f "I hate the cold."
-    
     show fenira neutral
     
-    f "Anything below forty pisses me off, and it was something like minus six degrees that day. Not including wind chill. What was I supposed to wear, short shorts?"
+    f "I really, really... {i}really{/i} hate the cold."
+    
+    f "I'm a phoenix, y'know? We like warm."
+    
+    pc "And yet you snowboarded?"
+    
+    f "Yeah. It was fun. The pay-off was the temperature..."
+    
+    f "Anyways, it was something like minus six degrees farenheit that day. And that wasn't including wind chill. What was I supposed to wear, short shorts?"
+    
+    f "So, uh, I bundled up."
+    
+    show fenira happy
+    
+    f "I bundled up {i}good{/i}."
     
     f "Nagi laughed at me for weeks. Then she made this."
     
@@ -1273,6 +1283,8 @@ label ch1_scene08_fenVisit:
             show fenira neutral
             
             f "Until I hit the minotaurus, that is."
+            
+            f "Here's a lesson for you: no amount of padding's gonna keep a minotaurus from kicking your ass."
 
     "Fenira places the trophy on her bed, with all the rest."
     
@@ -1738,7 +1750,7 @@ label ch1_scene08_fenVisit_pcWins:
     
     show viscella shocked
     
-    show fenira happy at fenira_left with dissolve
+    show fenira neutral at fenira_left with dissolve
     
     show viscella at viscella_right with move
     
@@ -1955,11 +1967,11 @@ label ch1_scene08_nagVisit:
             
             n "I was in a band and everything. Fenira did vocals, believe it or not. She could do some crazy things with her voice."
             
-            show nagi neutral
+            show nagi bored
             
             n "She could also do some crazy things to a stage."
             
-            n "Probably why the school shut us down."
+            n "Probably why the school shut us down..."
             
             n "Sorry, you probably didn't stop by for a history lesson. What's up?"
             
@@ -2003,15 +2015,7 @@ label ch1_scene08_nagVisit:
      
     $ kaFlip()
      
-    show kamao wink:
-        xpos 0.1
-        xanchor 0.5
-        ypos 0.55
-        yanchor 340
-        zoom 1.0
-        xzoom -1.0
-        
-    with dissolve
+    show kamao wink at kamao_farleft with dissolve
     
     play music "assets/sound/bgm/scene_comi1.ogg"
     
@@ -2057,8 +2061,6 @@ label ch1_scene08_nagVisit:
     
     ka "About what?"
     
-    show nagi confident
-    
     n "Our good chemistry, of course."
     
     ka "..."
@@ -2069,7 +2071,7 @@ label ch1_scene08_nagVisit:
     
     show kamao unhappy
     
-    ka "I mean, pfft. Nice try, snake lady, but I used that trick like two hours ago."
+    ka "I mean, pfft. Nice try, snake lady, but I used that trick like an hour ago."
     
     ka "Right, [pc]?"
     
@@ -2142,8 +2144,8 @@ label ch1_scene08_nagVisit:
             $ n_love += nagAff(1)
             
             show nagi neutral with dissolve:
-                xpos 0.2
-                xanchor 525
+                xalign 0.35
+                ypos 0.4
                 zoom 1.5
                 
             show kamao flustered
@@ -2190,13 +2192,13 @@ label ch1_scene08_nagVisit:
             
             show kamao sleepy
             
-            ka "Aah, I remember it like it was two hours ago..."
+            ka "Aah, I remember it like it was an hour ago..."
             
     n "Right."
             
     show nagi neutral
             
-    n "Hey, if you need any help filing a restraining order, I know a girl."
+    n "Hey, if you need any help filing a restraining order, I know a chick."
             
     show kamao unhappy
             
@@ -2235,12 +2237,7 @@ label ch1_scene08_nagVisit:
     ka "Please don't eat me."
     
     show kamao with MoveTransition(0.2):
-        xpos 0.3
-        xanchor 0.5
-        ypos 0.85
-        yanchor 340
-        zoom 1.0
-        xzoom -1.0
+        ypos 1.1
         
     play sound "assets/sound/sfx/body_hit.wav"
     
@@ -2358,6 +2355,10 @@ label ch1_scene08_nagVisit:
     
     n "Oh, right. Boxes."
     
+    n "Talking all about boxes."
+    
+    n "..."
+    
     show nagi bored
     
     n "Wow. See what happens when I haven't unpacked any of my conversation starters? It's not pretty."
@@ -2448,7 +2449,7 @@ label ch1_scene08_nagVisit:
     
     show nagi confused
     
-    n "Wait, you've forgotten about chimera?"
+    n "...Seriously?"
     
     pc "I think I had this same conversation with Kumiru and Viscella."
     
@@ -2460,9 +2461,13 @@ label ch1_scene08_nagVisit:
     
     show nagi confused
     
-    n "So you know about humans, but not chimera?"
+    n "Humans?"
     
-    pc "I guess, yeah."
+    pc "Yeah."
+    
+    n "But nothing about chimera?"
+    
+    pc "Nope."
     
     show nagi neutral
     
@@ -2588,6 +2593,8 @@ label ch1_scene08_kamVisit:
             
             "She jumps, nearly dropping the mirror in the process."
             
+            $ kaUnFlip()
+            
             show kamao shocked_open at kamao_center
             
             ka "Gyah!"
@@ -2643,6 +2650,8 @@ label ch1_scene08_kamVisit:
             ka "Fufufu!"
             
             "Suddenly, she pumps her fist."
+            
+            $ kaUnFlip()
             
             show kamao confident at kamao_center
             
@@ -2718,7 +2727,7 @@ label ch1_scene08_kamVisit:
     
     "Kamao ushers me into her bedroom, kicking various articles of clothing under her bed as she does so."
     
-    pc "How'd you manage to get your room so messy? Didn't you just move in a couple hours ago?"
+    pc "How'd you manage to get your room so messy? Didn't you just move in an hour ago?"
     
     show kamao wink
     
@@ -2746,25 +2755,31 @@ label ch1_scene08_kamVisit:
     
     ka "Because I'm proud! It's like... a family tradition!"
     
-    ka "One time, at band camp, I literally broke {i}all the flutes{/i}. On accident, of course. Mostly."
-    
-    pc "All of them?"
-    
-    show kamao sleepy
-    
-    ka "Yeah. All of them."
-    
     show kamao vhappy
     
-    ka "When the flute players were done with me, I had to breathe through a straw!"
+    ka "One time, my dad called in a hazmat team because I wouldn't clean my room!"
     
-    show kamao confused
+    pc "Uh..."
     
-    ka "Actually, that would've made my throat a bit like a flute, wouldn't it?"
+    ka "It was hilarious!"
     
-    show kamao unhappy
+    show kamao bored
     
-    ka "Damn. That's poetry, right there."
+    ka "Until I got the whole lecture on mishandling dangerous biohazards..."
+    
+    pc "..."
+    
+    show kamao smirk
+    
+    ka "Pff, I'm just kidding."
+    
+    ka "..."
+    
+    show kamao neutral
+    
+    ka "Uh, mostly."
+    
+    show kamao happy
     
     ka "Anyways, enough about me! Tell me about you!"
     
@@ -2794,12 +2809,7 @@ label ch1_scene08_kamVisit:
             
             show kumiru unamused at kumiru_left
             
-            show viscella neutral:
-                xpos 0.12
-                xanchor 0.5
-                ypos 0.6
-                yanchor 260
-                xzoom -1.0
+            show viscella neutral at viscella_farleft
             
             with flash
             
@@ -2960,23 +2970,21 @@ label ch1_scene08_kamVisit:
     
     menu:
         
-        "Whisper something dirty into her ear.":
+        "Whisper 'dirty stuff' into her ear.":
             
             show kamao shockblush
             
             "You lean in close. Kamao freezes, her breath caught in her throat, as you whisper something into her ear."
             
-            pc "Omlette du fromage."
+            pc "Dirty stuff."
             
             ka "..."                              
             
-            show kamao happy
+            show kamao smirk
             
-            ka "Hah! I get that reference!"
+            ka "Pff. Smartass."
             
-            show kamao vhappy
-            
-            ka "K-bux get!"
+            ka "Oh well. K-bux get."
                                            
         "'How many do I get for doing dirty stuff to you?'":
             
@@ -3064,7 +3072,7 @@ label ch1_scene08_kamVisit:
                     
                     show kamao bored
                     
-                    ka "I want sex, not sympathy."
+                    ka "Thanks, but I want sex, not sympathy."
                     
                     show kamao shocked
                     
@@ -3136,7 +3144,7 @@ label ch1_scene08_kamVisit:
     
     menu:
         
-        "I find that hard to believe.":
+        "'I find that hard to believe.'":
             
             $ ka_love += kamAff(2)
             
@@ -3166,7 +3174,7 @@ label ch1_scene08_kamVisit:
 
             ka "That's {i}my{/i} job."
             
-        "Well, at least you're honest.":
+        "'Well, at least you're honest.'":
             
             ka "Am I, though?"
             
@@ -3212,7 +3220,7 @@ label ch1_scene08_kamVisit:
     
     show kamao happy
     
-    ka "Oh my god, Dad, it's so cool. They've got their own movie theatre. I'm not kidding."
+    ka "Oh my god, it's so cool. They've got their own movie theatre. I'm not kidding."
     
     ka "Well, obviously not {i}that{/i} big, but pretty big."
     
@@ -3758,6 +3766,8 @@ label ch1_scene09:
     stop music fadeout 3.0
     
     hide kamao with dissolve
+    
+    $ kaUnFlip()
     
     show nagi bored at nagi_center with move
     
