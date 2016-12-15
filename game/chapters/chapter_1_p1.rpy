@@ -34,6 +34,7 @@ label start:
     
     play music "assets/sound/bgm/noodle.mp3"
     
+
     scene bg void with Dissolve(4.0)
     
     if gamedebug == True:
@@ -43,11 +44,8 @@ label start:
         "GAME IS IN DEBUG MODE."
         
         "TESTING"
-        
-        show kamao neutral at kamao_center
-        
+
         ""
-        
         
         "END TESTING"
         
