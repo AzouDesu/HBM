@@ -79,7 +79,7 @@ label ch1_scene07:
         
         "'Whew, this thing weighs a ton! {i}Right, Nagi?{/i}'":
             
-            $ n_like += nagAff(1)
+            $ n_like += 1
             
             show kumiru happy
             
@@ -123,7 +123,7 @@ label ch1_scene07:
                 
                 "'You caught me.'":
                     
-                    $ ku_love += kumAff(1)
+                    $ ku_love += 1
                 
                     show nagi wink
                     
@@ -147,7 +147,7 @@ label ch1_scene07:
                     
                 "'Maybe I'm trying to impress {i}you{/i}?'":
                     
-                    $ n_love += nagAff(1)
+                    $ n_love += 1
                     
                     show nagi neutral
                     
@@ -517,9 +517,9 @@ label ch1_scene07:
     
 label ch1_scene08_visSearch:  
     
-    $ v_like += visAff(2)
+    $ v_like += 2
     
-    $ ku_like += kumAff(2)
+    $ ku_like += 2
     
     stop music fadeout 2.0
     
@@ -759,7 +759,7 @@ label ch1_scene08_visSearch:
         
         "'There are way better hiding places than closets.'":
             
-            $ v_love += visAff(1)
+            $ v_love += 1
             
             show viscella shocked
             
@@ -867,9 +867,9 @@ label ch1_scene08_visSearch:
         
         "'Sorry, Viscella. I mean, she's spot on...'":
             
-            $ ku_love += kumAff(2)
+            $ ku_love += 2
             
-            $ ku_like += kumAff(1)
+            $ ku_like += 1
             
             $ flag_HelpedViscellaLie = False
             
@@ -919,9 +919,9 @@ label ch1_scene08_visSearch:
             
         "'She was trying out the karaoke machine.' (Lie)":
             
-            $ v_love += visAff(2)
+            $ v_love += 2
             
-            $ v_like += visAff(1)
+            $ v_like += 1
             
             $ flag_HelpedViscellaLie = True
             
@@ -976,9 +976,9 @@ label ch1_scene08_visSearch:
             
             $ flag_HelpedViscellaLie = False
     
-            $ ku_like += kumAff(1)
+            $ ku_like += 1
             
-            $ v_like += visAff(1)
+            $ v_like += 1
     
             v "I... I was... um..."
             
@@ -1066,7 +1066,7 @@ label ch1_scene08_visSearch:
  
 label ch1_scene08_fenVisit:
     
-    $ f_like += fenAff(4)
+    $ f_like += 4
         
     
     $ flag_VisitedFenira = True
@@ -1348,7 +1348,7 @@ label ch1_scene08_fenVisit:
             
             $ flag_AcceptedFeniraChallenge = True
             
-            $ f_love += fenAff(1)
+            $ f_love += 1
             
             show fenira confident
             
@@ -1864,7 +1864,7 @@ label ch1_scene08_fenVisit_end:
         
         "Sure, if you want.":
             
-            $ f_love += fenAff(2)
+            $ f_love += 2
             
             show fenira lovestruck
             
@@ -1918,7 +1918,7 @@ label ch1_scene08_fenVisit_end:
             
 label ch1_scene08_nagVisit:
     
-    $ n_like += nagAff(4)
+    $ n_like += 4
     
     $ flag_VisitedNagi = True
     
@@ -2141,7 +2141,7 @@ label ch1_scene08_nagVisit:
             
             n "And here I thought you'd never ask."
             
-            $ n_love += nagAff(1)
+            $ n_love += 1
             
             show nagi neutral with dissolve:
                 xalign 0.35
@@ -2509,7 +2509,7 @@ label ch1_scene08_nagVisit:
         
         "'Who wouldn't?'":
             
-            $ n_love += nagAff(1)
+            $ n_love += 1
             
             show nagi bored
             
@@ -2536,7 +2536,7 @@ label ch1_scene08_nagVisit:
             
         "'Wh- ah, well, I, um-'":
             
-            $ n_love += nagAff(1)
+            $ n_love += 1
             
             show nagi sad
             
@@ -2566,7 +2566,7 @@ label ch1_scene08_nagVisit:
         
 label ch1_scene08_kamVisit:
     
-    $ ka_like += kamAff(4)
+    $ ka_like += 4
     
     $ flag_VisitedKamao = True
     
@@ -2898,7 +2898,7 @@ label ch1_scene08_kamVisit:
                             
                             show kamao shockblush
                             
-                            $ ka_love += kamAff(2)
+                            $ ka_love += 2
                             
                             "You pet Kamao's tail."
                             
@@ -2996,7 +2996,7 @@ label ch1_scene08_kamVisit:
                                            
         "'How many do I get for doing dirty stuff to you?'":
             
-            $ ka_love += kamAff(1)
+            $ ka_love += 1
             
             show kamao embarrassed
             
@@ -3158,7 +3158,7 @@ label ch1_scene08_kamVisit:
         
         "'I find that hard to believe.'":
             
-            $ ka_love += kamAff(2)
+            $ ka_love += 2
             
             show kamao bored
             

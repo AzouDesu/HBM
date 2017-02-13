@@ -1,1 +1,8 @@
+MECHANICAL:
+
+Characters slightly remember the PC if he has their totem, incurring special dialogue. Dialogue in milestone scenes (and others, maybe) if the PC has char's totem will differ slightly.
+
+STORY:
+
 Fenira and MC hold hands, she accuses him of having sweaty palms, when in reality she's the one sweating a river
+

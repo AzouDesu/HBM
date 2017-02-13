@@ -6,7 +6,8 @@
         python:
             flag_ScaredViscella = True
             flag_RememberedAllise = False
-            flag_AlliseDraveniaInBetween == True
+        
+        $advDay()
         
         play sound "assets/sound/sfx/morning.ogg"
         
@@ -252,7 +253,7 @@
             
             "'I've got time.'":
                 
-                $ d_like += draAff(1)
+                $ d_like += 1
                 
                 show dravenia happy
                 
@@ -452,7 +453,7 @@
                         
             "'You're a {i}dragon{/i}?! That's so cool! Can you breathe fire?'":
                 
-                $ d_love += draAff(1)
+                $ d_love += 1
                 
                 show dravenia lovestruck
                 
@@ -829,7 +830,7 @@
                     
                     "'I'm sure it's not that bad.'":
                         
-                        $ v_like += visAff(1)
+                        $ v_like += 1
                         
                         v "..."
                         
@@ -1004,7 +1005,7 @@
                         
                     "'Tch. I underestimated you.'":
                     
-                        $ v_love += visAff(1)
+                        $ v_love += 1
                     
                         v "Hehe! Never underestimate your opponent!"
                         
@@ -1242,7 +1243,7 @@
             
             "'No, you're not.'":
                 
-                $ v_like += visAff(1)
+                $ v_like += 1
                 
                 v "But... I just said something stupid..."
                 
@@ -1252,9 +1253,9 @@
                 
             "Pat her head.":
                 
-                $ v_like += visAff(1)
+                $ v_like += 1
                 
-                $ v_love += visAff(2)
+                $ v_love += 2
                 
                 "I take a few steps forward, and pat Viscella on the head with a wet {i}splat{/i}."
                 
@@ -1398,7 +1399,7 @@
             
             "'I'm... I'm fine.'":
                 
-                $ a_like += allAff(1)
+                $ a_like += 1
                 
                 "The strange girl pauses for a moment, gazing intently at me."
                 
@@ -1667,9 +1668,9 @@
         
         $ flag_RememberedAllise = True
 
-        $ a_like += allAff(1)
+        $ a_like += 1
 
-        $ a_love += allAff(3)
+        $ a_love += 3
         
         stop music fadeout 1.0
         
@@ -1924,7 +1925,7 @@
             
             "'Thanks... I'll keep that in mind.'":
 
-                $ d_like += draAff(3)
+                $ d_like += 3
 
                 show dravenia happy
 
@@ -1966,7 +1967,7 @@
                 
             "'If it were your place, huh?'":
                 
-                $ d_like += draAff(2)
+                $ d_like += 2
                 
                 d "Of course. A hellguard exists to be vigilant, not paranoid."
                 
@@ -1994,8 +1995,8 @@
                 
             "'Aren't you being a little paranoid?'":
                 
-                $ d_like += draAff(1)
-            
+                $ d_like += 1       
+                
                 d "Of course not, sir."
                 
                 show dravenia neutral
@@ -2195,7 +2196,7 @@
 
                     "'Did you... wanna chat?'":
                         
-                        $ a_like += allAff(2)
+                        $ a_like += 2
                         
                         a "..."
                         
@@ -2277,7 +2278,7 @@
             
     label ch2_scene07_draVisit:
         
-        $ d_like += draAff(4)
+        $ d_like += 4
         
         "I decide it's probably best to head back upstairs for now and set my new bodyguard at ease."
         
@@ -2351,7 +2352,7 @@
 
             "'If you wanted to spoon me, you just had to ask.'":
                 
-                $ d_love += draAff(1)
+                $ d_love += 1
                 
                 show dravenia happy
                 
@@ -2637,7 +2638,7 @@
                         
                         jump ch2_scene07_draVisit
                         
-        $ a_like += allAff(4)
+        $ a_like += 4
         
         a "..."
         

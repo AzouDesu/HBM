@@ -20,7 +20,11 @@ label start:
     
     show screen clock
     
+    show screen calendar
+    
     $ app_access = True
+    
+    $ calendar_access = True
     
     show screen button
     
@@ -44,33 +48,9 @@ label start:
         "GAME IS IN DEBUG MODE."
         
         "TESTING"
-
-        show fenira neutral at fenira_farleft
+        ###
         
-        ""
-
-        show fenira neutral at fenira_left with move
-        
-        ""
-        
-        show fenira:
-            xzoom 1.0
-            xanchor 0.25
-        
-        ""
-        
-        show fenira neutral at fenira_center with move
-        
-        ""
-
-        show fenira neutral at fenira_right with move
-        
-        ""
-
-        show fenira neutral at fenira_farright with move
-        
-        ""
-        
+        ###
         "END TESTING"
         
     $ renpy.pause(3.0)
@@ -433,7 +413,7 @@ label ch1_scene02:
     menu:
         "'I think so...'":
             
-            $ ku_like += kumAff(1)
+            $ ku_like += 1
             
             show kumiru neutral
             
@@ -532,7 +512,7 @@ label ch1_scene02:
     
         "'And I'm sorry for bursting your eardrums.'":
             
-            $ ku_love += kumAff(1)
+            $ ku_love += 1
             
             show kumiru happy
     
@@ -648,7 +628,7 @@ label ch1_scene02:
     menu:
         "'You guys apologize too much. I'm fine.'":
             
-            $ v_like += visAff(1)
+            $ v_like += 1
             
             show viscella neutral
             
@@ -674,7 +654,7 @@ label ch1_scene02:
             
         "'Whoa. What are you made of?'":
             
-            $ v_love += visAff(1)
+            $ v_love += 1
             
             show viscella shocked
             
@@ -853,7 +833,7 @@ label ch1_scene02:
             
         "'This 'nightmare' thing sounds most plausible.'":
             
-            $ ku_like += kumAff(2)
+            $ ku_like += 2
             
             show kumiru happy
             
@@ -863,7 +843,7 @@ label ch1_scene02:
             
         "'Maybe I really am from a different dimension...'":
             
-            $ v_like += visAff(2)
+            $ v_like += 2
      
             show viscella excited
             
@@ -877,9 +857,9 @@ label ch1_scene02:
             
         "'I don't know...'":
             
-            $ v_like += visAff(1)
+            $ v_like += 1
             
-            $ ku_like += kumAff(1)
+            $ ku_like += 1
             
     show kumiru neutral
             
@@ -1151,7 +1131,7 @@ label ch1_scene03:
             
             show viscella vhappy
             
-            $ v_like += visAff(1)
+            $ v_like += 1
             
             v "See?"
             
@@ -1167,7 +1147,7 @@ label ch1_scene03:
             
         "'It's normal.'":
             
-            $ ku_like += kumAff(1)
+            $ ku_like += 1
             
             v "It is?"
             
@@ -1617,7 +1597,7 @@ label ch1_scene04:
     menu:
         "'A catgirl?'":
             
-            $ ka_like += kamAff(1)
+            $ ka_like += 1
             
             ka_un "Nope. Fluffier."
             
@@ -1631,7 +1611,7 @@ label ch1_scene04:
             
         "'A foxgirl!'":
             
-            $ka_like += kamAff(1)
+            $ka_like += 1
             
             show kamao winkblush
             
@@ -1780,7 +1760,7 @@ label ch1_scene04:
     menu:
         "'We definitely did not do that.'":
             
-            $ v_like += visAff(1)
+            $ v_like += 1
             
             show viscella happy
             
@@ -1797,7 +1777,7 @@ label ch1_scene04:
             
         "'Someone get this furball off of me.'":
             
-            $ ku_like += kumAff(1)
+            $ ku_like += 1
             
             show viscella neutral
             
@@ -1821,9 +1801,9 @@ label ch1_scene04:
             
         "'It's true. I'm sorry...'":
             
-            $ ka_love += kamAff(1)
+            $ ka_love += 1
             
-            $ ka_like += kamAff(1)
+            $ ka_like += 1
             
             show kamao teasing
             
@@ -1914,7 +1894,7 @@ label ch1_scene04:
     menu:
         "'It's [pc].'":
             
-            $ ka_like += kamAff(2)
+            $ ka_like += 2
             
             show kamao horny
             
@@ -1942,7 +1922,7 @@ label ch1_scene04:
             
         "'Guess.'":
             
-            $ ka_like += kamAff(2)
+            $ ka_like += 2
             
             show kamao confused
             
@@ -2424,7 +2404,7 @@ label ch1_scene05:
             
         "'You had it coming.'":
             
-            $ ka_like += kamAff(1)
+            $ ka_like += 1
             
             show kamao happy
             
@@ -2497,7 +2477,7 @@ label ch1_scene05:
     menu:
         "'She has that effect on people.'":
             
-            $ f_like += fenAff(1)
+            $ f_like += 1
             
             f_un "I figured. But I still shouldn't be picking fights with people I just met."
             
@@ -2616,7 +2596,7 @@ label ch1_scene05:
         
         "'Do you want help with your things first?'":
             
-            $ f_love += fenAff(1)
+            $ f_love += 1
             
             $ flag_OfferedFeniraUnpackHelp = True
             
@@ -2869,7 +2849,7 @@ label ch1_scene06:
         
         "'Guilty.'":
             
-            $ n_like += nagAff(1)
+            $ n_like += 1
             
             $ flags_NagiCourtFenSupport -= 1
             
@@ -2893,7 +2873,7 @@ label ch1_scene06:
             
         "'Not guilty.'":
             
-            $ f_like += fenAff(1)
+            $ f_like += 1
             
             $ flags_NagiCourtFenSupport += 1
             
@@ -3058,7 +3038,7 @@ label ch1_scene06:
          
         "'Well, that goes without saying...'":
             
-            $ n_like += nagAff(1)
+            $ n_like += 1
             
             $ flags_NagiCourtFenSupport -= 1
             
@@ -3070,7 +3050,7 @@ label ch1_scene06:
             
         "'Aren't you blowing this a little out of proportion?'":
             
-            $ f_like += fenAff(1)
+            $ f_like += 1
             
             $ flags_NagiCourtFenSupport += 1
             
@@ -3107,7 +3087,7 @@ label ch1_scene06:
             
     if flags_NagiCourtFenSupport <= -1:
     
-        $ n_like += nagAff(2)
+        $ n_like += 2
     
         show fenira sad
         
@@ -3137,9 +3117,9 @@ label ch1_scene06:
         
     elif flags_NagiCourtFenSupport >= 0 and flags_NagiCourtFenSupport <= 1:
     
-        $ n_like += nagAff(1)
+        $ n_like += 1
         
-        $ f_like += fenAff(1)
+        $ f_like += 1
         
         show fenira angry
         
@@ -3166,7 +3146,7 @@ label ch1_scene06:
     
     elif flags_NagiCourtFenSupport >= 2:
             
-        $ f_like += fenAff(2)
+        $ f_like += 2
         
         f "No, you know what? We're done here. I don't need this shit, and [pc] definitely doesn't need this shit."
         
@@ -3245,7 +3225,7 @@ label ch1_scene06:
         
         "'Yeah. Don't want her to hurt herself.'":
             
-            $ n_like += nagAff(1)
+            $ n_like += 1
             
             show nagi happy
             

@@ -60,7 +60,13 @@ init python:
     
     stat_max = 100
     
+    season = "spring"
     
+    day = "monday"
+    
+    date = 1
+    
+    # EACH MONTH 3 DAYS FORWARD (i.e. 1st of Summer = Monday, 1st of Fall = Thursday, 1st of Winter = Sunday
     # Current Time
     # 0 = 12AM
     # 1 = 3AM
@@ -76,6 +82,7 @@ init python:
     # App Access allows us to access the app that shows us our relationships with everyone
     app_access = False
     clock_access = False
+    calendar_access = False
     
     flash = Fade(.25, 0, .75, color="#fff")
     
@@ -117,6 +124,43 @@ init python:
             
             return
 
+    def advDay():
+        
+        global day 
+        global date 
+        
+        date += 1
+        
+        if date > 31:
+            date = 1
+        
+        if day == "monday":
+            day = "tuesday"
+            return
+            
+        elif day == "tuesday":
+            day = "wednesday"
+            return
+            
+        elif day == "wednesday":
+            day = "thursday"
+            return
+            
+        elif day == "thursday":
+            day = "friday"
+            return
+            
+        elif day == "friday":
+            day = "saturday"
+            return
+            
+        elif day == "saturday":
+            day = "sunday"
+            return
+            
+        elif day == "sunday":
+            day = "monday"
+            return
 
     def visAff(affPts):
         tempVar = 0.0  
