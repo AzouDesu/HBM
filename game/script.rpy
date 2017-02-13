@@ -128,11 +128,24 @@ init python:
         
         global day 
         global date 
+        global season
         
         date += 1
         
         if date > 31:
             date = 1
+            
+            if season == "spring":
+                season = "summer"
+            
+            elif season == "summer":
+                season = "fall"
+                
+            elif season == "fall":
+                season = "winter"
+                
+            else:
+                season = "spring"
         
         if day == "monday":
             day = "tuesday"
