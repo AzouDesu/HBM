@@ -624,7 +624,7 @@ screen button:
                 hover "assets/menus/button_rlh.png"
                 activate_sound "assets/sound/sfx/blip.wav"
                 #action ui.callsinnewcontext("aff_screen_label")
-                action Show("aff_screen", wipedown)             
+                action Show("aff_screen", dissolve)             
     
 ###########################
 # Affection Screen
@@ -632,6 +632,8 @@ screen button:
 screen aff_screen:
     
     modal True
+     
+    add "assets/menus/phonebg.png" xalign 0.5 yalign 0.5
     
     #Play("sound", "assets/sounds/sfx/blip.wav")
     
@@ -643,7 +645,7 @@ screen aff_screen:
     #Diff between chars: 0.065
     #Diff between char bars: 0.054
     
-    add "assets/menus/phonebg.png" xalign 0.5 yalign 0.5
+    #add "assets/menus/phonebg.png" xalign 0.5 yalign 0.5
     
     if gamedebug:
         bar xalign 0.51 yalign 0.118 value FieldValue(store, "ku_like", affection_max) range affection_max style "like_bar"
@@ -724,7 +726,7 @@ screen aff_screen:
             idle "assets/menus/button_rl.png"
             hover "assets/menus/button_rlh.png"
             activate_sound "assets/sound/sfx/blip.wav"
-            action Hide("aff_screen", wipeup)
+            action Hide("aff_screen", dissolve)
 
 #    vbox xalign 0.765 yalign 0.5:
 #        imagebutton:
@@ -757,7 +759,7 @@ screen stat_screen:
             idle "assets/menus/button_rl.png"
             hover "assets/menus/button_rlh.png"
             activate_sound "assets/sound/sfx/blip.wav"
-            action Hide("stat_screen", wipeup)
+            action Hide("stat_screen", dissolve)
 
     vbox xalign 0.765 yalign 0.5:
         imagebutton:

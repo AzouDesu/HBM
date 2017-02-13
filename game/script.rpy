@@ -80,7 +80,7 @@ init python:
     flash = Fade(.25, 0, .75, color="#fff")
     
     flashBlack = Fade(.25, 0, .75, color="#000")
-    
+       
     #Functions
 
     #If clothes with flipped text variants exist, add them to these two functions

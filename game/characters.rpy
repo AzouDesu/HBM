@@ -16,7 +16,7 @@ define d_un = Character('???', color="#ffe749")
 define a = Character('Allise', color="#9236c6")
 define a_un = Character('???', color="#9236c6")
 define unknown = Character('???')
-define pc = Character('???')
+define pc = Character('PC')
 
 define voice_a = Character('Friendly Voice') 
 define voice_b = Character('Familiar Voice') 
@@ -30,6 +30,11 @@ define pc_f = "???"
 define pc_v = "???"
 define pc_n = "???"
 define pc_a = "???"
+
+transform menu_center:
+    xalign 0.5
+    yalign -15.0
+    linear 0.5 yalign 0.5 
 
 # Allise
 
@@ -117,7 +122,7 @@ image allise p_neutral = LiveComposite(
             "a_Outfit == 'swimwear'", "assets/allise/a_outfit_swimwear.png"
             ),
         (230, 241), "assets/allise/faces/a_p_neutral.png",
-        (236, 183), "assets/allise/a_p_signglow.png"
+        (229, 257), "assets/allise/a_p_eyeaura.png"
         )
 
 image allise p_angry = LiveComposite(
@@ -127,7 +132,7 @@ image allise p_angry = LiveComposite(
             "a_Outfit == 'swimwear'", "assets/allise/a_outfit_swimwear.png"
             ),
         (230, 241), "assets/allise/faces/a_p_angry.png",
-        (236, 183), "assets/allise/a_p_signglow.png"
+        (229, 257), "assets/allise/a_p_eyeaura.png"
         )
 
 image allise p_sad = LiveComposite(
@@ -137,7 +142,7 @@ image allise p_sad = LiveComposite(
             "a_Outfit == 'swimwear'", "assets/allise/a_outfit_swimwear.png"
             ),
         (230, 241), "assets/allise/faces/a_p_sad.png",
-        (236, 183), "assets/allise/a_p_signglow.png"
+        (229, 257), "assets/allise/a_p_eyeaura.png"
         )
 
 image allise p_vsad = LiveComposite(
@@ -148,7 +153,7 @@ image allise p_vsad = LiveComposite(
             ),
         (230, 241), "assets/allise/faces/a_p_sad.png",   
         (245, 305), "assets/allise/a_p_tears.png",
-        (236, 183), "assets/allise/a_p_signglow.png"
+        (229, 257), "assets/allise/a_p_eyeaura.png"
         )
 
 image allise vsad = LiveComposite(
@@ -775,7 +780,7 @@ transform viscella_puddle_center:
 transform viscella_puddle_right:
     xpos 0.6
     xanchor 0.5
-    ypos 0.7
+    ypos 0.85
     yanchor 260
     zoom 0.5
     xzoom 1.0
@@ -1548,6 +1553,14 @@ transform fenira_farleft:
     yanchor 330
     zoom 0.5
     xzoom -1.0
+
+transform fenira_farleft_unflipped:
+    xpos 0.15
+    xanchor 0.25
+    ypos 0.5
+    yanchor 330
+    zoom 0.5
+    xzoom 1.0
     
 transform fenira_legs:
     xpos 0.5
@@ -1574,8 +1587,7 @@ image dravenia angry = LiveComposite(
             "d_Outfit == 'default'", "assets/dravenia/d_outfit_default.png",
             "d_Outfit == 'swimwear'", "assets/dravenia/d_outfit_swimwear.png"
             ),
-        (775, 245), "assets/dravenia/faces/d_angry.png",
-        (975, 220), "assets/gen_vein.png"
+        (775, 245), "assets/dravenia/faces/d_angry.png"
         )
 
 image dravenia vangry = LiveComposite(

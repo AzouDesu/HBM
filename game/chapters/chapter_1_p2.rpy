@@ -2198,7 +2198,7 @@ label ch1_scene08_nagVisit:
             
     show nagi neutral
             
-    n "Hey, if you need any help filing a restraining order, I know a chick."
+    n "Hey, if you need any help filing a restraining order, I know a girl."
             
     show kamao unhappy
             
@@ -2475,7 +2475,7 @@ label ch1_scene08_nagVisit:
     
     pc "Really?"
     
-    show nagi wink
+    show nagi happy
     
     n "Totally. You're like the protagonist from an action movie. You can't tell me that's not cool."
 
@@ -2485,7 +2485,13 @@ label ch1_scene08_nagVisit:
         
     n "Well, I'm sure you'll run into some eventually."
     
+    show nagi wink
+    
+    n "Maybe you'll run into some with me?"
+    
     "Nagi yawns, stretching her arms over her head."
+    
+    show nagi neutral
     
     n "I'm kinda jealous, honest."
     
@@ -2789,7 +2795,7 @@ label ch1_scene08_kamVisit:
     
     menu:
         
-        "Ask about her offer":
+        "Ask about her offer.":
             
             ka "My offer... offer..."
             
@@ -2980,9 +2986,11 @@ label ch1_scene08_kamVisit:
             
             ka "..."                              
             
-            show kamao smirk
+            show kamao bored
             
-            ka "Pff. Smartass."
+            ka "Smartass."
+            
+            show kamao smirk
             
             ka "Oh well. K-bux get."
                                            
@@ -3067,6 +3075,10 @@ label ch1_scene08_kamVisit:
                     ka "I just want a big, fat-"
                     
                     pc "Alright, I get it."
+                    
+                    ka "Oooh, I {i}bet{/i} you got it."
+                    
+                    pc "..."
                     
                 "'Well. Good luck.":
                     
@@ -3282,7 +3294,7 @@ label ch1_scene09:
     
     scene bg nBedroom_n
     
-    show nagi happy at nagi_right
+    show nagi neutral at nagi_right
     
     show fenira vhappy at fenira_left
     
@@ -3388,9 +3400,13 @@ label ch1_scene09:
     
     f "Yeah, yeah."
     
-    show fenira with MoveTransition(0.5):
-        xalign 1.5
+    show fenira:
         xzoom 1.0
+        xanchor 0.25
+    
+    show fenira with move:
+        xpos 0.05
+        
     
     play sound "assets/sound/sfx/body_hit.wav"
     
@@ -3399,7 +3415,7 @@ label ch1_scene09:
     show nagi confused with vpunch
 
     show fenira shocked with MoveTransition(0.1):
-        xalign 1.4
+        xpos 0.1
         
     f "Ack, who the-"
     
@@ -3410,7 +3426,7 @@ label ch1_scene09:
     f "Pfft. Have fun, Nagi."
     
     show fenira with MoveTransition(1.5):
-        xalign 3.0
+        xpos -0.6
         
     $ renpy.pause(1.0)
     
@@ -3422,7 +3438,7 @@ label ch1_scene09:
         xalign -3.0
         
     show kamao with MoveTransition(0.2):
-        xalign -2.0
+        xalign -0.5
         
     play music "assets/sound/bgm/scene_comi1.ogg"
         
@@ -3536,8 +3552,6 @@ label ch1_scene09:
     
     n "What's in it for me?"
     
-    n "You know, besides the loss of all my pride and dignity."
-    
     show kamao confused
     
     ka "Hmm..."
@@ -3554,13 +3568,13 @@ label ch1_scene09:
     
     ka "You give me exclusive [pc] privileges, and I don't wake you up every morning by bellyflopping onto your bed."
     
-    n "You think threats are gonna work? We've already established that I'm higher on the food chain."
+    n "I thought we've already established that I'm higher on the food chain."
     
     show kamao confident
     
-    ka "Not so fast! I did some internet searching, and found to my amazement that eating people is illegal."
+    ka "Sure. But I did some internet searching, and found to my amazement that eating people is illegal."
     
-    n "Is reporting you to the supervisor also illegal?"
+    n "Is reporting you to the supervisor for sexual harassment {i}also{/i} illegal?"
         
     show kamao shocked
         
@@ -3621,6 +3635,10 @@ label ch1_scene09:
         show kamao confident
         
         ka "He probably just wanted advice on how to approach someone as drop-dead gorgeous as me!"
+
+        n "Pfft."
+        
+        n "Alright, then. Let's pretend that's true for a moment."
 
         n "If that was the case, it meant he trusted me more than anyone in this house. Probably more than anyone he knows, considering the whole 'amnesia' thing."
         
@@ -3684,28 +3702,20 @@ label ch1_scene09:
         
         show nagi bored
         
-        n "Do I look like a thesaurus?"
+        n "..."
         
-        ka "Yeah, actually. You're green, and my last thesaurus was green. No way that's a coincidence."
-        
-        show nagi confused
-        
-        n "Uh... huh."
-        
-        ka "Anyways, you gonna let me have him or not?"
+        ka "Whoops, we're getting sidetracked. So, you gonna let me have him or not?"
         
         
     show nagi neutral
         
-    n "Absolutely..."
+    n "Absolutely."
     
     show kamao shocked_open
     
     ka "R-Really?"
     
-    show nagi confident
-    
-    n "...not."
+    n "No."
         
     show kamao angry
         

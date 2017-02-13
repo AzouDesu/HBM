@@ -45,6 +45,30 @@ label start:
         
         "TESTING"
 
+        show fenira neutral at fenira_farleft
+        
+        ""
+
+        show fenira neutral at fenira_left with move
+        
+        ""
+        
+        show fenira:
+            xzoom 1.0
+            xanchor 0.25
+        
+        ""
+        
+        show fenira neutral at fenira_center with move
+        
+        ""
+
+        show fenira neutral at fenira_right with move
+        
+        ""
+
+        show fenira neutral at fenira_farright with move
+        
         ""
         
         "END TESTING"
