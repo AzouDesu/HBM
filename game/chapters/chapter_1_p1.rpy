@@ -1,5 +1,5 @@
 
-label start:
+label OLDstart:
     
     python:
         flag_DriderSeen = False
@@ -20,7 +20,7 @@ label start:
     
     show screen clock
     
-    show screen calendar
+    #show screen calendar
     
     $ app_access = True
     
@@ -49,7 +49,8 @@ label start:
         
         "TESTING"
         ###
-
+        
+        #scene bg pBedroom
         
         ###
         "END TESTING"
@@ -116,7 +117,7 @@ label start:
             
         
     
-label nameSelect:
+label OLDnameSelect:
     
     $ pc = renpy.input("What is my name?")
     
@@ -2237,8 +2238,6 @@ label ch1_scene04:
     
     hide kamao with dissolve
     
-    $ kaUnFlip()
-    
     jump ch1_scene05
     
 label ch1_scene05:
@@ -2276,8 +2275,6 @@ label ch1_scene05:
     show fenira angry at fenira_right with dissolve
     
     f_un "N-Nagi! Get your ass back here and get this fleabag off of me!"
-    
-    $ kaFlip()
     
     show kamao teasing at kamao_center_flipped with dissolve
     

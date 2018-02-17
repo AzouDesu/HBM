@@ -624,7 +624,7 @@ screen button:
                 hover "assets/menus/button_rlh.png"
                 activate_sound "assets/sound/sfx/blip.wav"
                 #action ui.callsinnewcontext("aff_screen_label")
-                action Show("aff_screen", dissolve)         
+                action Show("aff_screen", dissolve)
                 
 screen calendar:
     if calendar_access:
@@ -642,9 +642,9 @@ screen calendar:
         else:
             text "winter" font ("assets/fonts/MunroSmall.ttf") size 40 min_width 150 text_align 0.5 xalign 0.0 ypos 5
             
-        text day font ("assets/fonts/MunroSmall.ttf") size 32 min_width 150 text_align 0.5 xalign 0.0 ypos 50 color "#000"
+        text day font ("assets/fonts/MunroSmall.ttf") size 32 min_width 150 text_align 0.5 xalign 0.0 ypos 50
         
-        text str(date) font ("assets/fonts/MunroSmall.ttf") size 80 min_width 150 text_align 0.5 xalign 0.0 ypos 70 color "#000"
+        text str(date) font ("assets/fonts/MunroSmall.ttf") size 80 min_width 150 text_align 0.5 xalign 0.0 ypos 70
     
 ###########################
 # Affection Screen

@@ -1,0 +1,44 @@
+MAX POSSIBLE LIKE
+
+Ch1:
+	Kum: 5
+	Vis: 5
+	Nagi 5 
+	Fen: 5
+	Kam: 5
+
+Ch1_2: 
+	Kum: 4
+	Vis: 4
+	Nag: 4
+	Fen: 4
+	Kam: 4
+
+Ch2:
+	Dra: 8
+	All: 8
+
+Total: 8/9
+
+MAX POSSIBLE LOVE
+
+Ch1:
+	Kum: 1
+	Vis: 1
+	Nag: 1
+	Fen: 1
+	Kam: 1
+
+Ch1_2:
+	Kum: 3
+	Vis: 3 
+	Nag: 3
+	Fen: 3
+	Kam: 3
+
+Ch2:
+	Dra: 2
+	All: 2
+
+Total: 4
+

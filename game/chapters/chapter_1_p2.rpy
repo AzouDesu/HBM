@@ -869,7 +869,7 @@ label ch1_scene08_visSearch:
             
             $ ku_love += 2
             
-            $ ku_like += 1
+            $ ku_like += 2
             
             $ flag_HelpedViscellaLie = False
             
@@ -921,7 +921,7 @@ label ch1_scene08_visSearch:
             
             $ v_love += 2
             
-            $ v_like += 1
+            $ v_like += 2
             
             $ flag_HelpedViscellaLie = True
             
@@ -2013,8 +2013,6 @@ label ch1_scene08_nagVisit:
     
     play sound "assets/sound/sfx/door_open.wav"
      
-    $ kaFlip()
-     
     show kamao wink at kamao_farleft with dissolve
     
     play music "assets/sound/bgm/scene_comi1.ogg"
@@ -2272,8 +2270,6 @@ label ch1_scene08_nagVisit:
     ka "Deal."
     
     hide kamao with dissolve
-    
-    $ kaUnFlip()
     
     stop music fadeout 2.0
     
@@ -2599,8 +2595,6 @@ label ch1_scene08_kamVisit:
             
             "She jumps, nearly dropping the mirror in the process."
             
-            $ kaUnFlip()
-            
             show kamao shocked_open at kamao_center
             
             ka "Gyah!"
@@ -2656,8 +2650,6 @@ label ch1_scene08_kamVisit:
             ka "Fufufu!"
             
             "Suddenly, she pumps her fist."
-            
-            $ kaUnFlip()
             
             show kamao confident at kamao_center
             
@@ -3430,8 +3422,6 @@ label ch1_scene09:
         
     $ renpy.pause(1.0)
     
-    $ kaFlip()
-    
     show kamao neutral at kamao_left
     
     show kamao:
@@ -3776,8 +3766,6 @@ label ch1_scene09:
     stop music fadeout 3.0
     
     hide kamao with dissolve
-    
-    $ kaUnFlip()
     
     show nagi bored at nagi_center with move
     

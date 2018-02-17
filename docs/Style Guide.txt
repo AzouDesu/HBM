@@ -1,0 +1,5 @@
+Choices:
+
+For dialogue choices, brace the choice in single quotes, like "'Yes.'". For action and thought choices, the single quotes are unnecessary.
+
+For dialogue choices, have the PC actually say those lines in the text box, just like any other character.

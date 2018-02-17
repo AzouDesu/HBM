@@ -12,14 +12,18 @@ init python:
     gamedebug = True
     
     #To change an outfit, set 'xx_Outfit' to a valid outfit in in characters.rpy
+    #0 = Default, 1 = Swimwear
     
-    ka_Outfit = "default"
-    ku_Outfit = "default"
-    v_Outfit = "default"
-    f_Outfit = "default"
-    n_Outfit = "default"
-    d_Outfit = "default"
-    a_Outfit = "default"
+    story_numberofloops = 0
+    
+    
+    ka_Outfit = 0
+    ku_Outfit = 0
+    v_Outfit = 0
+    f_Outfit = 0
+    n_Outfit = 0
+    d_Outfit = 0
+    a_Outfit = 0
     
     ku_like = 0.0
     ku_love = 0.0
@@ -89,40 +93,6 @@ init python:
     flashBlack = Fade(.25, 0, .75, color="#000")
        
     #Functions
-
-    #If clothes with flipped text variants exist, add them to these two functions
-
-    def kaFlip():
-        
-        global ka_Outfit
-        
-        if ka_Outfit == "default":
-            
-            ka_Outfit = "default_f"
-            
-            return
-            
-        #Clothing goes here#
-            
-        else:
-            
-            return
-            
-    def kaUnFlip():
-        
-        global ka_Outfit
-        
-        if ka_Outfit == "default_f":
-            
-            ka_Outfit = "default"
-            
-            return
-            
-        #Clothing goes here#
-            
-        else:
-            
-            return
 
     def advDay():
         
@@ -271,11 +241,12 @@ image bg void = "assets/bg/void.png"
 image bg kitchen = "assets/bg/placeholder kitchen.png"
 image bg living = "assets/bg/placeholder living.png"
 image bg hallway = "assets/bg/placeholder hallway day.png"
-image bg theatre = "assets/bg/placeholder theatre.jpg"
-image bg study = "assets/bg/placeholder study.jpg"
+image bg theatre = "assets/bg/placeholder theatre.png"
+image bg study = "assets/bg/placeholder study.png"
 image bg gym = "assets/bg/placeholder gym.png"
 image bg rec = "assets/bg/placeholder rec.png"
 image bg street = "assets/bg/placeholder street.png"
+image bg pool = "assets/bg/placeholder pool.png"
 
 image debugscreen = "assets/bg/debugscreen.png"
 
@@ -283,49 +254,49 @@ image debugscreen = "assets/bg/debugscreen.png"
 image bg pBedroom = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom day.png", # base
-        (0, 0), "assets/menus/rooms/playerroom.png" # head
+        (511, 0), "assets/menus/rooms/playerroom.png" # head
         )
 
 image bg kuBedroom = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom day.png", # base
-        (0, 0), "assets/menus/rooms/kumiruroom.png" # head
+        (511, 0), "assets/menus/rooms/kumiruroom.png" # head
         )
 
 image bg vBedroom = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom day.png", # base
-        (0, 0), "assets/menus/rooms/viscellaroom.png" # head
+        (511, 0), "assets/menus/rooms/viscellaroom.png" # head
         )
 
 image bg nBedroom = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom day.png", # base
-        (0, 0), "assets/menus/rooms/nagiroom.png" # head
+        (511, 0), "assets/menus/rooms/nagiroom.png" # head
         )
 
 image bg kaBedroom = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom day.png", # base
-        (0, 0), "assets/menus/rooms/kamaoroom.png" # head
+        (511, 0), "assets/menus/rooms/kamaoroom.png" # head
         )
 
 image bg fBedroom = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom day.png", # base
-        (0, 0), "assets/menus/rooms/feniraroom.png" # head
+        (511, 0), "assets/menus/rooms/feniraroom.png" # head
         )
 
 image bg dBedroom = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom day.png", # base
-        (0, 0), "assets/menus/rooms/draveniaroom.png" # head
+        (511, 0), "assets/menus/rooms/draveniaroom.png" # head
         )
 
 image bg aBedroom = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom day.png", # base
-        (0, 0), "assets/menus/rooms/alliseroom.png" # head
+        (511, 0), "assets/menus/rooms/alliseroom.png" # head
         )
 
 #NIGHT
@@ -333,55 +304,54 @@ image bg aBedroom = LiveComposite(
 image bg pBedroom_n = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom night.png", # base
-        (0, 0), "assets/menus/rooms/playerroom.png" # head
+        (511, 0), "assets/menus/rooms/playerroom.png" # head
         )
 
 image bg kuBedroom_n = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom night.png", # base
-        (0, 0), "assets/menus/rooms/kumiruroom.png" # head
+        (511, 0), "assets/menus/rooms/kumiruroom.png" # head
         )
 
 image bg vBedroom_n = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom night.png", # base
-        (0, 0), "assets/menus/rooms/viscellaroom.png" # head
+        (511, 0), "assets/menus/rooms/viscellaroom.png" # head
         )
 
 image bg nBedroom_n = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom night.png", # base
-        (0, 0), "assets/menus/rooms/nagiroom.png" # head
+        (511, 0), "assets/menus/rooms/nagiroom.png" # head
         )
 
 image bg kaBedroom_n = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom night.png", # base
-        (0, 0), "assets/menus/rooms/kamaoroom.png" # head
+        (511, 0), "assets/menus/rooms/kamaoroom.png" # head
         )
 
 image bg fBedroom_n = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom night.png", # base
-        (0, 0), "assets/menus/rooms/feniraroom.png" # head
+        (511, 0), "assets/menus/rooms/feniraroom.png" # head
         )
 
 image bg dBedroom_n = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom night.png", # base
-        (0, 0), "assets/menus/rooms/draveniaroom.png" # head
+        (511, 0), "assets/menus/rooms/draveniaroom.png" # head
         )
 
 image bg aBedroom_n = LiveComposite(
         (1280, 800), # Width x Height
         (0, 0), "assets/bg/placeholder bedroom night.png", # base
-        (0, 0), "assets/menus/rooms/alliseroom.png" # head
+        (511, 0), "assets/menus/rooms/alliseroom.png" # head
         )
 
 
 
 define startpc = Character('You', color="#FFFFFF")
-define nameselected = False
 
 # ch1_sc01_01_01
 # chapter_scene_decision_choice

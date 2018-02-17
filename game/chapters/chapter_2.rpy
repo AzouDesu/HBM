@@ -612,8 +612,6 @@
           
         ka "Hayo!!"
         
-        $ kaFlip()
-        
         show kamao vhappy at kamao_left
     
         show kamao:
@@ -1670,7 +1668,7 @@
 
         $ a_like += 1
 
-        $ a_love += 3
+        $ a_love += 2
         
         stop music fadeout 1.0
         
@@ -3133,13 +3131,216 @@
         
         show dravenia neutral
         
-        d "Excuse me - I am going to familiar myself with the layout of the building and its surroundings."
+        d "Excuse me - I am going to familiarize myself with the layout of the building and its surroundings."
         
         d "If you come to any trouble at all, be certain to scream."
         
         pc "Um... alright?"
            
+        "What a day... well, I guess there's no point dwelling on it. I'm starving."
         
+        jump ch2_scene09
+        
+    label ch2_scene09:
+        
+        scene bg kitchen with dissolve
+        
+        "Now, let's see what we've got..."
+        
+        "..."
+        
+        "Cereal, cereal, and more cereal. Nothing exciting, either - just boxes upon boxes of bran flakes. It'll have to do."
+        
+        "I grab a box, and close the cupboard - only to find myself face-to-face with, well..."
+        
+        show kamao neutral at kamao_center with dissolve
+        
+        ka "Hey."
+        
+        pc "Uh... hey."
+        
+        "I vaguely recall that Dravenia instructed me to scream should anything happen to me, but... I should be okay."
+        
+        ka "Whatcha doin'?"
+        
+        "I heft the box."
+        
+        pc "Eating."
+        
+        show kamao shocked
+        
+        ka "Eugh. Are you one of those health nuts?"
+        
+        pc "This is all they had."
+        
+        show kamao confused
+        
+        ka "What? For real? Nothing with marshmellows?"
+        
+        pc "Nope."
+        
+        show kamao bored
+        
+        ka "Wow, guess it's time to move out..."
+        
+        ka "..."
+        
+        show kamao vhappy
+        
+        ka "Anyways! Come swimming with me!"
+        
+        pc "Uh... swimming?"
+        
+        show kamao happy
+        
+        ka "Swimming! I was looking around after the dragon punted me out and discovered that the big shed in the backyard is actually..."
+        
+        show kamao neutral
+        
+        ka "Wait for it..."
+        
+        show kamao vhappy
+        
+        ka "An indoor pool!"
+        
+        show kamao wink
+        
+        ka "So let's go. Last one there has to skinny dip."
+        
+        show kamao with MoveTransition(0.2):
+            xpos 0
+            
+        play sound "assets/sound/sfx/body_hit.wav"
+    
+        show kamao pained
+        
+        show nagi neutral at nagi_farleft with vpunch:
+            xpos -0.5
+        
+        ka "Oof!"
+        
+        n "Oh. Hello."
+           
+        show kamao at kamao_center
+        
+        show nagi bored at nagi_left
+        
+        with dissolve
+        
+        ka "Mffmfffm?!"
+        
+        n "Having fun?"
+        
+        show kamao embarrassed at kamao_right with move
+           
+        ka "Gah! Huah! I c-can breathe! I thought I was g-gonna {i}suffocate{/i} in that marshmellow hell!"
+        
+        show nagi confused
+        
+        n "Yeah. You hated it. Which is why you shoved your face downwards when you ran into me."
+           
+        ka "..."
+           
+        show kamao sleepy
+           
+        ka "Yeah..."
+           
+        n "..."
+           
+        show nagi closed
+           
+        n "*Sigh*."
+        
+        show nagi neutral
+        
+        n "Where were you off to in such a hurry, hm? Vibrator finish charging?"
+        
+        show kamao unhappy
+        
+        ka "{i}Excuse me{/i}! I'll have you know I have a {i}backup{/i} vibe for when one runs outta juice!"
+        
+        show nagi bored
+        
+        ka "What do I look like to you, some sorta barbarian? Jeeze."
+           
+        show kamao neutral
+           
+        ka "Anyways, [pc] and I were gonna go for swim! One of us was gonna be naked. One thing would lead to another, and soon we'd {i}both{/i} be naked."
+        
+        n "Uh-huh."
+        
+        show nagi neutral
+        
+        n "Hey, [pc], you wanna go shopping? You've barely got any worldly possessions, not to mention clothes. It's on me."
+        
+        show kamao unhappy
+        
+        ka "He- wha?! I just {i}told{/i} you we were going swimming!"
+           
+        show kamao horny
+        
+        ka "C'mon, [pc], do you want snaketits' pity cash or my scantily-clad-slash-naked-body, huh? Huh?!"
+           
+        menu:
+            
+            "'I don't recall agreeing to go swimming...'":
+                
+                $ n_like += 1
+                
+                show nagi happy
+                
+                show kamao unhappy
+                
+                ka "You were getting around to it!"
+                
+                pc "Sure, but... {i}pity cash{/i}."
+                
+                n "Cool. I need to use the washroom, then I'll get my car ready."
+                
+                show nagi wink
+                
+                n "My {i}sports car{/i}."
+                show kamao flustered
+                
+                ka "Nooooo!"
+                
+            "'Sorry, Nagi, she beat you to it.'":
+                
+                $ ka_like += 1
+                
+                show nagi surprised
+                
+                show kamao confident
+                
+                n "You're actually... are you sure?"
+                
+                show nagi confused
+                
+                n "Hint hint, I'm giving you an out."
+                
+                pc "Thanks, Nagi, but if she goes swimming alone she'll probably knock herself out with a pool noodle."
+                
+                show nagi neutral
+                
+                show kamao embarrassed
+                
+                ka "Hey, those things can pack a {i}punch{/i}."
+                
+                n "Well, alright. I'm still buying you things, though. I'll just drag Fenira to the store instead."
+                
+                show nagi confident
+                
+                show kamao neutral
+                
+                n "Hope you like assless chaps."
+                
+                pc "Please tell me you're-"
+                
+                hide nagi with dissolve
+                
+                pc "...Well. Assless chaps it is."
+                
+                ka "I'm not complaining."
            
         "Test"
 
