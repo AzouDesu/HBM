@@ -4112,7 +4112,6 @@ label intro_nagVisit:
         
         "The door across from me, which I remember to be Kamao's, is ajar. I stealthily slip past in order to avoid detection, and approach the room directly beside it."
         
-    
     else:
         
         "The door to my left, which I remember to be Kamao's, is ajar. I stealthily slip past in order to avoid detection, and approach the opposite end of the hallway."
@@ -4143,21 +4142,41 @@ label intro_nagVisit:
     
     n "Oh, [pc]. Long time no see."
     
+    pc "You play the guitar?"
+    
+    show nagi neutral
+    
+    n "Nope. I'm just pretending. Makes me very popular with the boys, you know."
+    
+    "Nagi strums a few delicate chords, slowly picking up the pace until she's formed a nice rhythm."
+    
+    n "I kid. I was in a band and everything. Fenira did vocals, believe it or not. She could do some crazy things with her voice."
+    
+    show nagi bored
+    
+    n "She could also do some crazy things to a stage."
+    
+    n "Probably why the school shut us down..."
+    
+    n "Sorry, you probably didn't stop by for a history lesson. What's up?"
+    
     menu:
         
-        "'You play the guitar?'":
+        "'You're pretty good.'":
             
-            n "Sure do."
+            show nagi neutral
             
-            n "I was in a band and everything. Fenira did vocals, believe it or not. She could do some crazy things with her voice."
+            n "Hey, thanks. Keep complimenting me and maybe you'll end up in a song one day."
             
-            show nagi bored
+            n "So you'd better keep it up, because I've had creative block for months now."
             
-            n "She could also do some crazy things to a stage."
+            show nagi happy
             
-            n "Probably why the school shut us down..."
+            n "I'll even bribe you. I think I've still got some chocolate-coated peanuts from the plane trip here." 
             
-            n "Sorry, you probably didn't stop by for a history lesson. What's up?"
+            show nagi neutral
+            
+            n "Think they melted, though... anyways, what's up?"
             
         "'What happened to sleeping'?":
             
@@ -4175,19 +4194,11 @@ label intro_nagVisit:
             
             n "Anyways, what's up?"
 
-    pc "Nothing, which is the problem. I don't have anything to unpack, so..."
+    pc "Just figured I'd visit some of my new roommates."
     
-    show nagi confused
+    n "Oh? Well, if you want me to entertain you, you might have to reciprocate and keep me company while I unpack."
     
-    n "Really? You just showed up with the clothes on your back?"
-    
-    pc "That's one way to put it, yeah."
-    
-    show nagi neutral
-    
-    n "I don't know how you do it. I bring a ton of stuff."
-    
-    pc "Really? I don't see a lot of boxes."
+    pc "Unpack? Unpack what? I don't see a lot of boxes..."
     
     show nagi happy
     
@@ -4453,6 +4464,8 @@ label intro_nagVisit:
     
     ka "Deal."
     
+    "Nagi pulls her purse off her bed, and rifles around inside for a few moments before withdrawing a few coins, which she drops in Kamao's hand. The kistune gives me a grin, and pops out the door."
+    
     hide kamao with dissolve
     
     stop music fadeout 2.0
@@ -4545,144 +4558,49 @@ label intro_nagVisit:
 
     n "At least the kitsune gave us something to talk about."
     
+    show nagi neutral
+    
     n "Where are you from, anyways?"
     
     pc "Uh..."
     
+    "She seems nice enough, but I can't take the risk."
+    
     menu:
         
-        "'I can't remember.'":
+        "Dodge the question.":
             
-            show nagi
+            pc "Oh, you know. Around. How about you?"
+            
+            n "Around, huh? I've heard it was a nice place. A little quaint, though. You fly here from Around?"
+    
+            pc "Hah."
+            
+            n "I try. Not often I have people dodge the question when I ask them where they're from, though. Must be some interesting secret you're holding on to, huh?"
+            
+            pc "Er..."
+            
+            show nagi happy
+            
+            n "Don't worry, I won't prod. More fun if I figure it out on my own, right?"
+                    
+        "Make up a name at random.":
+            
+            pc "Where I'm from? Oh, I'm from a little place called, ah, Skellow."
+            
+            n "Skellow? Where's that?"
+            
+            pc "Um. Northeast of here, I guess. It's a really tiny town, so... easy to miss."
+            
+            n "Hey, if you say so. I don't know much about the area, so you could probably make up a totally random name and I'd believe you."
+            
+            pc "Hah... hah. Crazy."
+            
+            n "I know, right?"
+            
+            
+    ######################CURRENT PROGRESS########################
 
-        "'You know. Around.'":
-    
-            n "Around, huh? You born here in Skellow?"
-            
-            menu:
-                
-                "'Yeah.'":
-                    
-                    n "Really? That's funny." 
-                    
-                    show nagi wink
-                    
-                    n "Especially since Skellow's a name I just made up."
-                    
-                    n "But hey, if you don't wanna tell me where you're from, I won't force you."
-                    
-                    pc "It's not that, it's just... I can't remember."
-                    
-                "'Uh, no...'":
-                    
-                    n "Then where were you born?"
-                    
-                    pc "I, uh... I can't remember."
-       
-    show nagi confused
-       
-    n "You... can't remember?"
-            
-    "You shake your head."
-    
-    n "How do you not know where you're from?"
-    
-    pc "I've forgotten a lot more than just where I'm from..."
-    
-    n "You're telling me you have amnesia?"
-    
-    pc "Well... yeah."
-    
-    n "Oh."
-    
-    show nagi neutral
-    
-    n "That's fine, then."
-    
-    pc "Huh?"
-    
-    n "Well, no helping amnesia, right?"
-    
-    pc "You don't think I'm crazy?"
-    
-    n "Why would I think you're crazy? There are at least four different kinds of chimera that can screw with your memories. And they're all pretty easy to piss off."
-    
-    show nagi bored
-    
-    n "Trust me. I know."
-    
-    show nagi neutral
-    
-    n "So, how far back can you remember?"
-    
-    pc "Uh... three hours?"
-    
-    show nagi surprised
-    
-    n "Wow, really?"
-    
-    pc "Really. I'm still wrapping my head around monster people."
-    
-    n "Monster people?"
-    
-    pc "Uh, chimera."
-    
-    show nagi confused
-    
-    n "...Seriously?"
-    
-    pc "I think I had this same conversation with Kumiru and Viscella."
-    
-    show nagi neutral
-    
-    n "Sorry. It's just surprising. What kind of people are you used to?"
-    
-    pc "You know... people people. Two legs, two arms, no tail, made of flesh, that kind of thing."
-    
-    show nagi confused
-    
-    n "Humans?"
-    
-    pc "Yeah."
-    
-    n "But nothing about chimera?"
-    
-    pc "Nope."
-    
-    show nagi neutral
-    
-    n "Sounds fun."
-    
-    pc "Really?"
-    
-    show nagi happy
-    
-    n "Totally. You're like the protagonist from an action movie. You can't tell me that's not cool."
-
-    pc "There hasn't been much action so far..."
-        
-    show nagi neutral
-        
-    n "Well, I'm sure you'll run into some eventually."
-    
-    show nagi wink
-    
-    n "Maybe you'll run into some with me?"
-    
-    "Nagi yawns, stretching her arms over her head."
-    
-    show nagi neutral
-    
-    n "I'm kinda jealous, honest."
-    
-    pc "Really? Why?"
-    
-    n "Well, you know. Sometimes I think maybe a clean slate would be nice."
-    
-    pc "You'd forget all your friends and family..."
-    
-    n "Fair enough, I suppose. But still. Right now, you're freer than most of us will ever be. Might as well squeeze a little joy out of it, right?"
-    
     n "But hey, enough of that. Now I really {i}am{/i} exhausted. I'm gonna get some sleep. Wanna join me?"
     
     menu:
