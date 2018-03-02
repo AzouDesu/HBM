@@ -3275,7 +3275,7 @@ label intro_visSearch:
     
     ku "Wouldn't want to get in the way of that good night's rest."
     
-    jump ch1_scene09
+    jump intro_kam_nagi_fight
     
 
 label intro_fenVisit:
@@ -4097,7 +4097,7 @@ label intro_fenVisit_end:
     
     "Fenira hurries back into her own room. I decide to do the same."
     
-    jump ch1_scene09
+    jump intro_kam_nagi_fight
     
       
 label intro_nagVisit:
@@ -4598,8 +4598,39 @@ label intro_nagVisit:
             
             n "I know, right?"
             
+    n "Well, I hope you at least know what you've gotten yourself into."
+    
+    show nagi bored
+    
+    n "Not that it's your fault. Bondhouses aren't normally supposed to be this lopsided. There's five of us chimera - for both of our sakes there should be another human or two."
+
+    show nagi confident
+
+    n "...But you're probably the sort who enjoys having a group of chimera fighting over you, huh?"
+    
+    menu:
+        
+        "'Well...'":
             
-    ######################CURRENT PROGRESS########################
+            n "Nailed it."
+            
+            n "Nothing to be ashamed of, it's a pretty common fantasy, y'know?"
+            
+            pc "You sure like teasing, huh?"
+            
+        "'N-no...'":
+            
+            show nagi teasing
+            
+            n "You blushing? You're totally blushing."
+            
+            pc "Well, yeah. You're teasing me."
+            
+    show nagi wink
+            
+    n "Oh, you haven't seen anything yet."
+    
+    show nagi neutral
 
     n "But hey, enough of that. Now I really {i}am{/i} exhausted. I'm gonna get some sleep. Wanna join me?"
     
@@ -4660,7 +4691,7 @@ label intro_nagVisit:
     
     "I say goodbye to Nagi, and head back to my own room."
     
-    jump ch1_scene09
+    jump intro_kam_nagi_fight
         
 label intro_kamVisit:
     
@@ -4676,7 +4707,6 @@ label intro_kamVisit:
         
         "The door across from me, which I remember to be Kamao's, is ajar. I approach, and peek my head in."
         
-    
     else:
         
         "The door to my left, which I remember to be Kamao's, is ajar. I approach, and peek my head in."
@@ -5038,7 +5068,7 @@ label intro_kamVisit:
                             
                             "You decide to head back to your room."
                             
-                            jump ch1_scene09
+                            jump intro_kam_nagi_fight
             
         "'Just thought I'd say hello.'":
             
@@ -5362,9 +5392,7 @@ label intro_kamVisit:
     
     "I decide to slip away before I get roped into an argument."
             
-    jump ch1_scene09
-    
-        ###################################### Temporary end of story #######################################
+    jump intro_kam_nagi_fight
     
     "*TEMPEND*"
     
