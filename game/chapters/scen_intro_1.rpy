@@ -48,7 +48,7 @@ label start:
     
     "Like a great wound in the stars..."
     
-    "And... it's getting..."
+    "And... it's already..."
     
     #[QUEUE]TIRE SCREECHING NOISE
     
