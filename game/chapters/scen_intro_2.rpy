@@ -29,15 +29,15 @@
 
         with Dissolve(3.0)
 
-        f "I was just trying to pass to our striker, but nope! Took her job, and she couldn't have been happier!"
+        f "I was just trying to pass, but mid-kick I decided, y'know what, fuck it, let's show the fresh meat how it's done."
 
-        n "A shame you still lost 7-1."
+        n "A shame you still lost 3-1."
 
         show fenira happy
 
         f "Hey, we may have lost, but at least I saved our pride."
 
-        n "Only to have it torn away from you the following week."
+        n "Only to have it torn away from you the following week. You guys got your asses handed to you. It was hard to watch."
 
         show fenira neutral
 
@@ -397,7 +397,7 @@
             
             n "And what makes you think I'm interested in [pc]?"
             
-            ka "Huh? You're a chimera. He's a guy."
+            ka "Huh? You're a chimera. He's a human."
             
             ka "What more proof do I need?"
             
@@ -406,6 +406,10 @@
             show kamao shocked
             
             ka "A- are you?"
+            
+            show nagi closed
+            
+            n "Hm..."
             
             show nagi neutral
             
@@ -772,19 +776,17 @@
                 
                 show dravenia closed
                 
-                d "Humans were treated as cattle. Whether to satisfy their wives or to produce and raise offspring, men were enslaved en masse."
-                
-                d "The women weren't as lucky. They were seen only as competition, lesser in every way to their chimera counterparts. The atrocities were endless, and before long, human men outnumbered their women three to one."
+                d "Humans were treated as cattle, with little freedom to do ought but satisfy their chimera owners or to produce and raise offspring."
                 
                 show dravenia neutral
                 
-                d "Our chimeran foremothers lacked foresight. They failed to understand the consequences of their actions. Our species requires humans to survive, after all - both male and female. Your extinction is our extinction."
+                d "Our chimeran forebears lacked foresight. They failed to understand the consequences of their actions. Our species requires humans to survive and reproduce, after all. Your extinction is our extinction."
                 
                 d "But not all of them were blind."
                 
                 show dravenia happy
                 
-                d "In the closing years of the eighteenth century, a collection of chimera noblewomen met in secret in a small inn in Paris."
+                d "In the closing years of the eighteenth century, a collection of chimera noblewomen met in secret in a small inn in Paris. They decided that something must be done."
                 
                 d "And thus began one of the largest revolts in our people's collective history."
                 
@@ -798,11 +800,9 @@
                 
                 d "On the other hand, some chimera saw change as necessary. Some saw that the old ways were unsustainable and would inveitably signal a slow death for the species."
                 
-                d "Others were ruled by their heart. Every chimera family was dotted with humans - whether fathers, husbands, or in-laws."
-                
-                d "Those who had bonded with their human sisters-in-law had particular reason to oppose the status quo, when human women could be put to death for the smallest trivialities."
+                d "Others were ruled by their heart. Every chimera family was dotted with humans - husbands, wives, in-laws."
 
-                d "Regardless, human and chimera fought side-by-side. Prominent human figureheads would rise in rank and reputation - leaders who thrashed the stereotype of the meek, subservient human and threw the traditional worldview into question... only to be cut down or captured and subjected to far worse."
+                d "Regardless of their reasons, human and chimera fought side-by-side. Prominent human figureheads would rise in rank and reputation - leaders who thrashed the stereotype of the meek, subservient human and threw the traditional worldview into question... only to be cut down or captured and subjected to far worse."
                 
                 d "Can we blame them? No matter how powerful the human, there is little they can do to protect them from a dragon's breath or a succubi's touch."
                 
@@ -891,6 +891,8 @@
                 
                 d "To say you've reversed the odds would be what I like to call a 'colossal understatement.'"
                 
+                d "We protect more than just humans these days - anyone with the proper financial connections can find themselves under Hellsguard protection."
+                
         pc "So... you're a bodyguard?"
         
         show dravenia neutral
@@ -977,7 +979,7 @@
                 
                 "She gives a somewhat disappointed sigh."
                 
-        d "Did you have any questions?"
+        d "Did you have any other questions?"
         
         menu:
             
@@ -1103,6 +1105,8 @@
             xzoom -1.0
 
         "Dravenia quickly and silently crosses the room, pressing her back up against the wall directly beside the door. She gives you a stoic nod."
+        
+        "Is she genuinely concerned, or is she just trying to show off?"
         
         menu:
             
@@ -1584,7 +1588,7 @@
           
         d "Of course not."
         
-        v "I knew it! You're going to play baseball with it!"
+        v "I knew it! You're going to go bowling with it!"
         
         v "Someone help!"
         
@@ -1729,13 +1733,13 @@
         
         v "..."
         
-        show dravenia neutral
-        
         menu:
             
             "'You're not a waste of space.'":
                 
                 $ v_like += 1
+                
+                show dravenia neutral
                 
                 v "I'm... not?"
                 
@@ -1755,11 +1759,15 @@
                 
                 $ v_love += 2
                 
+                show dravenia neutral
+                
                 "I take a few steps forward, and pat Viscella on the head with a wet {i}splat{/i}."
                 
                 show viscella embarrassed
                 
                 "She almost jumps at the contact."
+
+                show viscella flustered
 
                 v "Wh-wh-what are you doing?!"
                 
@@ -1775,6 +1783,8 @@
                 
         d "We're being watched."
         
+        stop music fadeout 1.0
+        
         "Dravenia points, and the three of us glance to the nearby archway."
         
         jump intro_a_meeting
@@ -1782,6 +1792,8 @@
     label intro_a_meeting:
         
         scene bg living with dissolve
+        
+        play music "assets/sound/bgm/noodle.mp3" fadein 2.0
         
         "Standing beneath... is a young woman."
 
@@ -1795,13 +1807,15 @@
         
         a_un "Hello."
         
-        d "Ah. Who might you be? I don't recall any infomation about a human woman on the roster."
+        d "You must be the human woman on the roster."
         
         a_un "..."
         
-        a_un "You are mistaken. I am a tenant."
+        a_un "Yes."
         
-        "The girl approaches until she's only a few inches away."
+        "The girl approaches until she's only a few inches away. She's staring straight at me. She won't even look at Dravenia when she's talking to her."
+        
+        ###################################### Current Point #######################################
         
         scene bg kitchen
         
@@ -1817,563 +1831,156 @@
         
         d "I was thoroughly briefed. Slime, drider, phoenix, lamia, kitsune, and human - {i}one{/i} human. My patron."
         
-        a_un "...Are you sure."
+        a_un "You are mistaken. I am a tenant."
         
-        show dravenia vangry
+        d "I studied the roster for hours. {i}One{/i} human. Six tenants total."
         
-        d "Of course I'm sure. I studied the roster for hours. {i}One{/i} human. Six tenants total."
+        a_un "Yes. I am new."
         
-        d "If you think mind games will work on me, I'm afraid..."
+        d "New?"
         
         show dravenia confused
         
-        d "I'm..."
-        
-        show dravenia neutral
-        
-        d "..."
-        
-        show dravenia happy
-        
-        d "Oh! You must be Allise."
-        
-        "...Huh?"
-        
-        ###################################### Current Point #######################################
-        
-        d "Forgive me, I'm... not sure why I did not recognize you."
-        
-        d "Yes, yes. Slime, drider, phoenix, lamia, kitsune, and two humans. I remember, now."
-        
-        "Her memory must not be a solid as she thinks. Either that, or..."
-        
-        a_un "I'm checking."
-        
-        d "Checking what?"
-        
-        a_un "If [pc] is okay. Are you okay, [pc]?"
-        
-        menu:
-            
-            "'I'm... I'm fine.'":
-                
-                $ a_like += 1
-                
-                "The strange girl pauses for a moment, gazing intently at me."
-                
-                "I'm not sure if it's just me, but she doesn't seem to be blinking. At all."
-                
-                a_un "I see. That is unfortunate."
-                
-                d "Unfortunate? Excuse me?"
-                
-            "'Not anymore...'":
-            
-                "The strange girl gives a solemn nod."
-                
-                show allise closed
-                
-                a_un "As it should be."
-                
-                d "..."
-                
-        d "Ma'am, it would be best if you took a step back and explained yourself properly."
-        
-        show allise neutral
-        
-        a_un "..."
-        
-        "The girl does as she is asked, but keeps her eyes on me."
-        
-        a_un "[pc] lost his memories in an accident. I was assigned to take care of him. He ran off. But now I found him."
-        
-        pc "Then... why don't I remember you?"
-        
-        a_un "The incident left you unable to form long-term memories. We cured it two days ago. You can form them again."
-        
-        "I watch her uneasily, noticing that she still has yet to blink. Eventually she does, but... only when I start to really notice it. As if she's trying to set my mind at ease..."
-        
-        v "Um... hold on..."
-        
-        v "Isn't stuff like that really hard to cure?"
-        
-        a_un "We cured it two days ago."
-        
-        v "But-"
-        
-        show viscella neutral
-        
-        show dravenia neutral
-        
-        with flashBlack
-        
-        play music "assets/sound/bgm/noodle.mp3"
-        
-        v "..."
-        
-        d "..."
-        
-        "Uh... what?"
-        
-        "The atmosphere just shifted."
-        
-        show allise closed
-        
-        a_un "You are confused. I suppose I should explain."
-        
-        a_un "Your memories."
-        
-        a_un "It was me."
-    
-        "..."
-        
-        pc "What?"
-        
-        show allise neutral
-        
-        a_un "I destroyed your memories."
-        
-        menu:
-            
-            "'What?!'":
-            
-                a_un "I. Destroyed. Your memories."
-        
-                pc "W-what? You're not making any sense!"
-                        
-                "I glance desperately from Dravenia to Viscella, hoping they'll back me up."
-                
-                "They don't."
-                
-                "In fact, they look frozen."
-                
-                "They're breathing, but their eyes are vacant."
-                
-                "It's uncanny. Regardless, they're clearly not going to be any help."
-                
-                a_un "Your memories. The ones you're missing. I destroyed them. I took them from your head."
-                
-                "She makes a movement with her hands, as if she's pinching one of her temples, and pulls it outwards like an invisible strand."
-                
-                a_un "Cut them free..."
-                
-                "She whips her hand away from her head, holding it out in front of her."
-                
-                a_un "And obliterated them."
-                
-                "She releases her grip, letting the nonexistant strips of my past fall to the floor."
-                
-                "She's crazy. That has to be it. That, or I'm dreaming. None of this makes sense. This situation... it doesn't even feel real."
-                
-            "'...Oh. Well, thanks for clearing that up, I suppose.'":
-             
-                a_un "You're welcome."
-                
-                a_un "I figured I would set your mind at ease."
-                
-                "I glance from Dravenia to Viscella, making sure at least they've heard the admission of guilt."
-                
-                "They haven't."
-                
-                "In fact, they look frozen."
-                
-                "They're breathing, but their eyes are vacant."
-                
-                "It's uncanny. Regardless, they're clearly not going to be any help."
-                
-                pc "...And you're not pulling a prank on me?"
-                
-                a_un "I do not pull pranks."
-                
-                a_un "Usually."
-                
-                a_un "Regardless, I am responsible for your missing memories."
-
-        a_un "You are free to believe whatever you like."
-                
-        a_un "But know that regardless of what you believe..."
-                
-        a_un "You can never remember."
-        
-        a_un "I will not allow you to remember."
-
-        pc "Why?"
-        
-        "She blinks at me. Guess she's not in the business of dropping hints."
-        
-        "This is... a lot to take in."
-
-        pc "So, my memories are... gone?"
-        
-        pc "No... that's not right."
-        
-        a_un "...?"        
-
-        pc "My name. I know my name."
-        
-        a_un "..."
-        
-        a_un "Of course."
-        
-        "She looks at me for a moment. Her stare is no longer distant."
-        
-        a_un "Everyone deserves a name."
-        
-        a_un "Or so..."
-        
-        a_un "..."
-        
-        show allise closed
-        
-        a_un "Or so I've been told."
-        
-        "She takes a deep breath. When she opens her eyes, they are as empty as they had been before."
-        
-        show allise neutral
-        
-        a_un "I left you your name, yes."
-        
-        a_un "But that is all."
-        
-        menu:
-            
-            "'Why? Why'd you do this to me?":
-                
-                a_un "Irrelevant."
-                
-                jump ch2_scene04_forgotAllise
-            
-            "'No... it's not. There's something else I remember.'":
-                
-                show allise closed
-                
-                a_un "..."
-                
-                "Yes... that's right."
-                
-                "I've had this sensation..."
-                
-                "This unusual sensation..."
-                
-                "There's something I know..."
-                
-                pc "And that is..."
-                
-                menu:
-                    
-                    "'Who I am.'":
-                        
-                        show allise neutral
-                        
-                        a_un "Is that so?"
-                        
-                        a_un "What is an identity without memory?"
-                        
-                        a_un "Who are you."
-                        
-                        a_un "What have you done."
-                        
-                        a_un "Who have you hurt."
-                        
-                        a_un "Who have you saved."
-                        
-                        a_un "What do you believe."
-                        
-                        a_un "What do you stand for."
-                        
-                        a_un "Do you require more dramatic flair, or are you satisfied?"
-                        
-                        "This girl... what is she saying..."
-                        
-                        jump ch2_scene04_forgotAllise
-                        
-                    "'Your name...'":
-                        
-                        a_un "..."
-                        
-                        "This has to be it... I know it... I know it..."
-                        
-                        menu:
-                            
-                            "'...Violet.'":
-                                
-                                a_un "..."
-                                
-                                show allise sad
-                                
-                                a_un "I am... sorry."
-                            
-                                jump ch2_scene04_forgotAllise
-                            
-                            "'...Saya.'":
-                                
-                                a_un "..."
-                                
-                                show allise sad
-                                
-                                a_un "I am... sorry."
-                                
-                                jump ch2_scene04_forgotAllise
-                            
-                            "'...Allise.'":
-                        
-                                jump ch2_scene04_rememberedAllise
-                        
-
-
-                        
-    label ch2_scene04_rememberedAllise:
-        
-        $ flag_RememberedAllise = True
-
-        $ a_like += 1
-
-        $ a_love += 2
-        
-        stop music fadeout 1.0
-        
-        a_un "..."
-        
-        "Did... did I get it wrong?"
-
-        a_un "..."
-        
-        "She's not saying anything..."
-        
-        a_un "..."
-        
-        "But... somehow I know..."
-        
-        a_un "..."
-        
-        "That the person standing in front of me..."
-        
-        a_un "..."
-        
-        "Her name..."
-        
-        a_un "..."
-        
-        "It's-"
-        
-        play sound "assets/sound/sfx/flash.ogg"
-        
-        show allise neutral with flash
-        
-        a "I have already taken enough of your time."
-        
-        a "Your memories are gone. Do not seek them."
-        
-        a "..."
-        
-        show allise sad
-        
-        a "Please..."
-        
-        a "[pc]."
-        
-        jump ch2_scene05
-
-        
-    label ch2_scene04_forgotAllise:
-        
-        $ flag_RememberedAllise = False
-        
-        a_un "I have already taken enough of your time."
-        
-        "She takes a deep breath."
-        
-        show allise closed
-        
-        a_un "Your memories are gone."
-        
-        a_un "Do not go searching for them..."
-        
-        show allise sad
-        
-        a_un "Please."
-        
-        show allise neutral
-        
-        jump ch2_scene05
-        
-    label ch2_scene05:
-    
-        show viscella scared
+        a_un "Yes. New. I was inserted this morning."
         
         show dravenia angry
         
-        show allise neutral
+        d "Right. So you wouldn't mind if I contact the supervisor and verify your story?"
         
-        with flashBlack
-    
-        play music "assets/sound/bgm/062.mp3" fadein 1.0
-    
-        v "-isn't that impossible for people like us? You'd need magic to fix something serious like that, right?"
+        a_un "No."
         
-        d "The slime is right. Your story is flimsy at best, Miss...?"
+        d "Very well. One moment."
         
-        show allise neutral
+        "Dravenia grabs a phone off its base and carries it into the adjacent room."
         
-        a "Allise."
-            
-        d "Miss Allise."
-        
-        "It's like nothing happened..."
-        
-        d "So unless you can come up with a more convincing argument, I suggest you leave."
-        
-        a "..."
-        
-        a "I am a tenant."
-        
-        d "What? But you just said-"
-        
-        a "I am here to fulfill the species quota."
-        
-        show viscella confused
-        
-        v "S-species quota?"
-        
-        show dravenia neutral
-        
-        d "Ridiculous. Just seconds ago you claimed to be [pc]'s caretaker, and now you claim to be a tenant?"
-        
-        a "I do not claim to be a tenant."
-        
-        a "I am a tenant."
-        
-        a "I am officially registered. If I was not, this facility would not meet the regulated species quota."
-        
-        show viscella flustered
-        
-        v "What's the species quota?!"
-        
-        show dravenia closed
-        
-        show viscella embarrassed
-        
-        d "..."
-        
-        show dravenia neutral
-        
-        d "The species quota of the WBA asserts that each bondhouse must harbour at least one human woman for every four chimera."
-
-        show viscella confused
-
-        v "Um..."
-        
-        v "So..."
-        
-        v "That... that means, that... um..."
-        
-        d "...*Sigh*." 
-        
-        d "It means we require a human woman. A role that Miss Allise seems to have conveniently fulfilled."
-        
-        show dravenia angry
-        
-        d "Which is extremely unusual, given the contradictory story she gave us just a minute ago."
-        
-        a "You remain skeptical."
-        
-        d "Of course I do."
-        
-        a "I am not lying."
-        
-        show dravenia stern
-        
-        d "You lied about being [pc]'s caretaker. Who's to say you're not lying now?"
-
-        a "I was not lying. I was joking."
-        
-        show dravenia shocked
-
-        show viscella neutral
-        
-        d "...You were {i}joking{/i} about being a lost and confused young man's only remaining link to his past, providing him a glimmer of hope, only to crush it to dust for the sake of a {i}joke{/i}?"
-        
-        a "Yes."
-        
-        a "I have been told I possess an 'oblique' sense of humour."
-        
-        v "..."
-        
-        d "..."
-        
-        a "See?"
-        
-        show dravenia neutral
-        
-        d "But... but how did you know [pc] 's memories were even missing?"
-        
-        a "I eavesdropped. You speak loudly."
-        
-        v "W-wait, I don't understand. Me and Kumi checked the roster - there were only three other names!"
-        
-        a "I was a late addition."
-        
-        d "..."
-        
-        d "This conversation isn't going to go anywhere, is it?"
-        
-        show allise closed
-        
-        a "Correct."
-        
-        show allise neutral
-        
-        a "I will depart to the basement. [pc], follow."
-        
-        "Allise waits for me to blink, which she seems to interpret as me accepting her proposal. She nods, then wanders off. She doesn't seem to notice Dravenia's glare - that, or she just doesn't care."
-        
-        hide allise with dissolve
+        hide dravenia
         
         show viscella at viscella_right
         
-        show dravenia behind viscella at dravenia_left
+        show allise at allise_left
         
-        with move
+        with dissolve
         
-        d "..."
+        v "Um..."
+        
+        a_un "..."
+        
+        "She's still staring at me. She hasn't blinked."
+        
+        "Did I do something to offend her?"
+        
+        pc "I'm-"
+        
+        a_un "[pc]."
+        
+        show viscella surprised
+        
+        pc "Uh... yes."
+        
+        v "Hold on, how'd you know his name? They only release species on the roster, not names..."
+        
+        pc "She overheard it yesterday. We arrived in the same shuttle, remember?"
+        
+        a_un "Yes."
+        
+        "Viscella looks from me to the newcomer. She inches closer, whispering."
         
         show viscella scared
         
-        v "Um... miss?"
+        v "I don't like this... she's weird, and not in a good way..."
         
-        d "What?"
+        v "I'm getting real horror manga vibes..."
         
-        v "A-Are you going to bite someone's head off?"
+        "The woman's eyes flick over to Viscella, hold for a moment, and then refocus on me."
+        
+        pc "*Ahem*... uh, if you know my name, can you tell me yours?"
+        
+        "There's a moment of hesitation."
+        
+        a "...Allise."
+        
+        "Without warning, she starts moving - almost without needing to pick up momentum, like she'd been pushed. She passes by Viscella and I, the slime practically shivering as this Allise finally pries her eyes off me and makes her way down the stairs into the basement."
+        
+        "...How bizarre."
+        
+        hide allise with dissolve
+    
+        d "It seems you were right. The supervisor confirmed that you... hm?"
+        
+        show dravenia neutral at dravenia_left with dissolve
+        
+        d "Where did she go?"
+        
+        show viscella with MoveTransition(0.3):
+            ypos 1.4
+                
+        play sound "assets/sound/sfx/splat.wav"
+                
+        show viscella puddle_scared at viscella_puddle_right with Dissolve(0.3)
+        
+        stop music fadeout 1.0
+        
+        d "..."
+        
+        pc "..."
+        
+        "Viscella whimpers faintly in her puddle."
+        
+        play music "assets/sound/bgm/093.mp3" fadein 1.0
         
         show dravenia confused
         
-        d "What? Why would I do that?"
+        d "Erm... what happened?"
         
-        v "Don't dragons bite heads off when they're mad?"
+        menu:
+            
+            "'Our new tenant is a bit of an oddball.'":
+                
+                d "You don't say."
+                
+                v "She's scary..."
+                
+                pc "It might be unintentional. She might be a little socially awkward, that's all."
+                
+            "'Viscella's just overreacting again.'":
+                
+                v "Am not!"
+                
+                pc "C'mon, Viscella. She just looked at us weird. She's probably just socially awkward."
+                
+        show viscella puddle_neutral
+                
+        v "So am I, but even I don't try to give off that... aura of {i}whatever{/i} she was giving out!"
+                
+        v "Plus, she looked at me like I was a bug! I {i}hate{/i} being looked at like I'm a bug! Being socially awkward is no excuse. If anything, you'd expect her to be more understanding, but I feel like she already hates me..."      
         
-        show dravenia neutral
+        pc "I'm sure you're overthinking it. Here, c'mon up."
+                
+        "I offer the blob my hand - with a bit of hesitation, a lance of goo wraps around it and slowly forms into a hand, and Viscella hauls herself to her feet."
+                
+        show viscella neutral at viscella_right with dissolve
         
-        d "Only when they are asked unnecessary questions."
+        v "Um... thanks..."
         
-        v "Oh. Um, did I just ask an unnecessary question?"
+        pc "You're welcome."
         
-        d "Yes."
+        d "I am afraid I still do not follow what {i}actually{/i} happened here."
         
-        v "Oh. Should I run away?"
+        pc "Oh... Allise walked in, stared at me for a few seconds, and left."
         
-        show dravenia closed
+        v "She looked at me for a second, but she didn't look happy..."
         
-        d "*Sigh*. No, you don't need to run away."
+        pc "Well, she didn't look angry, either. I've never seen such a strong poker face."
         
-        show dravenia neutral
+        d "Allise? Is that her name?"
         
-        d "More than I can say for [pc], I'm afriad..."
+        v "She knew [pc]'s name, too..."
         
-        show viscella neutral
+        d "How strange..."
         
-        pc "Huh?"
+        d "Well, I should at least attempt to introduce myself and apologize for my behaviour."
         
-        d "Nothing, nothing. It is not my place to voice an unsubstantiated mistrust of an individual I have just met."
+        d "Well. It is not my place to voice an unsubstantiated mistrust of an individual I have barely met."
         
         show dravenia closed
         

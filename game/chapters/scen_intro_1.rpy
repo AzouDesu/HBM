@@ -249,9 +249,9 @@ label intro_ku_v_meeting:
             
     show kumiru neutral
     
-    ku "Oh, it's because you're a guy."
+    ku "Oh, it's because you're a human."
             
-    ku "She's not very good with guys."
+    ku "She's not very good with humans."
     
     show viscella flustered
     
@@ -259,7 +259,7 @@ label intro_ku_v_meeting:
     
     show kumiru embarrassed
     
-    ku "What! I never said {i}I{/i} was any good with guys, did I?"
+    ku "What! I never said {i}I{/i} was any good with humans either, did I?"
             
     ku "It's not our fault. We haven't exactly had much exposure."
         
@@ -1353,7 +1353,9 @@ label intro_ka_meeting:
     
     ka "It's a long story that involves a rubber duck and a vacuum cleaner. That's all I'm gonna say."
     
-    "A kitsune? Apart from the ears and tails, she doesn't seem all that unusual. Certainly less unusual than the other two."
+    "A kitsune? Apart from the ears and tails, she doesn't seem all that unusual. Certainly less unusual than the other two. Why is it that she's only got some minor attributes of a fox, whereas Kumiru's entire biology is radically different?"
+    
+    "Unless it's all surface-level. Maybe she's got three spleens."
 
     ka "Now, before we were so rudely interrupted by four- ten eyes here, you were telling me your name."
     
