@@ -1801,294 +1801,105 @@
         
         a_un "..."
 
-        d "..."
-        
         d "Hello?"
         
         a_un "Hello."
         
         d "You must be the human woman on the roster."
-        
-        a_un "..."
-        
+           
         a_un "Yes."
         
-        "The girl approaches until she's only a few inches away. She's staring straight at me. She won't even look at Dravenia when she's talking to her."
-        
-        ###################################### Current Point #######################################
+        d "I... see."
         
         scene bg kitchen
         
         show viscella scared at viscella_farright
         
-        show dravenia angry at dravenia_farleft
+        show dravenia neutral at dravenia_farleft
         
         show allise neutral at allise_center
         
         with dissolve
         
-        d "That's far enough, thank you."
+        "The girl approaches until she's only a few inches away. She's staring straight at me. She won't even look at Dravenia when she's talking to her."
         
-        d "I was thoroughly briefed. Slime, drider, phoenix, lamia, kitsune, and human - {i}one{/i} human. My patron."
-        
-        a_un "You are mistaken. I am a tenant."
-        
-        d "I studied the roster for hours. {i}One{/i} human. Six tenants total."
-        
-        a_un "Yes. I am new."
-        
-        d "New?"
-        
-        show dravenia confused
-        
-        a_un "Yes. New. I was inserted this morning."
-        
-        show dravenia angry
-        
-        d "Right. So you wouldn't mind if I contact the supervisor and verify your story?"
-        
-        a_un "No."
-        
-        d "Very well. One moment."
-        
-        "Dravenia grabs a phone off its base and carries it into the adjacent room."
-        
-        hide dravenia
-        
-        show viscella at viscella_right
-        
-        show allise at allise_left
-        
-        with dissolve
-        
-        v "Um..."
+        d "Good to meet you. I am Dravenia. This is [pc]."
         
         a_un "..."
         
-        "She's still staring at me. She hasn't blinked."
+        show dravenia confused
         
-        "Did I do something to offend her?"
+        d "Uhm. And this is Viscella. What is your name?"
         
-        pc "I'm-"
+        "The woman, for her part, continues to stare at me, before she passes me by."
         
-        a_un "[pc]."
+        a_un "Come. I have something to discuss. Alone."
         
-        show viscella surprised
-        
-        pc "Uh... yes."
-        
-        v "Hold on, how'd you know his name? They only release species on the roster, not names..."
-        
-        pc "She overheard it yesterday. We arrived in the same shuttle, remember?"
+        pc "Me?"
         
         a_un "Yes."
         
-        "Viscella looks from me to the newcomer. She inches closer, whispering."
+        "She doesn't turn back, heading down a nearby flight of stairs towards the basement. I glance back at the other two. Dravenia, still left hanging, clears her throat, looking somewhat flustered."
         
-        show viscella scared
+        hide allise
         
-        v "I don't like this... she's weird, and not in a good way..."
+        show dravenia neutral at dravenia_left
         
-        v "I'm getting real horror manga vibes..."
+        show viscella at viscella_right
         
-        "The woman's eyes flick over to Viscella, hold for a moment, and then refocus on me."
+        with dissolve
         
-        pc "*Ahem*... uh, if you know my name, can you tell me yours?"
+        v "And I thought {i}I{/i} was socially awkward..."
         
-        "There's a moment of hesitation."
+        d "Mmh... I don't like this. Why would she explicitly want to speak to you alone?"
         
-        a "...Allise."
+        v "Maybe it's a human thing?"
         
-        "Without warning, she starts moving - almost without needing to pick up momentum, like she'd been pushed. She passes by Viscella and I, the slime practically shivering as this Allise finally pries her eyes off me and makes her way down the stairs into the basement."
+        d "Unlikely. Regardless, please don't let your guard down around her, sir. I will position myself at the top of the stairs - if she tries anything, please scream at the top of your lungs."
         
-        "...How bizarre."
+        pc "I don't think that will be necessary..."
         
-        hide allise with dissolve
-    
-        d "It seems you were right. The supervisor confirmed that you... hm?"
+        d "Perhaps. I am aware humans are generally less aggressive in their advances than chimera. Regardless, something strikes me as... unusual, about her."
         
-        show dravenia neutral at dravenia_left with dissolve
-        
-        d "Where did she go?"
-        
-        show viscella with MoveTransition(0.3):
-            ypos 1.4
-                
-        play sound "assets/sound/sfx/splat.wav"
-                
-        show viscella puddle_scared at viscella_puddle_right with Dissolve(0.3)
-        
-        stop music fadeout 1.0
-        
-        d "..."
-        
-        pc "..."
-        
-        "Viscella whimpers faintly in her puddle."
-        
-        play music "assets/sound/bgm/093.mp3" fadein 1.0
-        
-        show dravenia confused
-        
-        d "Erm... what happened?"
+        v "She didn't even acknowledge my existence..."
         
         menu:
             
-            "'Our new tenant is a bit of an oddball.'":
+            "'She's probably just socially awkward, like Viscella said.'":
                 
-                d "You don't say."
+                v "Yeah... um, maybe she just wanted to to pull you aside so she could explain how shy she is and ask you to introduce her to us?"
                 
-                v "She's scary..."
+                show viscella happy
                 
-                pc "It might be unintentional. She might be a little socially awkward, that's all."
+                v "That sounds like something I'd do!"
                 
-            "'Viscella's just overreacting again.'":
+                d "I'm not sure... either way, only one way to find out. Apologies - I would follow, but she specifically asked for privacy. I do not wish to be overbearing."
                 
-                v "Am not!"
+                pc "Don't worry about it. I'll be fine."
                 
-                pc "C'mon, Viscella. She just looked at us weird. She's probably just socially awkward."
+                d "I will be just out of earshot, sir."
                 
-        show viscella puddle_neutral
+            "'There is something sort of bizarre about her...'":
                 
-        v "So am I, but even I don't try to give off that... aura of {i}whatever{/i} she was giving out!"
+                d "Exactly. There is no harm taking precautions. I could lend you a push dagger?"
                 
-        v "Plus, she looked at me like I was a bug! I {i}hate{/i} being looked at like I'm a bug! Being socially awkward is no excuse. If anything, you'd expect her to be more understanding, but I feel like she already hates me..."      
-        
-        pc "I'm sure you're overthinking it. Here, c'mon up."
+                pc "Nonono, I'm fine. Really."
                 
-        "I offer the blob my hand - with a bit of hesitation, a lance of goo wraps around it and slowly forms into a hand, and Viscella hauls herself to her feet."
+                show viscella scared
                 
-        show viscella neutral at viscella_right with dissolve
+                v "You... you have daggers?"
+                
+                d "I cannot answer that question."
+                
+                v "But you just said you'd lend him one!"
+                
+                d "Nonsense. Be safe, sir."
+                
+        pc "Again with the sir..."
         
-        v "Um... thanks..."
+        "I march off downstairs. Dravenia follows, but stops at the top of the stairs, leaning casually against the railing as I descend into the basement."
         
-        pc "You're welcome."
-        
-        d "I am afraid I still do not follow what {i}actually{/i} happened here."
-        
-        pc "Oh... Allise walked in, stared at me for a few seconds, and left."
-        
-        v "She looked at me for a second, but she didn't look happy..."
-        
-        pc "Well, she didn't look angry, either. I've never seen such a strong poker face."
-        
-        d "Allise? Is that her name?"
-        
-        v "She knew [pc]'s name, too..."
-        
-        d "How strange..."
-        
-        d "Well, I should at least attempt to introduce myself and apologize for my behaviour."
-        
-        d "Well. It is not my place to voice an unsubstantiated mistrust of an individual I have barely met."
-        
-        show dravenia closed
-        
-        d "If it {i}was{/i} my place, however, I would likely encourage my patron to exercise extreme caution around our new tenant."
-        
-        menu:
-            
-            "'Thanks... I'll keep that in mind.'":
 
-                $ d_like += 3
-
-                show dravenia happy
-
-                d "That is all I ask."
-                
-                show dravenia neutral
-                
-                d "Oh... and to scream loudly if anything goes wrong."
-                
-                d "The higher the decibel, the better."
-                
-                pc "Uh... right."
-                
-                d "Now, it would be most improper to keep Miss Allise waiting."
-                
-                show dravenia happy
-                
-                d "So feel free to take your time descending the stairs. You would not wish to wear yourself out so early in the morning."
-                
-                show viscella shocked
-                
-                v "Did... did the dragon just say something kinda funny?"
-                
-                show dravenia neutral
-                
-                v "Whoa! I didn't know dragons could do that without being total sadists!"
-                
-                v "Maybe... maybe you're {i}not{/i} totally evil!"
-                
-                d "..."
-                
-                show dravenia closed
-                
-                d "..."
-                
-                v "...What?"
-                
-                "...I decide to head after Allise."
-                
-            "'If it were your place, huh?'":
-                
-                $ d_like += 2
-                
-                d "Of course. A hellguard exists to be vigilant, not paranoid."
-                
-                d "Though gut instincts are not something to be ignored..."
-                
-                show dravenia neutral
-                
-                d "Ah, I'm rambling. Do not let me hold you, sir - Miss Allise wishes to speak with you, like as not."
-    
-                v "Um... good luck."
-                
-                d "Yes, break a leg."
-                
-                d "..."
-                
-                d "Do not {i}actually{/i} break a leg."
-                
-                pc "I... I know."
-                
-                show dravenia closed
-                
-                d "Just checking."
-                
-                pc "I decide to head after Allise."
-                
-            "'Aren't you being a little paranoid?'":
-                
-                $ d_like += 1       
-                
-                d "Of course not, sir."
-                
-                show dravenia neutral
-                
-                d "I am being {i}very{i} paranoid."
-                
-                d "But I will not interfere with your life until that paranoia becomes properly justified."
-                
-                d "Regardless, sir. I believe Miss Allise declared a desire to speak with you."
-                
-                v "Yeah... I wonder why..."
-                
-                show dravenia closed
-                
-                d "Fear not. If her motives are malicious, I shall handle it the Hellguard way."
-                
-                pc "The Hellguard way?"
-                
-                show dravenia smug
-                
-                d "Yes. Known to many as 'blunt force trauma'."
-                
-                show viscella unamused
-        
-                "...I'm not sure who to be more worried about. I decide to head after Allise."
-                
-        
         stop music fadeout 2.0
                 
         jump ch2_scene06
@@ -2097,259 +1908,265 @@
         
         scene bg basement with wipeleft
         
-        pc "Hello? Allise?"
+        "Come to think of it, I haven't been down here yet. Not that it seems I was missing much - there's not a single piece of furniture. Just a few doors - one of which is slightly open. Squinting, I can see an eye peering out of the darkness."
         
-        show allise closed at allise_center with dissolve
+        "Once I make eye contact, the door creaks open."
+        
+        show allise neutral at allise_center with dissolve
+        
+        play music "assets/sound/bgm/082.mp3" fadein 3.0
+        
+        a_un "Come."
+        
+        pc "Uhm..."
+        
+        "The woman beckons. I glance up the stairs once, before approaching. She retreats into the darkness of the room, and as I cross the threshold of the doorframe I fumble for a light switch. I find it - and, switching it on, find myself standing in a completely empty room aside from myself and our mysterious tenant."
+        
+        scene bg aBedroom 
+        
+        show allise neutral at allise_center
+        
+        with dissolve
+        
+        a_un "Welcome."
+        
+        pc "Welcome? It's just an empty room..."
+        
+        a_un "It is my bedroom."
+        
+        pc "Oh, is it? You should really get some decorations in here. Like a bed, for example."
+        
+        a_un "No."
+        
+        pc "...Okay."
+        
+        "There's a long, incredibly awkward silence as I try desperately to find something to look at without returning the stare she's leveling at me."
+        
+        pc "D-Did you need something? I mean, I still haven't caught your name..."
+        
+        a "Allise."
+        
+        pc "Your name is Allise?"
+        
+        a "Yes."
+        
+        pc "I see... so, Allise, what did you bring me down here for?"
+        
+        "Allise seems to consider this for a moment - and by consider it, I mean she continues to stare impassively at me for what feels like half a minute. She's still not blinking."
+        
+        "The moment I take a mental note of it, though... she blinks. Just once."
+        
+        a "To explain."
+        
+        pc "Explain what?"
+        
+        a "The situation."
+        
+        pc "Well, what's the situation?"
+        
+        a "You need to choose."
+        
+        pc "Choose?"
+        
+        a "Yes. Choose."
+        
+        pc "Choose what?"
+        
+        a "A favourite."
+        
+        pc "Sorry, but... could you please explain what's going on using more than 3 words in each sentence?"
+        
+        a "Yes. You need to choose a favourite individual among the members of this building over the course of the next year."
+        
+        pc "...Why?"
+        
+        a "Reasons."
+        
+        pc "Reasons? That's not a very good reason."
+        
+        a "It does not matter. If you do {i}not{/i} choose a favourite, I will restart the cycle until you do."
+        
+        "I frown. What's this lady talking about?"
+        
+        pc "Cycle?"
+        
+        a "Yes. Starting from yesterday."
+        
+        pc "I don't follow."
+        
+        a "You must develop a close bond with one member of this household by the end of the term."
+        
+        a "If you fail to do this, I will reset the cy-"
+        
+        pc "Hold up, hold up. What is a cycle?"
+        
+        "Allise's stair remains consistent, but for some reason I get the feeling she's looking at me as if I said something stupid."
+        
+        a "A period of time. The upcoming year."
+        
+        pc "Right. And you're going to restart it. What, you're going to turn back the clock? Rewind time?"
+        
+        a "Yes."
+        
+        pc "Because otherwise, I still don't get what you're trying to- what?"
+        
+        a "If you fail to develop a bond by the end of the term, I will restart from the beginning of the time-loop."
+        
+        pc "Is this a joke?"
+        
+        a "I do not joke."
+        
+        menu:
+            
+            "Don't believe her.":
+                
+                "I think she might be off her rocker."
+                
+            "Don't believe her.":
+        
+                "I think she might be off her rocker."
+        
+        pc "Sorry, Allise, but... that's probably the craziest thing I've ever heard."
+        
+        a "You do not believe me."
+        
+        pc "Of course I don't. C'mon, you're gonna go back in time? That's absolutely crazy."
+        
+        a "Why?"
+        
+        pc "The most powerful chimera in the world can't go back in time, and you're telling me you can? A human?"
         
         a "..."
         
-        "She's just standing in the middle of the room."
+        a "I was expecting you would require evidence. When you were eleven years of age, home alone, you were playing with chemicals in your basement."
+        
+        a "A friend had told you that a mixture of common household substances would synthesize a slime."
+        
+        a "You were lonely, so you decided to give it a try. But the concoction did not create a slime - it created toxic gas. Your parents returned shortly afterwards and found you passed out."
+        
+        a "You narrowly avoided a hospital visit. When your parents demanded to know what you were doing mixing chemicals."
+        
+        a "Panicked, you told them instead that you were attempting to make drugs. You believed the punishment would be less severe than if you had confessed you were attempting to create a chimera."
+        
+        "For once, I return this woman's stare just as intently. Swallowing, I open my mouth to sp-"
+        
+        a "Now you will ask: 'How did you know that? I never mentioned it to anyone!'"
+        
+        "For a moment, I'm confused into thinking it was me that spoke. No - it was her, mimicking my voice perfectly, and predicting exactly what I was going to ask."
+        
+        a "Perhaps you have never mentioned that story to anyone. But you will, when you are intoxicated at the halloween party next month."
+        
+        a "Of course, now that I have revealed this information to you, perhaps you will refrain from telling that story. Perhaps you will refrain from attending at all."
+        
+        a "Such is the consequence of interfering in causality." 
+        
+        pc "I... don't quite understand, what-"
+        
+        a "Simple, then."
+        
+        a "I have created a semi-stable time loop. At the end of the year, we will return to its beginning. Only I will retain my memories of the previous cycle - you and the others will forget."
+        
+        pc "Wait, hold on, just - just stop for a second, would you? This is a lot to take in, and even if I {i}did{/i} believe you-"
+        
+        a "Belief is irrelevant. This is fact." 
 
-        play music "assets/sound/bgm/082.mp3" fadein 3.0
-    
-        show allise neutral
-    
-        a "I have something for you."
+        a "If you prove incapable of following my instructions in this cycle as was the case in the previous, I will immediately restart the cycle."
         
-        pc "I... what?"
+        pc "What are you? Is there even a chimera-"
         
-        show allise closed
+        a "Cease."
         
-        a "I have something for you."
+        a "Are you or are you not prepared to follow my instructions."
+        
+        pc "What- what instructions?"
+        
+        a "To form a bond with a tenant."
+        
+        pc "Wait, so just... you go through all this, this... weird, crazy talk just to tell me I need to make a friend?"
+
+        a "The first cycle, I did not reveal my presence. You spent your days in relative happiness. You made connections with the other tenants."
+        
+        a "But the bonds were impermanent. Weak. Unfit. You spread yourself thin by attempting to befriend them all."
+        
+        a "I require a deep, powerful connection. A year is not long enough for one of your skills to develop that with everyone."
+        
+        a "But perhaps you will have more success with a single individual."
+        
+        a "Choose one tenant. Just one. Work your way into their psyche, and let them work their way into yours. Become reliant on one another, inseperable."
+        
+        a "If you can do this, I will release you from the cycle."
+        
+        a "If you cannot, I will evaluate this strategy and refine it for the next cycle - as I have done with all the others."
+        
+        a "If you refuse outright, I will restart the cycle prematurely. What you undoubtedly believes is a rebellious assertion of free will is really just a waste of time for both of us. I {i}will{/i} have you follow my instructions eventually - it is only a matter of how many cycles it takes to do so." 
+        
+        a "If you attempt to speak to the others about your situation or my role in it, I will restart the cycle prematurely. Their meddling is an annoyance, and rarely improves their opinion of your mental health."
+        
+        a "I expect your answer by midnight tonight. I will ask only once. Decide on a course of action by then."
         
         menu:
             
-            "'What is it?'":
+            "Demand more time.":
                 
-                a "You must say please."
-                        
-                pc "Uh... please?"
-                        
-                "Allise nods. Then she reaches into her sweater pocket, and pulls out what seems to be a featureless black smartphone."
-                        
-            "'My memories?'":
+                pc "Just slow down, damnit! You're dumping way too much responsibility on me! If what you're telling me is true, how do you expect me to make such a serious decision in one night?!"
                 
-                a "No."
+                a "You will adapt. It is a particular talent of your species to endure under immense stress."
                 
-                pc "Damn."
+                pc "Stress? What are you talking about! This isn't stress, this is insanity!"
                 
-                show allise neutral
+                pc "And what do you mean, you'll convince me eventually? You're just looping the same thing over and over again, aren't you?"
                 
-                a "Do you want to know what it is?"
+            "Grudgingly accept.":
                 
-                menu:
-                    
-                    "'Well... yeah.'":
-                        
-                        a "You must say please."
-                        
-                        pc "Uh... please?"
-                        
-                        "Allise nods. Then she reaches into her sweater pocket, and pulls out what seems to be a featureless black smartphone."
-                        
-                    "'No, not really.'":
-                        
-                        a "I see."
-                        
-                        a "I will give it to you anyways."
-
-                        "Allise reaches into her sweater pocket, and pulls out what seems to be a featureless black smartphone."    
-        
-        "Well... more of a tablet, really. It's pretty wide for a smartphone."
-        
-        show allise neutral
-        
-        a "Here."
-        
-        menu:
-            
-            "'Uh... thanks?'":
-                
-                "Allise nods, and I take the phone... tablet... thing. It's quite light."
-                
-            "'So, you'll give me a phone, but not my memories?'":
+                pc "...I don't have much choice, do I? If you're telling the truth, and I turn you down, you'll just... start everything over again. Over and over, until I agree."
                 
                 a "Yes."
                 
-                "Well. That was straightforward. I approach, and take a look at the phone... tablet... thing she's offering me. Seems normal. I pick it up - it's quite light."
+                pc "Won't I just say all of this over again?"
                 
-        pc "I'm not sure I can pay you back just yet..."
+        a "No. I will gradually change my approach. Furthermore, there are discrepencies in each cycle that cannot be accounted for. This happens naturally for all subjects of casaulity - but its effect is hightened dramatically for you."
         
-        show allise neutral
+        pc "What do you mean, for me?"
         
-        a "Payment is unnecessary."
+        a "...Irrelevant. Remember: your choice is to be made by midnight."
         
-        pc "But-"
+        scene bg basement with Fade(0.1, 0.0, 0.1)
         
-        a "Payment is unnecessary."
+        pc "Wait, hold on, there's still so much-"
         
-        "Looks like payment is unnecessary."
+        "Wait. What?"
         
-        "I turn it on. Weird. It's getting full bars in the basement, and there doesn't seem to be a battery indicator."
+        "I only blinked, but... I'm in the basement? Huh?"
         
-        pc "Is it a standard charger?"
+        "Did I black out? Microsleep? Did she push me out the door?"
         
-        a "No."
+        "I glance back towards the door. It's closed. I give it a knock."
         
-        pc "Then how do I charge it?"
+        pc "Allise?"
         
-        show allise closed
-        
-        a "You don't."
-        
-        pc "But what if it-"
-        
-        a "It won't."
-        
-        pc "...Alright."
-        
-        pc "Uh, any particular reason you're giving me this?"
-        
-        show allise neutral
-        
-        a "Yes."
-        
-        pc "..."
-        
-        a "..."
-        
-        pc "Uh, mind telling me what that reason is?"
-        
-        a "You will find out later."
-        
-        pc "If you say so, I guess..."
-        
-        "I manage to work the phone... tablet... thing into my pocket."
-        
-        pc "Is... is that all?"
-        
-        a "Yes."
-        
-        a "Is our discourse concluded?"
+        "There's no answer."
         
         menu:
             
-            "'Uh... yes?'":
+            "Try the doorknob.":
                 
-                "Allise nods." 
+                "I try the doorknob."
+                
+                "It's locked. Of course."
+                
+            "Shrug it off.":
+                
+                "Well, it's clear she has some sort of bizarre power. I guess kicking me out of her room faster than I can blink isn't entirely out of the question."
+                
+        "No use staying down here, then. Casting one last cautious glance at the door, I trudge my way back upstairs. My head's spinning in all sorts of directions. It's a miracle I don't tumble down the steps."
         
-            "'Not yet.'":
-                
-                a "I see."
-                
-                pc "..."
-                
-                a "..."
-                
-                pc "..."
-                
-                a "..."
-                
-                menu:
-                    
-                    "'How about those memories, huh?'":
-                        
-                        show allise closed
-                        
-                        a "Is our discourse concluded?"
-                        
-                        pc "Not yet, I asked about my-"
-                        
-                        show allise neutral
-                        
-                        a "Our discourse is concluded."
-
-                    "'Did you... wanna chat?'":
-                        
-                        $ a_like += 2
-                        
-                        a "..."
-                        
-                        a "We are already conversing."
-                        
-                        pc "Sure, but we're not really talking about anything."
-                        
-                        a "Is there a topic you wish to address?"
-                        
-                        pc "Uh..."
-                        
-                        menu:
-                            
-                            "'Nice weather we're having.'":
-                                
-                                a "Yes."
-                                
-                                pc "..."
-                                
-                                a "..."
-                                
-                                a "Is there another topic you wish to address?"
-                                        
-                                pc "Well... not that I can think of..."
-                                        
-                                a "Then our discourse is concluded."    
-                                
-                            "'Where are you from?'":
-                                
-                                a "..."
-                                
-                                a "Is there another topic you wish to address?"
-                                
-                                menu:
-                                    
-                                    "'Uh... nice weather we're having.'":
-                                        
-                                        a "Yes."
-                                        
-                                        pc "..."
-                                        
-                                        a "..."
-                                        
-                                        a "Is there another topic you wish to address?"
-                                        
-                                        pc "Well... not that I can think of..."
-                                        
-                                        a "Then our discourse is concluded."
-                                        
-                                    "'No. I'd really like to know where you're from.'":
-                                        
-                                        a "Then our discourse is concluded."
-                                        
-                                        
-
-    "With that, she wanders into one of the nearby rooms without so much as a backwards glance, and the door closes silently behind her."
-    
-    hide allise with dissolve
-    
-    "It doesn't look like she's the talkative sort."
-    
-    "Still, though... that doesn't mean I have to give up just yet."
-    
-    "On the other hand, I could head back upstairs. Dravenia is probably pacing around the kitchen already."
-
-    #$ affection_max = 10.0
-
-    "Should I keep trying with Allise, or should I go back to Dravenia and the others?"
-
-    menu:
+        "Do I believe her or not? It's a lot to take in, but... maybe I'm doing myself a disservice by treating this rationally. I left my rational life when I left my parents."
         
-        "'Head back upstairs.'":
-            
-            jump ch2_scene07_draVisit
+        "Still, choosing a single person to form an inseperable bond with? What kind of contrived, strung-together plot..."
         
-        "'Keep trying with Allise.'":
-            
-            jump ch2_scene07_allVisit
-            
-    label ch2_scene07_draVisit:
-        
-        $ d_like += 4
-        
-        "I decide it's probably best to head back upstairs for now and set my new bodyguard at ease."
+        "... No use losing my mind over it, I guess."
         
         scene bg kitchen with wipeleft
-        
-        "...That is, if she was here."
         
         pc "Dravenia? Viscella? Hello?"
         
@@ -2402,16 +2219,8 @@
                         show dravenia happy
                         
                         d "Come get me."
-                        
+        
                         pc "Uh..."
-                        
-                        d "I kid, of course."
-                        
-                        d "In honesty, that is not something you need to worry about."
-                        
-                        show dravenia smug
-                        
-                        d "That would be my job."
                         
                         d "But I digress. How went your conversation with Miss Allise?"
 
@@ -2465,13 +2274,13 @@
                 
                 d "..."
                 
-                d "Mostly. The spoon comment was rather accurate."
+                d "Mostly. The spoon comment was rather accurate - they are quite messy when properly used."
                 
                 d "But I digress. How went your conversation with Miss Allise?"            
 
         menu:
             
-            "'Just fine. I think.'":
+            "'It went alright. I mean, all things considered...'":
                 
                 d "So... she did not make any unwanted advances?"
                 
@@ -2493,15 +2302,15 @@
                 
                 "She looks a little dissapointed."
                 
-                pc "Anyways..."
-                
             "'I'm not actually sure.'":
                 
                 d "Hmm?"
                 
-                pc "She's... not much of a talker."
+                pc "It's sort of hard to explain."
                 
-                d "I figured as much."
+                d "I figured as much. She seems the type where explaining is difficult."
+                
+                "Lady, you have no idea."
                 
                 show dravenia closed
                 
@@ -2511,9 +2320,7 @@
                 
                 d "Just in case, sir."
                 
-                pc "Uh... anyways..."
-                
-        pc "Where's Viscella?"
+        pc "Hey, where's Viscella? Wasn't she here with you?"
         
         show dravenia neutral
         
@@ -2540,6 +2347,10 @@
                 show dravenia closed
         
                 d "And I am {i}convinced{/i} that no child is actually comfortable around a clown."
+                
+                pc "Were you?"
+                
+                d "...No."
         
             "'She's scared of a lot of things...'":
             
@@ -2559,654 +2370,213 @@
                 
                 d "Though, to her credit, she seems more concerned about my species than my profession."
                 
-        d "But there are more pressing matters to attend to."
+        "Dravenia clears her throat."
         
-        d "Your memories, for example."
+        d "Regardless, though - was there any reason you wanted to see the slime?"
         
-        pc "I'm... not sure what else needs to be said."
+        "I'd like to tell someone, but... it's sort of risky. Maybe I should wait to know them better, to make sure they won't alert Allise. Or think I'm completely insane..."
         
-        d "How far back can you remember?"
+        "Gah, who am I kidding? This {i}is{/i} insane. I've heard some varieties of chimera possess some powerful magic, but stuff like this is just... just..."
         
-        pc "Yesterday."
+        show dravenia confused
         
-        d "That is all?"
+        d "...Sir?"
         
-        pc "That's it."
+        pc "A-ah! Sorry, I'm a little..."
         
-        d "Most unusual..."
+        d "Distracted. Is everything alright?"
         
-        d "If you do not mind me asking, why are you here?"
+        pc "Yeah, it's fine. I'm fine."
         
-        pc "I woke up here."
+        "...No, I'm not. I need to talk to someone. Make sure I'm thinking clearly. But I can't have them thinking I'm crazy, either."
         
-        d "In this kitchen?"
+        "C'mon, think... who do I know who's imaginative and gullible and equal measure?"
         
-        pc "No, outside. Kumiru and Viscella found me. Apparently I just... appeared."
+        "Oh. Right."
         
-        d "Hmm..."
+        d "I had just asked if there was any reason you needed to see the slime, and it seemed to set you off daydreaming."
         
-        d "Miss Allise's story is fraud, then. There is no way a licensed medical institution would allow a patient to run wild without so much as a missing persons announcement."
+        show dravenia surprised
         
-        d "And, if she is lying about such a serious matter, I see no reason to trust whatever else she may say."
+        "Her eyes widen."
         
-        d "May I speak with her?"
+        d "Don't tell me you..."
         
-        menu:
-            
-            "'You don't need my permission...'":
-                
-                d "True. But what harm in there is being polite?"
-                
-            "'Good luck with that.'":
-                
-                d "You sounds skeptical."
-                
-                d "I assure you, I can be quite persuasive."
+        pc "Yes! I need to talk to Viscella. It's urgent. Well - not urgent, but, uh, it's important."
         
-        "With that, Dravenia marches off downstairs. I'm starting to feel like a yo-yo."
+        d "Important? I'm sure together we can find her in a matter of-"
         
-        scene bg basement with dissolve
+        pc "No! I mean no. Well, sorry. I just... this is something that needs privacy."
         
-        "We arrive at the door to Allise's room. Dravenia gives it a knock."
+        show dravenia embarrassed
         
-        play sound "assets/sound/sfx/knock.ogg"
+        d "I... I see... are, um, you two familiar, or was it at first sight?"
         
-        d "Miss Allise?"
+        pc "Huh?"
         
-        a "Come in."
+        d "Nothing! Nothing, I- this way. I'm pretty sure she went this way."
         
-        "Dravenia gives me a glance, before pushing open the door."
-        
-        scene bg aBedroom
-        
-        show allise neutral at allise_right
-        
-        with Dissolve(2.0)
-        
-        "We enter and find Allise waiting. She's just... standing in the middle of the room."
-        
-        show dravenia confused at dravenia_left behind allise with dissolve
-        
-        d "Erm... Miss Allise?"
-        
-        a "Yes?"
-        
-        show dravenia neutral
-        
-        d "We- well, {i}I{/i}, mostly - wanted to ask you some questions."
-        
-        a "..."
-        
-        d "Forgive me. But spending every waking moment suspicious of your true intentions and nature would my job will be more difficult than it needs to be."
-        
-        d "Much easier to clear up any misunderstandings now, is it not?"
-        
-        jump ch2_scene08
-        
-    label ch2_scene07_allVisit:
-        
-        "I decide not to give up with Allise. After all, she's the only thing I've got that connects me to my past."
-    
-        play sound "assets/sound/sfx/knock.ogg"
-        
-        pc "Hey, Allise?"
-        
-        "There doesn't seem to be a response, at first."
-        
-        "After a moment, however, the door opens a crack."
-        
-        show allise neutral at allise_center with dissolve
-        
-        a "I am not returning your memories."
-        
-        menu:
-            
-            "'Fine, alright? I admit defeat. I just wanted to talk.'":
-                
-                a "I see."
-                
-            "'Why not?'":
-                
-                play sound "assets/sound/sfx/door_close.wav"
-                
-                hide allise with dissolve
-                
-                "..."
-                
-                pc "Oh, come on..."
-                
-                menu:
-                    
-                    "'Fine! Fine. We'll forget about the memories for now, alright?'":
-                        
-                        "The door creaks open again."
-                        
-                        show allise neutral at allise_center with dissolve
-                        
-                        a "Promise."
-                        
-                        pc "I promise."
-                        
-                        a "You will not raise the topic of your memories or past. My identity is likewise off-limits."
-                        
-                        pc "Seriously? We can't even talk about you?"
-                        
-                        a "...Within reason."
-                        
-                        pc "Fine, I'll take it. Are you willing to talk, then?"
-                        
-                        a "I suppose."
-                        
-                    "Give up and go upstairs.":
-                        
-                        "This is pointless; I'm not gonna get any answers out of her."
-                        
-                        jump ch2_scene07_draVisit
-                        
-        $ a_like += 4
-        
-        a "..."
-        
-        pc "..."
-        
-        a "..."
-        
-        pc "You're... not exactly the talkative sort, are you?"
-        
-        a "No."
-        
-        pc "Er... do you want to come out here?"
-        
-        a "Why don't you come in here?"
-        
-        pc "You didn't invite me..."
-        
-        a "Ah. Please, come in."
-
-        scene bg aBedroom with Dissolve(2.0)
-    
-        "There's a bedroom here, too?"
-        
-        "They really cram them in, here..."
-        
-        show allise neutral at allise_center
-        
-        a "Very well. Let us converse."
-        
-        a "..."
-        
-        a "Nice weather we are having."
-        
-        pc "Seriously?"
-        
-        show allise sad
-        
-        a "I told you I am not the talkative sort..."
-        
-        pc "Alright, alright. Let me try."
-        
-        show allise neutral
-        
-        menu:
-            
-            "'What do you do for fun?'":
-                
-                a "...Fun?"
-                
-                pc "Please tell me you know what 'fun' is."
-                
-                a "Of course."
-                
-                a "For fun, I 'take it easy'."
-                
-                pc "You... take it easy?"
-                
-                a "Yes."
-                
-                pc "What does that mean?"
-                
-                a "I 'chill' and 'relax', thereby 'taking it easy'."
-                
-                pc "You sound like you're rehearsing something... who taught you to 'take it easy'?"
-                        
-                "Her eyes look a little shifty for a moment."
-                        
-                a "...Truly, there is nothing more enjoyable than 'taking it easy'."
-                
-                pc "Uh..."
-                
-                a "Wouldn't you agree?"
-                
-                pc "That's not quite what I asked..."
-                
-                a "Ah. The joys of 'taking it easy'."
-                
-                "Well, I tried..."
-                
-            "'What kind of music do you like?'":
-                
-                a "Music..."
-                
-                a "Hm..."
-                
-                a "I enjoy appealing music."
-                
-                pc "No, what {i}kind{/i}?"
-                
-                a "Ah. I enjoy... music that makes me cry."
-                
-                menu:
-                    
-                    "'Why?'":
-                        
-                        a "..."
-                        
-                        a "I do not know."
-                        
-                        pc "I see..."
-                        
-                        "She nods."
-                        
-                    "'Me too, actually.'":
-                        
-                        "She nods."
-                        
-                        a "Yes. I do not know why I enjoy it."
-                        
-                        pc "Well... there's a weird sort of power to music that makes you cry, isn't there?"
-                        
-                        a "...Yes. That must be it."
-                
-            "'What's your cup size?'":
-            
-                a "Cup size?"
-                
-                pc "You know, uh... bust."
-                
-                show allise closed
-                
-                a "Ah. You are asking about the size of my breasts."
-                
-                pc "Sorry, first thing that popped into my head. Kinda... says something about me, I guess..."
-
-                show allise neutral
-                
-                a "C."
-                
-                pc "Oh? I see."
-                
-                a "Not O-I-C."
-                
-                a "C."
-                
-                pc "...Yeah, I got that."
-                
-        a "Have we just concluded a conversation?"
-        
-        pc "You know, You seem pretty eager to get rid of me..."
-                
-        show allise closed
-                
-        a "Not particularly."
-                
-        show allise neutral
-                
-        a "I merely believe your time would be better spent with the others, where fraternization may result in more tangible benefits."
-        
-        pc "Tangible benefits?"
-        
-        a "Yes. Humans are social creatures. There are tangible benefits to forming bonds with those who are able."
-        
-        a "Support networks, a healthier mental state, opportunities for emotional and physical gratification."
-        
-        pc "What, and I can't get any of those things from 'fraternizing' with you?"
-            
-        a "The reward would hardly be worth the effort."
-                
-        pc "I can be the judge of that."
-        
-        play sound "assets/sound/sfx/knock.ogg"
-    
-        ""
-    
-        show allise closed
-        
-        a "Far more likely that {i}they{/i} will be the judge of that."
-        
-        pc "Hello?"
-        
-        d "[pc]. Is everything all right?"
-        
-        pc "Yeah, we're just talking."
-        
-        show allise neutral
-        
-        d "Could I impose on Miss Allise to indulge me for a moment? I would like to ask her for some questions."
-        
-        menu:
-            
-            "'I guess?'":
-                
-                d "Thank you."
-                
-            "'Come on, Dravenia. She hasn't done anything wrong.'":
-                
-                show allise closed
-                
-                a "You know that is a lie."
-                
-        "Allise glides over to the door, movements unnaturely smooth, and pulls it open."
-        
-        
-        show dravenia neutral at dravenia_left behind allise with dissolve
-        
-        show allise neutral at allise_right with move
-        
-        d "Ah, [pc]. I am relieved to see you thoroughly unmolested."
-        
-        pc "I don't think I was in any danger of that..."
+        "Dravenia starts towards the staircase, but freezes on the spot. Beads of sweat trickle down her face."
         
         show dravenia smug
         
-        d "Regardless, I am relieved."
+        d "Oh... so my first test, is it... v-very well..."
         
-        show dravenia neutral
+        pc "Are... you okay?"
         
-        d "Pray forgive my incessant nagging, but I must seek to clear up any confusion that might remain between myself and Miss Allise."
-    
-        jump ch2_scene08
-
-    label ch2_scene08:
-        
-        stop music fadeout 1.0
-        
-        a "..."
-        
-        show allise closed
-        
-        a "...Fine."
-        
-        d "Hm?"
-        
-        a "Yes. It was me."
-        
-        d "...What?"
-        
-        show black with Dissolve(1.0)
-        
-        $ renpy.pause(2.0)
-        
-        play music "assets/sound/bgm/noodle.mp3"
-        
-        show allise neutral
-        
-        a "...You always were the {i}most{/i} loathesome of them."
-        
-        show dravenia angry
-        
-        hide black with Dissolve (1.0)
-        
-        "Something... something's wrong."
-        
-        "The edges of the room almost seem to warp, accompanied by an icy chill that digs far deeper than my spine."
-        
-        d "Ex... excuse me?"
-        
-        show allise closed
-        
-        a "You must think your loyalty genuine."
-        
-        a "Eager to prove yourself as a sort of hero... immature, but perhaps noble."
-        
-        a "Loyalty, duty, devotion... I have come to believe they exist. You are the perfect example of what they are {i}not{/i}."
-        
-        pc "...Allise?"
-        
-        "This ill sensation... it's twisting in my gut."
-        
-        "If it's affecting Dravenia, however - she's not showing it."
-        
-        show dravenia neutral
-        
-        d "You speak as if you know me. I can assure you, we have never met - and, if we did, I would have prevented you from wronging this young man."
-        
-        show allise neutral
-        
-        a "Wronging?"
-        
-        d "You are undoubtedly the creature who has tampered with his mind."
-        
-        show allise closed
-        
-        "Allise gives a slow nod. The strange... twisting sensation that I could feel and see seems to be subsiding."
-        
-        d "I see. Please return them."
-        
-        d "I would rather like to end this nonsense."
-        
-        a "...I cannot do that. It is for his own good. And yours."
-        
-        show dravenia angry
-        
-        d "And why is that?"
-        
-        a "..."
-        
-        a "This grows tiresome."
-        
-        d "If I cannot convince you, I must-"
-        
-        show allise closed
-        
-        a "Make me? Yes, be quick about it. I am quite exhausted, and require rest."
-        
-        menu:
-            
-            "'Let's not do anything hasty, alright?'":
-                
-                "As expected, my words fall on deaf ears."
-        
-            "Stay silent.":
-                
-                "I hold my tongue."
-                
-        "Dravenia doesn't move immeditely. She merely stands stock-still, observing Allise before slowly raising her hands into what appears to be a combat stance."
-        
-        a "You are attempting to deduce what variety of chimera I happen to be. I shall make it simple for you, then: I am no chimera."
-        
-        d "And you expect me to believe you are human?"
-        
-        show allise neutral
-        
-        a "You will soon find out."
-                                   
-        d "...Sir, I would advise you leave."
-        
-        a "..."
-        
-        menu:
-            
-            "Get in between them.":
-                
-                $ flag_AlliseDraveniaInBetween = True
-                
-                "As the two women stare each other down, atmosphere tense as a coiled up spring, I am the first to move. I hurry between the two women, holding my arms out at each."
-                
-                pc "Calm down! Everyone, just {i}calm down{/i}, alright?"
-                
-                show dravenia vangry
-                
-                d "Sir, please get out of the way! She is dangerous!"
-                
-                a "[pc]. Move or remain, it means little: she will learn, either way."
-                
-                pc "Learn {i}what{/i}?"
-                
-                a "Futility. My task here is challenge enough {i}without{/i} her meddling."
-                
-                pc "Then she won't meddle!"
-                
-                show allise closed
-                
-                "After a tense moment, Allise closes her eyes."
-                
-                a "Make her swear it."
-                
-                show dravenia angry
-                
-                d "I beg your pardon?"
-                
-                show allise neutral
-                
-                a "Swear that you will no further meddle in this affair concerning [pc]'s memories."
-                
-            "Stay where you are.":
-                
-                $ flag_AlliseDraveniaInBetween = False
-                
-                "As the two women stare each other down, atmosphere tense as a coiled up spring, I remain still."
-                
-                d "Sir. Leave."
-                
-                pc "I'm not going anywhere. What are you guys even fighting over? Nothing!"
-                
-                d "Your memories-"
-                
-                pc "Yeah, {i}my{/i} memories! I appreciate the thought, Dravenia - but if I wanted my memories back that badly, I'd get them myself!"
-                
-                d "Try to sway my course if you must, sir - but I am not leaving this room until I have fulfilled my duty to you as a Hellguard and-"
-                
-                show allise angry
-                
-                a "Such {i}devotion{/i}."
-                
-                "Something in Allise snaps - I can tell. I only have the tiniest window of opportunity to prevent something awful from happening. I take it."
-               
-                pc "Allise, don't!"
-                
-                show dravenia neutral
-                
-                pc "Listen - I know there's something going on here that me and Dravenia don't understand! You keep saying it's for our own good - maybe I believe you, maybe I don't!"
-                
-                show allise neutral
-                
-                pc "But please, whatever it is you're about to do - don't. Please. I'll beg if I have to, just... don't."
-                
-                "A heavy silence fills the room. I start to suspect my words had less affect than I hoped they would, but..."
-                
-                show allise closed
-                
-                a "Very well."
-                
-                pc "...Huh?"
-                
-                a "Under the condition that you make your bodyguard swear not to interfere in this matter."
-                
-                show dravenia shocked
-                
-                d "What?!"
-                
-                show allise neutral
-                
-                a "I have done what I have done for a reason. Make her swear not to press the issue any further."
-        
-        pc "...Fine."
-        
-        show dravenia shocked
-        
-        d "Sir? You can't possibly-"
-        
-        menu:
-            
-            "'I {i}can{/i} possibly.'":
-                
-                show dravenia sad
-                
-                d "Ugh..."
-                
-            "'Stow it, private!'":
-                
-                d "Y-yes sir!"
-                
-                "To my surprise, she actually salutes. I don't even know if she's a private."
-        
-        pc "Now - promise. Swear to the both of us that you'll stop pestering Allise about the whole 'memories' issue."
-        
-        show dravenia sad
-        
-        d "But sir-"
-        
-        pc "I can deal with this on my own, alright? You've got your hands full keeping Kamao off of me."
-        
-        d "I do not like this one bit..."
-        
-        pc "Sorry, Dravenia, but liking it isn't your job."
-        
-        show dravenia neutral
-        
-        d "I should remind you that I need not obey your orders if they are contrary to your well-being..."
-        
-        pc "Allise isn't going to hurt me. She's had her chances, and the only thing she's {i}maybe{/i} wounded is my communication skills."
-        
-        show dravenia closed
-        
-        d "...Fine."
-        
-        d "If it pleases you so, I shall not attempt to wrench your stolen memories away from this manipulative fiend."
-        
-        pc "Uh... thank you."
-        
-        show dravenia angry
-        
-        "I'm pretty sure I catch her giving a little huff before marching out of the room, casting one last glare in Allise's direction before leaving."
-        
-        hide dravenia with dissolve
-        
-        show allise closed at allise_center with move
-        
-        a "What a nuisance..."
-
-        pc "'She's just looking out for me...'"
-        
-        show allise neutral
-        
-        a "A nuisance with an excuse is still a nuisance."
-                
-        a "Please leave me. I have much to consider."
-        
-        "Whether I wanted to protest or not didn't much matter - with surprising strength, I'm gently ushered out the door." 
-        
-        scene bg basement with wiperight
-        
-        "The door closes behind me without so much as a goodbye."
-           
-        "Well... that went better than expected."
-        
-        "I mean, I'm not closer to remembering who I am, but at least there's less tension in the air now."
-        
-        "...Though not at this percise moment, considering the dragon-woman glaring at me."
-        
-        show dravenia neutral at dravenia_center
+        d "Yes. Yes, sir. I will stay right here. Without following you. Your privacy is important, even if it puts you at risk."
         
         d "..."
         
-        pc "What?"
+        d "On second thought, saying it out loud..."
         
+        show dravenia embarrassed
+        
+        d "Would it be okay if I at least stood outside the door?"
+        
+        menu:
+            
+            "'Only if you swear not to eavesdrop.'":
+                
+                $ flag_intro_DraveniaAccompanies = False
+                
+                show dravenia stern
+                
+                d "Yes, sir! I swear it, sir!"
+                
+                d "I will attune my hearing to only the highest-pitch cries for aid!"
+                
+                pc "I don't think you'll hear any of those. Unless Viscella catches you standing ominously outside her door, that is."
+                
+                show dravenia embarrassed 
+                
+                d "Perhaps I shall stand slightly to the side of the door, instead..."
+                
+                pc "Probably a good idea. You just want me to scream if something goes wrong?"
+                
+                "Though I doubt it will..."
+                
+                show dravenia neutral
+                
+                d "Ah, it would likely be ineffective. The slime could smother you in an instant, rendering you incapable of calling for aid."
+                
+            "'Viscella's not a threat.'":
+                
+                $ flag_intro_DraveniaAccompanies = False
+                
+                show dravenia neutral
+                
+                d "Do not underestimate her simply because she is a slime. Contrary to their appearance, they can be deadly."
+                
+                pc "Do you really have to assume the worst in everyone?"
+                
+                show dravenia smug
+                
+                d "It is not assuming the worst, sir. It is assessing the threat."
+                
+                pc  "'And do you honestly think Viscella's a threat? From what I've been able to gather, she's a nervous, socially anxious doormat."
+                
+                show dravenia neutral
+                        
+                d "Well..."
+                
+                menu:  
+                    
+                    "'Please, Dravenia, I'll be fine. I'll scream loud enough to wake the house if I get in trouble.":
+                        
+                        show dravenia stern
+                        
+                        d "But if a slime smothers you the only sound you'll be able to make is-"
+                        
+                        show dravenia neutral
+                        
+                        d "..."
+                        
+                        d "Forgive me. I see that I am being rather overbearing."
+                        
+                    "'Are you trying to protect me, or are you just trying to show off?'":
+                        
+                        show dravenia shocked
+                        
+                        d "Wha-"
+                    
+                        show dravenia vangry
+                    
+                        d "I'm...!"
+                        
+                        d "..."
+                        
+                        show dravenia sad
+                        
+                        d "...Sincerest apologies, sir. That was an unprofessional outburst. More importantly, you are right - perhaps I am getting somewhat carried away."
+            
+                        d "Nevertheless, I swear my concern is genuine. You think me paranoid, but caution is trained into us above all else."
+
         show dravenia closed
+
+        d "With that said, could I give you something to set my mind at ease?"
         
-        d "Nothing."
+        pc "Oh? What?"
+        
+        "Dravenia reaches into her suit, revealing a thin, black band - an armband or watch, by the looks of it. Very stylish - the face is flat, and seems to be inset. A button?"
         
         show dravenia neutral
         
-        d "Excuse me - I am going to familiarize myself with the layout of the building and its surroundings."
+        d "Pressing this button will immediately alert me if you are in danger, and open a two-way line of communication between us."
         
-        d "If you come to any trouble at all, be certain to scream."
+        d "You will then be able to either explain the dangerous situation to the best of your ability, or cancel the alert in the case of a false alarm."
         
-        pc "Um... alright?"
-           
-        "What a day... well, I guess there's no point dwelling on it. I'm starving."
+        menu:
+            
+            "'Is this necessary...?'":
+                
+                d "Necessary? No. But the alternative is me hovering in close proximity to you for the majority of the day. Including during private activities."
+                
+            "'What if someone forces me to tell you it's a false alarm?'":
+                
+                d "Ah, an astute question, sir! And one I was just about to address."
+                
+        d "In the rare event you are essentially 'held at gunpoint' and forced to tell me the press was a false alarm, you need merely speak the words... ah."
         
-        jump ch2_scene09
+#       codeword is 'spilled my drink'
+        
+        "Dravenia glances around."
+        
+        d "Perhaps I shall elaborate when I can be absolutely sure we aren't being overheard."
+        
+        d "For now, though, it is unlikely such a fringe scenario will come to pass."
+        
+        if flag_intro_DraveniaAccompanies:
+            
+            d "Especially with myself in such proximity!"
+            
+            pc "You know you'll still be outside the room, right? And not eavesdropping?"
+            
+            pc "Assuming she's even {i}in{/i} her room."
+            
+            d "Of course. To a Hellguard, a measly door is nothing."
+            
+            pc "Just don't break anything. Bondhouses charge a lot for property damage..."
+            
+        else:
+            
+            d "..."
+            
+            show dravenia sad
+            
+            d "I suppose this is goodbye..."
+            
+            pc "C'mon, Dravenia, don't be so dramatic. I'll be fine."
+            
+            d "Yes, sir..."
+            
+        jump intro_viscellachatconspiracy
+            
+    label intro_viscellachatconspiracy:
+        
+        "Here we go, scene change."
+
+###################################################################################CURRENT###############################################################################################
         
     label ch2_scene09:
         
