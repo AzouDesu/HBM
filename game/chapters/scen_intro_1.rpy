@@ -285,6 +285,8 @@ label intro_ku_v_meeting:
     
     menu:
         
+        "{cps=0}Telling that to a pair of chimera I just met might make things awkward, but...{/cps}"
+        
         "'My parents were specist.'":
             
             pc "My parents were specist."
@@ -355,11 +357,11 @@ label intro_ku_v_meeting:
     
     "Shuttle Driver" "Eyes on the prize, kiddo."
     
-    "She's carrying all my stuff slung over her shoulders like it's child's play. She must be flexing, because with how easy she's walking there's no way my stuff is actually putting any strain on her arm muscles."
-    
-    "That's..."
+    "She's carrying all my stuff slung over her shoulders like it's child's play. She must be flexing, because with how easy she's walking there's no way my stuff is actually putting any strain on her arm muscles. That's..."
     
     menu:
+        
+        "{cps=0}She's carrying all my stuff slung over her shoulders like it's child's play. She must be flexing, because with how easy she's walking there's no way my stuff is actually putting any strain on her arm muscles. That's...{/cps}"
         
         "...kinda scary.":
             
@@ -427,6 +429,8 @@ label intro_ku_v_meeting:
     
     menu:
         
+        "{cps=0}The woman just stares as I regain my composure. I don't know what she's trying to accomplish, but...{/cps}"
+        
         "It's giving me a bad first impression...":
             
             "The least she could do is acknowledge my existence. Well, without just... glaring at me."
@@ -448,6 +452,8 @@ label intro_ku_v_meeting:
     "We stare at each other for a good ten seconds before I realize she's not going to elaborate."
     
     menu:
+        
+        "{cps=0}We stare at each other for a good ten seconds before I realize she's not going to elaborate.{/cps}"
         
         "Retreat":
             
@@ -582,6 +588,9 @@ label intro_ku_v_meeting:
     v "Because it's huge! It's huge, isn't it?"
     
     menu:
+        
+        v "{cps=0}Because it's huge! It's huge, isn't it?{/cps}"
+        
         "'It's huge.'":
             
             pc "It's huge."
@@ -1250,6 +1259,9 @@ label intro_ka_meeting:
     ka_un "You heard me, jailbait. We just finished consummating our love for one another." 
     
     menu:
+        
+        ka_un "{cps=0}You heard me, jailbait. We just finished consummating our love for one another.{/cps}" 
+        
         "'We definitely did not do that.'":
             
             pc "Yeah, no."
@@ -1364,6 +1376,9 @@ label intro_ka_meeting:
     ku "*Sigh*."
     
     menu:
+        
+        ku "{cps=0}*Sigh*.{/cps}"
+        
         "'It's [pc].'":
             
             pc "[pc]."
@@ -1689,6 +1704,9 @@ label intro_f_meeting:
     ka "[pc], are you gonna let her mad burn your girlfriend like that?"
     
     menu:
+        
+        ka "{cps=0}[pc], are you gonna let her mad burn your girlfriend like that?{/cps}"
+        
         "'You're not my girlfriend.'":
 
             ka "Don't mind him, he's in denial."
@@ -1902,6 +1920,8 @@ label intro_f_meeting:
     
     menu:
         
+        f "{cps=0}Actually, you know what? I'll come with you. If I don't, she'll probably end up talking you into helping her, too.{/cps}"
+        
         "'Do you want help with your things first?'":
             
             $ flag_OfferedFeniraUnpackHelp = True
@@ -2022,6 +2042,8 @@ label intro_n_meeting:
     f "Pffft."
     
     menu:
+        
+        f "{cps=0}Pffft.{/cps}"
         
         "'That was mean.'":
             
@@ -2357,6 +2379,8 @@ label intro_n_meeting:
     
     menu:
         
+        "{cps=0}You and Nagi each grab one end of the box and lift. It's... not that heavy.{/cps}"
+        
         "'Whew, this thing weighs a ton! {i}Right, Nagi?{/i}'":
             
             $ n_like += 1
@@ -2400,6 +2424,8 @@ label intro_n_meeting:
             n "Right, [pc]?"
             
             menu:
+                
+                n "{cps=0}Right, [pc]?{/cps}"
                 
                 "'You caught me.'":
                     
@@ -2511,6 +2537,8 @@ label intro_n_meeting:
     
     menu:
         
+        n "{cps=0}Beats me. Not that I mind having someone polite around. Especially after dealing with Fenira for nearly a decade.{/cps}"
+
         "'You sure like ribbing on her, don't you?'":
             
             show kumiru neutral
@@ -2700,6 +2728,8 @@ label intro_n_meeting:
     "Besides, I've got some time on my hands. How should I spend it?"
     
     menu:
+        
+        "{cps=0}Besides, I've got some time on my hands. How should I spend it?{/cps}"
 
         "Help Kumiru look for Viscella.":
             
@@ -2893,6 +2923,8 @@ label intro_visSearch:
     
     menu:
         
+        v "{cps=0}Whew. That's a relief.{/cps}"
+        
         "'Come on. I think Kumiru's worried about you.'":
             
             show viscella angry
@@ -2940,6 +2972,8 @@ label intro_visSearch:
     v "Why not?"
     
     menu:
+        
+        v "{cps=0}Why not?{/cps}"
         
         "'It's immature.'":
             
@@ -3080,6 +3114,8 @@ label intro_visSearch:
     v "I... I..."
     
     menu:
+        
+        v "{cps=0}I... I...{/cps}"
         
         "'Sorry, Viscella. I mean, she's spot on...'":
             
@@ -3370,6 +3406,8 @@ label intro_fenVisit:
     
     menu:
         
+        f "{cps=0}Try not to be too impressed.{/cps}"
+        
         "'Athletic trophies?'":
             
             show fenira neutral
@@ -3450,11 +3488,13 @@ label intro_fenVisit:
     
     menu:
         
+        f "{cps=0}Nagi laughed at me for weeks. Then she made this.{/cps}"
+        
         "'Wait, {i}Nagi{/i} made this?":
             
             show fenira happy
             
-            f "You kidding? She paid someone else to do it."
+            f "You kidding? Sorry, she didn't make it - she had it made. Paid someone else to do it."
             
             f "I've never seen anyone put so much money into an inside joke."
             
@@ -3502,6 +3542,8 @@ label intro_fenVisit:
     
     menu:
         
+        f "{cps=0}Shit. You think I made her run off or something?{/cps}"
+        
         "'Probably.'":
             
             show fenira sad
@@ -3525,6 +3567,8 @@ label intro_fenVisit:
     f "Last one to find her gets to apologize!"
 
     menu:
+        
+        f "{cps=0}Last one to find her gets to apologize!{/cps}"
         
         "'Hey, wait, I never agreed to-'":
             
@@ -3582,6 +3626,8 @@ label intro_fenVisit:
     
     menu:
         
+        "Which room should I check?"
+        
         "Study.":
             
             "I doubt Viscella would be hiding in the home gym. I decide to search the study."
@@ -3601,6 +3647,8 @@ label intro_fenVisit:
             f "Hah! I got you now! What rooms have you checked?"
     
             menu:
+                
+                f "{cps=0}Hah! I got you now! What rooms have you checked?{/cps}"
     
                 "'Theatre and rec room.'":
                     
@@ -3761,6 +3809,8 @@ label intro_fenVisit_fenWins:
     
     menu:
         
+        f "{cps=0}Not until [pc] clarifies our little misunderstanding.{/cps}"
+        
         "'I never agreed to that.'":
             
             if flag_AcceptedFeniraChallenge:
@@ -3827,6 +3877,8 @@ label intro_fenVisit_pcWins:
     
     menu:
         
+        v "{cps=0}I-if she finds me first what?{/cps}"
+        
         "'It won't be pretty.'":
             
             show viscella flustered at viscella_center with dissolve
@@ -3848,6 +3900,8 @@ label intro_fenVisit_pcWins:
             v "They're... not?"
             
             menu:
+                
+                v "{cps=0}They're... not?{/cps}"
                 
                 "'No. They're going to do something far worse.'":
                     
@@ -3897,6 +3951,8 @@ label intro_fenVisit_pcWins:
             v "That sounds {i}super{/i} fishy!"
             
             menu:
+                
+                v "{cps=0}That sounds {i}super{/i} fishy!{/cps}"
                 
                 "'If you don't come out, I'm going to start spoiling your favourite shows.'":
                     
@@ -4048,6 +4104,8 @@ label intro_fenVisit_end:
     
     menu:
         
+        f "{cps=0}In case the fleabag tries to chloroform you.{/cps}"
+        
         "Sure, if you want.":
             
             $ f_love += 2
@@ -4164,6 +4222,8 @@ label intro_nagVisit:
     
     menu:
         
+        n "{cps=0}Sorry, you probably didn't stop by for a history lesson. What's up?{/cps}"
+        
         "'You're pretty good.'":
             
             show nagi neutral
@@ -4270,9 +4330,15 @@ label intro_nagVisit:
     
     ka "Right, [pc]?"
     
+    $ tempvar = ""
+    
     menu:
         
-        "'Sorry, Nagi, she beat you to it.'":
+        "Do I play along, or..."
+        
+        "Come clean.":
+            
+            pc "Sorry, Nagi, she beat you to it."
             
             show kamao vhappy
             
@@ -4304,7 +4370,11 @@ label intro_nagVisit:
             
             show nagi bored
             
-        "'So, Nagi, eight o'clock tomorrow night?'":
+            n "..."
+            
+        "Play along with Nagi.":
+            
+            pc "So, Nagi, eight o'clock tomorrow night?"
             
             show nagi wink
             
@@ -4366,6 +4436,8 @@ label intro_nagVisit:
             n "..."
     
     menu:
+        
+        n "{cps=0}...{/cps}"
         
         "'She's a bit delusional.'":
             
@@ -4483,6 +4555,8 @@ label intro_nagVisit:
     
     menu:
         
+        n "{cps=0}She's...{/cps}"
+        
         "'Something.'":
             
             n "Yeah. A whole lot of something."
@@ -4531,6 +4605,8 @@ label intro_nagVisit:
             
             menu:
                 
+                n "{cps=0}Wait. Are you serious?{/cps}"
+                
                 "'Dead serious.'":
                     
                     n "I mean, whatever floats your boat."
@@ -4569,6 +4645,8 @@ label intro_nagVisit:
     "She seems nice enough, but I can't take the risk."
     
     menu:
+        
+        "{cps=0}She seems nice enough, but I can't take the risk.{/cps}"
         
         "Dodge the question.":
             
@@ -4612,6 +4690,8 @@ label intro_nagVisit:
     
     menu:
         
+        n "{cps=0}...But you're probably the sort who enjoys having a group of chimera fighting over you, huh?{/cps}"
+        
         "'Well...'":
             
             n "Nailed it."
@@ -4637,6 +4717,8 @@ label intro_nagVisit:
     n "But hey, enough of that. Now I really {i}am{/i} exhausted. I'm gonna get some sleep. Wanna join me?"
     
     menu:
+        
+        n "{cps=0}But hey, enough of that. Now I really {i}am{/i} exhausted. I'm gonna get some sleep. Wanna join me?{/cps}"
         
         "'Who wouldn't?'":
             
@@ -4724,6 +4806,8 @@ label intro_kamVisit:
     ka "Fu... fu... fu..."
                  
     menu:
+        
+        ka "{cps=0}Fu... fu... fu...{/cps}"
         
         "'What are you doing?'":
             
@@ -4921,6 +5005,8 @@ label intro_kamVisit:
     
     menu:
         
+        ka "{cps=0}Actually, for now, just tell me why you're in my bedroom.{/cps}"
+        
         "Ask about her offer.":
             
             ka "My offer... offer..."
@@ -4970,6 +5056,8 @@ label intro_kamVisit:
             
             menu:
                 
+                ka "{cps=0}Alright. It's my first time. Be gentle.{/cps}"
+                
                 "'I take it back.'":
                     
                     ka "What? You dangle it in front of me like that and just tear it away?!"
@@ -4997,6 +5085,8 @@ label intro_kamVisit:
                     show kamao lovestruck
                     
                     menu:
+                        
+                        ka "{cps=0}Th-three pets! Max! I'm not ready for any more than that!{/cps}"
                         
                         "'On second thought, this is kind of weird...'":
                             
@@ -5102,6 +5192,8 @@ label intro_kamVisit:
     
     menu:
         
+        ka "{cps=0}Before you ask, you can earn 100 K-bux by whispering dirty stuff into my ear.{/cps}"
+        
         "Whisper 'dirty stuff' into her ear.":
             
             show kamao shockblush
@@ -5154,6 +5246,8 @@ label intro_kamVisit:
     
     menu:
         
+        ka "{cps=0}And I do mean {i}service{/i}.{/cps}"
+        
         "'You seem a little... desperate.'":
             
             show kamao confused
@@ -5185,6 +5279,8 @@ label intro_kamVisit:
             ka "Barely legal."
                   
             menu:
+                
+                ka "{cps=0}Barely legal.{/cps}"
                 
                 "'What's the rush?'":
                     
@@ -5281,6 +5377,8 @@ label intro_kamVisit:
     ka "Okay, maybe just the dick lust."
     
     menu:
+        
+        ka "{cps=0}Okay, maybe just the dick lust.{/cps}"
         
         "'I find that hard to believe.'":
             

@@ -520,93 +520,6 @@
 
         show black with Dissolve(3.0) 
 
-        #    "..."
-
-        #    "..."
-
-        #    voice_a "Hey..."
-
-        #    voice_a "Can you hear me?"
-
-        #    voice_a "Easy, easy. Don't move around too much."
-
-        #    voice_a "Are you alright? What's your name?"
-
-        #    voice_b "My... name?"
-
-        #    voice_a "Yeah. What's your name?"
-
-        #    voice_b "..."
-
-        #    voice_b "I have no name."
-
-        #    voice_a "You don't? Well, what do your parents call you?"
-
-        #    voice_b "...Parents?"
-
-        #    voice_a "Yeah. Your mom and dad."
-
-        #    voice_b "Mom and... dad?"
-
-        #    voice_a "Don't tell me you don't have parents."
-
-        #    voice_b "..."
-
-        #    voice_a "This might be harder than I thought."
-
-        #    voice_a "Don't worry about it, though. You should get back to rest. I don't know what you've been through, but it can't have been nice."
-
-        #    voice_a "But before that, I guess you need a name, huh? Any ideas?"
-
-        #    voice_b "..."
-
-        #    voice_a "No? Nothing?"
-
-        #    voice_b "...Why?"
-
-        #    voice_a "Huh?"
-
-        #    voice_b "Why do I need a name?"
-
-        #    voice_a "What do you mean?"
-
-        #    $ renpy.pause(1.0)
-
-        #    voice_a "Everyone deserves a name."
-
-
-        #    unknown "I'm... sorry..."
-
-        #    "..."
-
-        #    unknown "This is all my fault."
-
-        #    unknown "I'm not going to hurt you ever again."
-
-        #    unknown "..."
-
-        #    unknown "That's what I want to say."
-
-        #    unknown "But..."
-
-        #    unknown "I don't want to to go."
-
-        #    unknown "I... I don't want to leave you..."
-
-        #    unknown "And I don't want you... to leave me."
-
-        #    unknown "I know I'm a monster... I know that more than anything..."
-
-        #    unknown "But please..."
-
-        #    unknown "Don't leave me..."
-
-        #    unknown "Don't... go..."
-
-        #    "..."
-
-        #    $ renpy.pause(2.0, hard = True)
-
         jump intro_d_meeting
 
     label intro_d_meeting:
@@ -639,6 +552,8 @@
         pc "..."
         
         menu:
+            
+            pc "{cps=0}...{/cps}"
             
             "React like a normal human being.":
                 
@@ -760,6 +675,8 @@
         
         menu:
             
+            "{cps=0}I don't know much about the Hellsguard, and she seems quite eager to talk my ear off...{/cps}"
+            
             "'I've got time.'":
                 
                 $ d_like += 1
@@ -825,6 +742,8 @@
                 d "Would you like to guess what these trained individuals were called?"
                 
                 menu:
+                    
+                    d "{cps=0}Would you like to guess what these trained individuals were called?{/cps}"
                     
                     "'Hellsguard?'":
                         
@@ -913,6 +832,8 @@
         
         menu:
             
+            d "{cps=0}Impressive, no? You were not gifted with a lifetime contract, unfortunately. But I can promise the day you die will {i}not{/i} fall under the upcoming year.{/cps}"
+        
             "'That's... comforting.'":
                 
                 d "Hellsguard are valued for providing peace of mind. I am glad to already be fulfilling that portion of my duties."
@@ -941,6 +862,8 @@
          
         menu:
             
+            d "{cps=0}A dragon? Yes. Put your mind at ease, sir - my hoarding instincts have been trained out of me. I carry with me nothing but the clothes on my back.{/cps}"
+         
             "'Hoarding instincts?'":
                 
                 d "Yes. Dragons hoard. It's a habit of sorts."
@@ -980,8 +903,12 @@
                 "She gives a somewhat disappointed sigh."
                 
         d "Did you have any other questions?"
+
+        $ tempvar = ""
         
         menu:
+            
+            d "{cps=0}Did you have any other questions?{/cps}"
             
             "'Yes, actually...'":
                 
@@ -1059,16 +986,21 @@
                 
                 d "I am... relieved. Making a mistake this far into the procedure would have been rather embarrassing."
                 
-                d "But it seems no such mistake has been made. I look forward to working with you, sir."
+                $ tempvar = "But it seems no such mistake has been made. I look forward to working with you, sir."
                 
+                d "[tempvar]"
                 
             "'No, that's about all I need to know.'":
                 
                 show dravenia happy
                 
-                d "Understood, sir. I look forward to working with you."
+                $ tempvar = "Understood, sir. I look forward to working with you."
+                
+                d "[tempvar]"
                 
         menu:
+            
+            d "{cps=0}[tempvar]{/cps}"
             
             "'I guess I look forward to working with you, too.'":
                 
@@ -1106,10 +1038,12 @@
 
         "Dravenia quickly and silently crosses the room, pressing her back up against the wall directly beside the door. She gives you a stoic nod."
         
-        "Is she genuinely concerned, or is she just trying to show off?"
+        "Is she genuinely concerned, or is she just trying to show off? As for the knock..."
         
         menu:
             
+            "{cps=0}Is she genuinely concerned, or is she just trying to show off? As for the knock... {/cps}"
+                
             "'Uh. Come in?'":
                 
                 "The door flies open."
@@ -1288,6 +1222,8 @@
         
         menu:
             
+            "{cps=0}I could say hello. Or...{/cps}"
+            
             "Say hello.":
                 
                 $ flag_ScaredViscella = False
@@ -1337,6 +1273,8 @@
                 v "Actually, I'm a lot better at making them."
                 
                 menu:
+                    
+                    v "{cps=0}Actually, I'm a lot better at making them.{/cps}"
                     
                     "'I'm sure it's not that bad.'":
                         
@@ -1497,6 +1435,8 @@
                 
                 menu:
                     
+                    v "{cps=0}{i}Amorphous Blob.{/i}{/cps}"
+                    
                     "'Should I get a doctor?'":
                         
                         show viscella puddle_neutral
@@ -1606,6 +1546,8 @@
         
         menu:
             
+            "{cps=0}Dravenia glances to me for support.{/cps}"
+            
             "'Viscella, she's not gonna hurt you.'":
                 
                 v "That's what they all say!"
@@ -1669,6 +1611,8 @@
         v "But still, she's a dragon! Aren't you terrified out of your mind right now?!"
         
         menu:
+            
+            v "{cps=0}But still, she's a dragon! Aren't you terrified out of your mind right now?!{/cps}"
             
             "'Uh... no?'":
                 
@@ -1734,6 +1678,8 @@
         v "..."
         
         menu:
+            
+            v "{cps=0}...{/cps}"
             
             "'You're not a waste of space.'":
                 
@@ -1864,6 +1810,8 @@
         v "She didn't even acknowledge my existence..."
         
         menu:
+            
+            v "{cps=0}She didn't even acknowledge my existence...{/cps}"
             
             "'She's probably just socially awkward, like Viscella said.'":
                 
@@ -2018,6 +1966,8 @@
         
         menu:
             
+            a "{cps=0}I do not joke.{/cps}"
+            
             "Don't believe her.":
                 
                 "I think she might be off her rocker."
@@ -2106,6 +2056,8 @@
         
         menu:
             
+            a "{cps=0}I expect your answer by midnight tonight. I will ask only once. Decide on a course of action by then.{/cps}"
+            
             "Demand more time.":
                 
                 pc "Just slow down, damnit! You're dumping way too much responsibility on me! If what you're telling me is true, how do you expect me to make such a serious decision in one night?!"
@@ -2148,6 +2100,8 @@
         
         menu:
             
+            "{cps=0}There's no answer.{/cps}"
+            
             "Try the doorknob.":
                 
                 "I try the doorknob."
@@ -2182,8 +2136,12 @@
         
         "I spin around. How I missed the towering woman on my way in is a complete mystery. She gives me a little smile, and pulls the hilt of the spoon away from my back."
     
+        $ tempString = ""
+
         menu:
             
+            "{cps=0}I spin around. How I missed the towering woman on my way in is a complete mystery. She gives me a little smile, and pulls the hilt of the spoon away from my back.{/cps}"
+    
             "'Yeah, you got me...'":
                 
                 d "Merely to prove a point, sir."
@@ -2193,6 +2151,8 @@
                 d "With me here, however, you can immunize yourself from any such fate."
                 
                 menu:  
+                    
+                    d "{cps=0}With me here, however, you can immunize yourself from any such fate.{/cps}"
                     
                     "'The fate where I get murdered with a spoon?'":
                         
@@ -2210,7 +2170,9 @@
                         
                         d "N-not that I would, of course."
                         
-                        d "But I digress. How went your conversation with Miss Allise?"
+                        $ tempString = "But I digress. How went your conversation with Miss Allise?"
+                        
+                        d "[tempString]"
                         
                     "'What if I get attacked and you're not around?'":
                         
@@ -2222,7 +2184,9 @@
         
                         pc "Uh..."
                         
-                        d "But I digress. How went your conversation with Miss Allise?"
+                        $ tempString = "But I digress. How went your conversation with Miss Allise?"
+                        
+                        d "[tempString]"
 
             "'If you wanted to spoon me, you just had to ask.'":
                 
@@ -2252,7 +2216,9 @@
                 
                 show dravenia neutral
                 
-                d "Oh! How fared your encounter with Miss Allise?"
+                $ tempString = "Oh! How fared your encounter with Miss Allise?"
+                
+                d "[tempString]"
                 
             "'You're trying... way too hard, Dravenia.'":
                 
@@ -2276,9 +2242,13 @@
                 
                 d "Mostly. The spoon comment was rather accurate - they are quite messy when properly used."
                 
-                d "But I digress. How went your conversation with Miss Allise?"            
+                $ tempString = "But I digress. How went your conversation with Miss Allise?"
+                
+                d "[tempString]"
 
         menu:
+            
+            d "{cps=0}[tempString]{/cps}"
             
             "'It went alright. I mean, all things considered...'":
                 
@@ -2331,6 +2301,8 @@
         d "I have the feeling she is somewhat afraid of me."
         
         menu:
+            
+            d "{cps=0}I have the feeling she is somewhat afraid of me.{/cps}"
             
             "'What makes you say that?'":
                 
@@ -2392,11 +2364,23 @@
         
         "C'mon, think... who do I know who's imaginative and gullible and equal measure?"
         
-        "Oh. Right."
+        menu:
+            
+            "{cps=0}C'mon, think... who do I know who's imaginative and gullible and equal measure?{/cps}"
+            
+            "'Viscella. Obviously.'":
+                
+                "Yeah, if anyone's gonna entertain this lunacy, it'll probably be her."
+                
+            "'Kamao. Definitely.'":
+                
+                "Now that I think about it, she sure does fit those criteria..."
+                
+                "But I don't think my current mental state can handle Kamao right now. Viscella's a safer bet."
         
         d "I had just asked if there was any reason you needed to see the slime, and it seemed to set you off daydreaming."
         
-        show dravenia surprised
+        show dravenia shocked
         
         "Her eyes widen."
         
@@ -2419,7 +2403,7 @@
         "Dravenia starts towards the staircase, but freezes on the spot. Beads of sweat trickle down her face."
         
         show dravenia smug
-        
+         
         d "Oh... so my first test, is it... v-very well..."
         
         pc "Are... you okay?"
@@ -2435,6 +2419,8 @@
         d "Would it be okay if I at least stood outside the door?"
         
         menu:
+            
+            d "{cps=0}Would it be okay if I at least stood outside the door?{/cps}"
             
             "'Only if you swear not to eavesdrop.'":
                 
@@ -2482,7 +2468,9 @@
                 
                 menu:  
                     
-                    "'Please, Dravenia, I'll be fine. I'll scream loud enough to wake the house if I get in trouble.":
+                    d "{cps=0}Well...{/cps}"
+                    
+                    "'Please, Dravenia, I'll be fine. I'll scream loud enough to wake the house if I get in trouble.'":
                         
                         show dravenia stern
                         
@@ -2492,7 +2480,7 @@
                         
                         d "..."
                         
-                        d "Forgive me. I see that I am being rather overbearing."
+                        d "Forgive me. I see that I am being rather overbearing.'"
                         
                     "'Are you trying to protect me, or are you just trying to show off?'":
                         
@@ -2528,6 +2516,8 @@
         
         menu:
             
+            d "{cps=0}You will then be able to either explain the dangerous situation to the best of your ability, or cancel the alert in the case of a false alarm.{/cps}"
+            
             "'Is this necessary...?'":
                 
                 d "Necessary? No. But the alternative is me hovering in close proximity to you for the majority of the day. Including during private activities."
@@ -2538,7 +2528,7 @@
                 
         d "In the rare event you are essentially 'held at gunpoint' and forced to tell me the press was a false alarm, you need merely speak the words... ah."
         
-#       codeword is 'spilled my drink'
+#       Codeword is 'spilled my drink'
         
         "Dravenia glances around."
         
