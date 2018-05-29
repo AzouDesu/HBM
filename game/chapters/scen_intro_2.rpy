@@ -2360,149 +2360,31 @@
         
         pc "Yeah, it's fine. I'm fine."
         
-        "...No, I'm not. I need to talk to someone. Make sure I'm thinking clearly. But I can't have them thinking I'm crazy, either."
-        
-        "C'mon, think... who do I know who's imaginative and gullible and equal measure?"
-        
-        menu:
-            
-            "{cps=0}C'mon, think... who do I know who's imaginative and gullible and equal measure?{/cps}"
-            
-            "'Viscella. Obviously.'":
-                
-                "Yeah, if anyone's gonna entertain this lunacy, it'll probably be her."
-                
-            "'Kamao. Definitely.'":
-                
-                "Now that I think about it, she sure does fit those criteria..."
-                
-                "But I don't think my current mental state can handle Kamao right now. Viscella's a safer bet."
+        "...No, I'm not. I need to sort out my thoughts."
         
         d "I had just asked if there was any reason you needed to see the slime, and it seemed to set you off daydreaming."
         
-        show dravenia shocked
+        pc "Sorry. Again, distracted... I think I'm going to go for a walk."
         
-        "Her eyes widen."
+        show dravenia happy
         
-        d "Don't tell me you..."
+        d "Very well. Would you like me to bring an umbrella? It seems quite overcast."
         
-        pc "Yes! I need to talk to Viscella. It's urgent. Well - not urgent, but, uh, it's important."
+        pc "Actually... I think this is something that needs privacy. Sorry, Dravenia."
         
-        d "Important? I'm sure together we can find her in a matter of-"
+        show dravenia neutral
         
-        pc "No! I mean no. Well, sorry. I just... this is something that needs privacy."
+        d "I ask again - is everything alright?"
         
-        show dravenia embarrassed
+        pc "Maybe. But I need some alone time to find out."
         
-        d "I... I see... are, um, you two familiar, or was it at first sight?"
+        d "I see... you understand that I am reluctant to part with you."
         
-        pc "Huh?"
+        pc "Yeah..."
         
-        d "Nothing! Nothing, I- this way. I'm pretty sure she went this way."
-        
-        "Dravenia starts towards the staircase, but freezes on the spot. Beads of sweat trickle down her face."
-        
-        show dravenia smug
-         
-        d "Oh... so my first test, is it... v-very well..."
-        
-        pc "Are... you okay?"
-        
-        d "Yes. Yes, sir. I will stay right here. Without following you. Your privacy is important, even if it puts you at risk."
-        
-        d "..."
-        
-        d "On second thought, saying it out loud..."
-        
-        show dravenia embarrassed
-        
-        d "Would it be okay if I at least stood outside the door?"
-        
-        menu:
-            
-            d "{cps=0}Would it be okay if I at least stood outside the door?{/cps}"
-            
-            "'Only if you swear not to eavesdrop.'":
-                
-                $ flag_intro_DraveniaAccompanies = False
-                
-                show dravenia stern
-                
-                d "Yes, sir! I swear it, sir!"
-                
-                d "I will attune my hearing to only the highest-pitch cries for aid!"
-                
-                pc "I don't think you'll hear any of those. Unless Viscella catches you standing ominously outside her door, that is."
-                
-                show dravenia embarrassed 
-                
-                d "Perhaps I shall stand slightly to the side of the door, instead..."
-                
-                pc "Probably a good idea. You just want me to scream if something goes wrong?"
-                
-                "Though I doubt it will..."
-                
-                show dravenia neutral
-                
-                d "Ah, it would likely be ineffective. The slime could smother you in an instant, rendering you incapable of calling for aid."
-                
-            "'Viscella's not a threat.'":
-                
-                $ flag_intro_DraveniaAccompanies = False
-                
-                show dravenia neutral
-                
-                d "Do not underestimate her simply because she is a slime. Contrary to their appearance, they can be deadly."
-                
-                pc "Do you really have to assume the worst in everyone?"
-                
-                show dravenia smug
-                
-                d "It is not assuming the worst, sir. It is assessing the threat."
-                
-                pc  "'And do you honestly think Viscella's a threat? From what I've been able to gather, she's a nervous, socially anxious doormat."
-                
-                show dravenia neutral
-                        
-                d "Well..."
-                
-                menu:  
-                    
-                    d "{cps=0}Well...{/cps}"
-                    
-                    "'Please, Dravenia, I'll be fine. I'll scream loud enough to wake the house if I get in trouble.'":
-                        
-                        show dravenia stern
-                        
-                        d "But if a slime smothers you the only sound you'll be able to make is-"
-                        
-                        show dravenia neutral
-                        
-                        d "..."
-                        
-                        d "Forgive me. I see that I am being rather overbearing.'"
-                        
-                    "'Are you trying to protect me, or are you just trying to show off?'":
-                        
-                        show dravenia shocked
-                        
-                        d "Wha-"
-                    
-                        show dravenia vangry
-                    
-                        d "I'm...!"
-                        
-                        d "..."
-                        
-                        show dravenia sad
-                        
-                        d "...Sincerest apologies, sir. That was an unprofessional outburst. More importantly, you are right - perhaps I am getting somewhat carried away."
-            
-                        d "Nevertheless, I swear my concern is genuine. You think me paranoid, but caution is trained into us above all else."
-
         show dravenia closed
-
-        d "With that said, could I give you something to set my mind at ease?"
+        
+        d "Thankfully, I have been meaning to give you something that will hopefully set both our minds at ease."
         
         pc "Oh? What?"
         
@@ -2524,48 +2406,194 @@
                 
             "'What if someone forces me to tell you it's a false alarm?'":
                 
+                show dravenia happy
+                
                 d "Ah, an astute question, sir! And one I was just about to address."
                 
         d "In the rare event you are essentially 'held at gunpoint' and forced to tell me the press was a false alarm, you need merely speak the words... ah."
         
 #       Codeword is 'spilled my drink'
         
+        show dravenia neutral
+        
         "Dravenia glances around."
         
         d "Perhaps I shall elaborate when I can be absolutely sure we aren't being overheard."
         
-        d "For now, though, it is unlikely such a fringe scenario will come to pass."
+        d "For now, though, I do hope you enjoy your walk."
         
-        if flag_intro_DraveniaAccompanies:
+        d "I will be in the yard. If you require my aid, be sure to press the button. Failing that, a shout or scream will suffice."
+        
+        "I strap the device around my wrist. It's pretty light, and not at all uncomfortable."
+        
+        pc "Thanks, Dravenia."
+        
+        show dravenia happy
+        
+        d "Of course."
+        
+        stop music fadeout 1.0
             
-            d "Especially with myself in such proximity!"
+        jump intro_lonewalk
             
-            pc "You know you'll still be outside the room, right? And not eavesdropping?"
+    label intro_lonewalk:
+        
+        scene bg yard with dissolve
+        
+        play music "assets/sound/bgm/tam-n17.mp3" fadein 3.0
+        
+        "Fresh air... that's nice."
+        
+        "At least the sky remains the same no matter where I am, or what sort of insanity's brewing all around me..."
+        
+        "Alright. Let's cover what I know so far."
+        
+        "Allise claims to be holding me in some sort of time loop."
+        
+        "And... she 'proved' this by telling me a story from my past that I've never told anyone."
+        
+        "And she's right. I've never told anyone that story, not even to my closest friends - and I haven't had many. I've never even written it down anywhere."
+        
+        "But that doesn't necessarily prove anything. She could have been spying on me on that day. Either that, or she can read minds."
+        
+        "...None of these options seem likely."
+        
+        "I was in the basement when I nearly gassed myself. She would have had to be in the room with me. Besides, that was nearly ten years ago."
+        
+        "I've heard that some rare and powerful chimera can read minds, but it's not an easy task. They always need a lot of time and energy. They can't just do it on a whim, and the odds they'd be able to do it without their victim knowing is pretty low."
+        
+        "But, still... a chimera powerful enough to read minds on a whim is still more likely than one capable of trapping someone in a time-travel bubble. I mean, at least the former's got {i}some{/i} sort of precedent."
+        
+        "So let's assume that's the case: Allise isn't really a human, but is actually some sort of chimera unknown to the public capable of incredible feats."
+        
+        "If that's so, why's she bothering with me? What's so important about me making some sort of permanent bond with someone that she's involving herself like this? And why tell me about all this time travel stuff when she could just threaten me like a normal person?"
+        
+        "Maybe she's just crazy? I don't know..."
+        
+        "Well, I suppose I could tell Dravenia about all of this. She's supposed to be an expert on all sorts of Chimera. She might be able to help."
+        
+        "But... what if Allise is telling the truth? What if I {i}am{/i} trapped in some sort of time loop?"
+        
+        "She told me if I tried telling anyone the truth, she'd just restart it again, and I'd go through this all over again without any of my memories. That doesn't sound very fun."
+        
+        "Maybe I should play along for now? I mean, technically, all she's demanding is I make a close friend. It's not like I'm being forced to kill someone."
+        
+        "It couldn't hurt. This could be a chance to learn more about chimera."
+        
+        "And I've never really been close to any of my friends..."
+        
+        "What should I do?"
+        
+        menu:
             
-            pc "Assuming she's even {i}in{/i} her room."
+            "{cps=0}What should I do?{/cps}"
             
-            d "Of course. To a Hellguard, a measly door is nothing."
+            "Trust Allise and resolve to make a friend.":
+                
+                jump intro_routeselect
+
+            "Doubt Allise and go to Dravenia.":
+                
+                "Should I explicitly ignore Allise's demands and go tell Dravenia everything?"
+                
+                "This could get messy - I doubt Dravenia will be happy with Allise."
+                
+                "And on the off-chance Allise is telling the truth, all of it will be for naught - she'll just start me off from the beginning of the time loop without any of my memories."
+                
+                "It'd almost be like restarting a game, as crazy as that sounds."
+                
+                "Though maybe that's not a bad thing. Maybe I'd act slightly differently and see different sides of the people I've met."
+                
+                menu:
+                    
+                    "Risk starting from the beginning? After this, there's no going back."
+                    
+                    "Yes. A restart could help me try different things.":
+                        
+                        "Here goes nothing..."
+                        
+                        jump intro_tattlereset
+                        
+                    "On second thought, I'll play along with Allise.":
+                    
+                        jump intro_trustallise
+        
+    label intro_tattlereset:
+        
+        a "I see you've decided to disobey my instructions."
+        
+        a "A dissapointment, perhaps, but not a surprise."
+        
+        a "Perhaps you will prove more willing in the next cycle."
+        
+        jump start    
+        
+    label intro_trustallise:
+        
+        "I guess I should just go with the flow, for now. I can always try to find a way out later if things start getting bad."
+        
+        "But that still leaves the matter of who to persue up in the air..."
+        
+        #temp jump
+        
+        jump intro_routeselect
+        
+    label intro_routeselect:
+        
+        
+        $ v_like = 1
+        
+        $ a_like = 1
+
+        "Viscella: [v_like] Kumiru: [ku_like] Kamao: [ka_like] Nagi: [n_like] Fenira: [f_like] Dravenia: [d_like] Allise: [a_like]"
+
+        #Viscella Pref
+        
+        if v_like > ka_like and v_like > ku_like and v_like > d_like and v_like > n_like and v_like > f_like and v_like > a_like:
             
-            pc "Just don't break anything. Bondhouses charge a lot for property damage..."
+            "Viscella and I seem to get along."
+            
+        #Kumiru Pref
+        
+        elif ku_like > v_like and ku_like > ka_like and ku_like > d_like and ku_like > n_like and ku_like > f_like and ku_like > a_like:
+            
+            "Kumiru and I seem to get along."
+        
+        #Kamao Pref
+        
+        elif ka_like > v_like and ka_like > ku_like and ka_like > d_like and ka_like > n_like and ka_like > f_like and ka_like > a_like:
+            
+            "As much as I hate to admit it... Kamao and I seem to get along."
+            
+        #Fenira Pref
+        
+        elif f_like > v_like and f_like > ka_like and f_like > d_like and f_like > n_like and f_like > ku_like and f_like > a_like:
+            
+            "Fenira and I seem to get along."
+            
+        #Nagi Pref
+        
+        elif n_like > v_like and n_like > ka_like and n_like > d_like and n_like > f_like and n_like > ku_like and n_like > a_like:
+            
+            "Nagi and I seem to get along."
+            
+        #Dravenia Pref
+        
+        elif d_like > v_like and d_like > ka_like and d_like > n_like and d_like > f_like and d_like > ku_like and d_like > a_like:
+            
+            "Dravenia and I seem to get along."
+            
+        #Allise Pref
+        
+        elif a_like > v_like and a_like > ku_like and a_like > d_like and a_like > f_like and a_like > n_like and a_like > ka_like:
+            
+            "Strangely enough... Allise and I seem to get along, in a weird way"
             
         else:
-            
-            d "..."
-            
-            show dravenia sad
-            
-            d "I suppose this is goodbye..."
-            
-            pc "C'mon, Dravenia, don't be so dramatic. I'll be fine."
-            
-            d "Yes, sir..."
-            
-        jump intro_viscellachatconspiracy
-            
-    label intro_viscellachatconspiracy:
         
-        "Here we go, scene change."
-
+            "I seem to get along pretty well with a few tenants..."
+        
+        
 ###################################################################################CURRENT###############################################################################################
         
     label ch2_scene09:
