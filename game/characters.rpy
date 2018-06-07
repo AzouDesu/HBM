@@ -957,6 +957,15 @@ image nagi closed = LiveComposite(
         (1007, 262), "assets/nagi/faces/n_closed.png"
         )
 
+image nagi smug = LiveComposite(
+        (2410, 3118), # Width x Height
+        (0, 0), ConditionSwitch(
+            "n_Outfit == 0", "assets/nagi/n_outfit_default.png",
+            "n_Outfit == 1", "assets/nagi/n_outfit_swimwear.png"
+            ),
+        (1007, 262), "assets/nagi/faces/n_smug.png"
+        )
+
 
 transform nagi_center:
     xpos 0.5

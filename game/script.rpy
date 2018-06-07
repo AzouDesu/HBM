@@ -16,7 +16,6 @@ init python:
     
     story_numberofloops = 0
     
-    
     ka_Outfit = 0
     ku_Outfit = 0
     v_Outfit = 0
